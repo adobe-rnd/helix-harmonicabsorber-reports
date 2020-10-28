@@ -9,7 +9,159 @@ errors during the test run, so the data is not as good as I would like.
 * **online:** `https://pages.adobe.com/illustrator/en/tl/thr-illustration-home/`
 * **pages:** That same site without the second CDN
 * **simulator:** The same page served from simulator.
-* **+david:** Variants served 
+* **+david:** Variants served with david's modifications
+* **+statified:** Variants served with statified (freezer) sites
+* **+cached:** Variants served with an all-caching, tls-intercepting proxy enabled
+* **+nointeractive:** XHR blocked with proxy (/stats.adobe.com|facebook.com|facebook.net/)
+* **+noadtech:** Blocking (/adobe-privacy\/latest\/privacy.min|marketingtech|demdex.net|cookielaw.org|geolocation.onetrust.com/)
+* **+noexternal:** Inverse blocking /::1|127.0.0.1|localhost/
+* **+nocss:** Blocking /\.css([?#])/
+* **+nojs:** Blocking /\.js([?#])/
+
+## Failures
+
+* **simulator:** Had for some reason css rendering problems
+* **statified:** Didn't render some content
+* **simulator:** Didn't render with CSS
+* **css, js:** This probably didn't have any impact, but I forgot the `$` in the regex.
+* **simulator+statified+david:** Complete failure; probably url mixup
+
+Note that automatic blocking variants where all tested on simulator
+variant; this means that these tests are of very limited usefulness.
+
+Note also that all scores are without automated error rejection applied;
+meaning variance rankings are also of very limited usefulness.
+
+## Fun facts
+
+* Lighthouse was run a total of 1300 times for this analysis
+* 3.3GB of data was produced
+* The single task that took the most time was getting helix simulator
+  automatically started; after a day of debugging it turned out helix
+  simulator doesn't like being started on a detached head. The task
+  that was the quickest to complete was getting the ssl intercepting proxy
+  to work; which was done in about 20 minutes. This is exactly the opposite
+  of what I would have expected.
+* I had to write specialized IO handlers because apparently neither process.stdout.write
+  not console.log like strings longer than 65k (or more likely `2**16-1`
+  which is the maximum size of an unsigned 16 bit integer)
+* I hate callback based APIs (no specific relation to subject matter)
+
+## Discussion
+
+The list of failures above is long and so most of my goals where not met
+in this analysis. This is OK though, there where some results and most of
+the work was development work anyway. We can iron out the kinks (debug the
+reproducible code) and just rerun the measurements, little time will
+be lost.
+
+### Baseline
+
+The measurement of the empty page gave a near perfect score and
+gelable variance (both by ~1e-7).
+
+This indicates that reaching a perfect score is possible.
+
+### Network latency nondeterminism
+
+Comparing simulator+statified and simulator+cached variants to online
+variants (pages, online) would have provided an indication of this; given
+that the simulator variants had issues, there is no clean comparison possible,
+
+Previous analysis provided some evidence that network
+latency has a small impact on the score and weak evidence
+that network nondeterminism has **no** impact on variance.
+
+### Simulator nondeterminism
+
+Comparing simulator and simulator+cached should provide a direct
+measurement of simulator nondeterminism impact.
+
+**Impact on Score:** Strong evidence, big impact
+**Impact on Variance:** Strong evidence, big impact
+
+Notice how simulator displays discrete, regular spikes in the scoring.
+
+### Adware nondeterminism
+
+Comparing pages and pages+david variants should allow us to gauge
+the impact of adware.
+
++noadtech, +noexternal and +nointeractive variants should provide a
+direct measurement of the impact from adware. These experiments have
+not yielded usable data.
+
+**Impact on Score:** Strong evidence of big impact on score
+**Impact on Variance:** Decent evidence of no impact on variance
+
+Note how the jitter structure looks a bit different as well; pages
+looks more randomized while pages+david seems to pivot between two discrete states.
+
+### Browser nondeterminism
+
+Hard to say. This is probably the impact of parsing js and css.
+Unfortunately these measurements failed. However, since the failure
+was a failure to render CSS properly, I suspect that all simulator
+variants provide a measurement with css rendering disabled.
+
+Given that simulator+cached version approached a perfect score
+by 1e-2 (score 0.994, 0.99 after rounding) and had a jitter around 1e-5,
+I think css rendering probably has a large impact on jitter.
+
+### Conclusion
+
+We now have tentative evidence that the two prime sources of jitter
+are simulator nondeterminism and browser nondeterminism. Network nondeterminism
+(in the case of online variants) may be a source but it's impact would be
+much smaller than that of the previous sources, at least in my hannover
+home internet.
+
+I suspect, that browser nondeterminism may be impacted by system
+load to a large degree and by true nondeterminism by a lesser degree.
+The regular spikes we're seeing look like there is a pretty regular
+load pattern going on on my test machine.
+
+This is all in line with the lighthouse documentation which characterizes
+network nondeterminism as an unlikely, server nondeterminism as a likely
+and browser nondeterminism as a certain source of variance.
+
+In essence, these results reproduce what the lighthouse documentation states.
+
+https://github.com/GoogleChrome/lighthouse/blob/master/docs/variability.md
+
+## Recommendation
+
+The initial goal of creating a controlled environment such that variance
+is below the measurement threshold (that is somewhere around 1e-3/1e-4)
+now seems to be unreachable. We could optimize the simulator to respond
+quicker (using caching), but we cannot do the same for the browser. Even
+though we might be able to drastically lower browser nondeterminism by correcting
+for system load, we cannot do so without modifying the scoring system in
+some way.
+
+I am pretty sure at this point that tuning the lighthouse score is not an option.
+
+Instead, I recommend we develop a measurement method to perform standard hypothesis
+testing on the question *did this modification improve my lighthouse performance score*.
+
+This will probably work somewhat like this:
+
+* Employ caching proxy to eliminate network & simulator variance
+* Run scoring continually on both versions at the same time so the differential
+  will be affected by the same cpu jitter
+* Perform outlier rejection on score components (each subscore)
+* Take differential
+* Apply kalman filtering
+* Calculate compound score
+* Calculate uncertainty sigma/stddev
+* Return (compound score differential, sigma)
+
+The helix simulator could show then show a live update with the improving
+certainty or wait until the experiment reaches a level of certainty (lets say three sigma)
+and then output the result with a decent number of places behind the comma.
+
+Something like it…and probably in a different order and I need to look
+up the appropriate math, but the general idea is *collect more and more data and quantify uncertainty*.
 
 # Report
 
@@ -20,6 +172,7 @@ errors during the test run, so the data is not as good as I would like.
 
 ![Performance Score](./performance_score_empty_simulator_online_simulator+statified.png)
 ![Performance Score](./performance_score_simulator_simulator+david_pages_pages+david.png)
+
 ![Performance Score](./performance_score_simulator+statified_simulator+statified+david.png)
 ![Performance Score](./performance_score_simulator_simulator+cached.png)
 ![Performance Score](./performance_score_simulator+cached_simulator+cached+nointeractive_simulator+cached+noexternal.png)
