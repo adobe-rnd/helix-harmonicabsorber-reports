@@ -131,6 +131,13 @@ https://github.com/GoogleChrome/lighthouse/blob/master/docs/variability.md
 
 ## Recommendation
 
+In order to confirm the scores here with more certainty, I would rerun
+this experiment, but this time without online, simulator, statified and david
+variants. We can use the automated, proxy based variants to test all the
+variance sources from above based on the `pages` environment. This should
+allow us to bypass most of the bugs while still quantifying all the variance
+sources to a high degree of certainty…
+
 The initial goal of creating a controlled environment such that variance
 is below the measurement threshold (that is somewhere around 1e-3/1e-4)
 now seems to be unreachable. We could optimize the simulator to respond
