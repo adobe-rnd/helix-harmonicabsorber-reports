@@ -1,0 +1,21 @@
+$_pages <<EOF
+9435.450983085051 1
+4650.329413091918 9
+4515.5372561907025 24
+4582.9333346413105 23
+4448.141177740095 19
+4380.745099289487 9
+3302.4078440797675 1
+4717.725491542526 10
+0 1
+4178.556863937665 1
+1347.92156901215 1
+4043.76470703645 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/unused-javascript/pages//raw_hist.png"
+set yrange [0:24]
+set boxwidth 67.3960784506075
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

@@ -1,0 +1,34 @@
+$_empty <<EOF
+0.9999935799942361 1
+0.9999948478718034 37
+0.9999950063564992 8
+0.9999950855988472 7
+0.9999947686294554 25
+0.9999946893871074 4
+0.9999949271141513 13
+0.9999943724177156 3
+0.9999942931753677 1
+0.9999944516600635 1
+EOF
+$_pages <<EOF
+0.13753946010513013 1
+0.9570454098981972 55
+0.9513145990604834 32
+0.9398529773850559 1
+0 1
+0.9283913557096284 6
+0.9111989231964871 1
+0.9226605448719146 2
+0.32665621774968406 1
+EOF
+$_pagesCached <<EOF
+0.9558428458407013 84
+0.9234413934393215 16
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/first-meaningful-paint/first-meaningful-paint_empty_pages_pages+cached+hist.png"
+set boxwidth 0.019999901711976943
+set style fill transparent solid 0.5 noborder
+set yrange [0:84]
+plot $_empty title "empty" with boxes ,$_pages title "pages" with boxes ,$_pagesCached title "pages+cached" with boxes ,

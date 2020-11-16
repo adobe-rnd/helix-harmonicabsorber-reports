@@ -1,0 +1,20 @@
+$_pages <<EOF
+1.0000778935778756 2
+0.7499339291593098 84
+0.7496019530950516 4
+0 1
+0.7464481804845985 1
+0.7492699770307933 1
+0.748772012934406 1
+0.7489380009665352 1
+0.7477760847416314 2
+0.7486060249022769 1
+0.7494359650629224 2
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/uses-rel-preconnect/pages//hist.png"
+set yrange [0:84]
+set boxwidth 0.00016598803212910796
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

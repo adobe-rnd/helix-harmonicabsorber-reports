@@ -1,0 +1,19 @@
+$_empty <<EOF
+0.9999999306470808 1
+0.9999999442012477 9
+0.9999999401349976 39
+0.9999999374241643 4
+0.9999999387795809 19
+0.9999999414904143 13
+0.9999999347133308 5
+0.9999999428458309 7
+0.9999999360687476 2
+0.9999999292916641 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/speed-index/empty//hist.png"
+set yrange [0:39]
+set boxwidth 1.3554166889531037e-9
+set style fill transparent solid 0.5 noborder
+plot $_empty title "empty" with boxes ,

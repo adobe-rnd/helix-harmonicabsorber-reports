@@ -1,0 +1,42 @@
+$_pagesCachedNoexternal <<EOF
+0.05568400230803107 18
+0.05568458611099399 11
+0.055683418505068145 8
+0.05568516991395692 4
+0.055683710406549604 18
+0.05568312660358668 5
+0.05568429420951253 32
+0.05568487801247545 3
+0.05568283470210522 1
+EOF
+$_pagesCachedNoexternalNosvg <<EOF
+0.06625354348425667 22
+0.06625281380762672 4
+0.06625390832257165 23
+0.06625427316088663 18
+0.0662531786459417 19
+0.0662546379992016 9
+0.06625536767583154 2
+0.06625244896931176 1
+0.06625500283751658 2
+EOF
+$_pagesCachedNoexternalNoimg <<EOF
+0.9999999836524097 6
+0.9999999836550324 19
+0.9999999836563437 32
+0.999999983657655 13
+0.9999999836537211 12
+0.9999999836589663 12
+0.9999999836615888 1
+0.9999999836602775 2
+0.9999999836510984 1
+0.9999999836629001 1
+0.9999999836497871 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/total-byte-weight/total-byte-weight_pages+cached+noexternal_pages+cached+noexternal+nosvg_pages+cached+noexternal+noimg+hist.png"
+set boxwidth 0.018886342979215896
+set style fill transparent solid 0.5 noborder
+set yrange [0:32]
+plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,$_pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes ,$_pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes ,

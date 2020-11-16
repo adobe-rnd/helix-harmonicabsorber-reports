@@ -1,0 +1,45 @@
+$_pagesCached <<EOF
+0.9972441255195311 1
+0.01804580796317079 1
+0.01801981243334885 28
+0.01801995685295897 20
+0.018020101272569092 10
+0.018020390111789335 3
+0.018019523594128607 7
+0.018019668013738728 19
+0.018020245692179214 11
+EOF
+$_pagesCachedNointeractive <<EOF
+0.018004043893572092 28
+0.01781779516363859 72
+EOF
+$_pagesCachedNoadtech <<EOF
+0.0531234891546619 4
+0.053122166720837624 24
+0.053122497329293694 26
+0.05312183611238156 13
+0.05312282793774976 13
+0.05312315854620583 10
+0.05312150550392549 6
+0.05312117489546943 2
+0.05260245022790038 1
+0.05312084428701336 1
+EOF
+$_pagesCachedNoexternal <<EOF
+0.05568400230803107 18
+0.05568458611099399 11
+0.055683418505068145 8
+0.05568516991395692 4
+0.055683710406549604 18
+0.05568312660358668 5
+0.05568429420951253 32
+0.05568487801247545 3
+0.05568283470210522 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/total-byte-weight/total-byte-weight_pages+cached_pages+cached+nointeractive_pages+cached+noadtech_pages+cached+noexternal+hist.png"
+set boxwidth 0.01958852660711785
+set style fill transparent solid 0.5 noborder
+set yrange [0:72]
+plot $_pagesCached title "pages+cached" with boxes ,$_pagesCachedNointeractive title "pages+cached+nointeractive" with boxes ,$_pagesCachedNoadtech title "pages+cached+noadtech" with boxes ,$_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,

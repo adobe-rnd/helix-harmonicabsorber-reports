@@ -1,0 +1,46 @@
+$_pagesCached <<EOF
+0.40000720086529495 6
+0.37500675081121404 33
+0.42500765091937587 40
+0.2750049505948903 1
+0.45000810097345684 8
+0.3000054006489712 2
+0.35000630075713307 8
+0.25000450054080936 1
+0.32500585070305216 1
+EOF
+$_pagesCachedNointeractive <<EOF
+0.3591076217729555 9
+0.4436035327783568 40
+0.31685966627025486 1
+0.38023159952430585 16
+0.4224795550270065 27
+0.4013555772756562 5
+0.2957356885189045 1
+0.3379836440216052 1
+EOF
+$_pagesCachedNoadtech <<EOF
+0.9999945764150919 67
+0.9999616815861405 12
+0.9999781290006162 11
+0.9999699052933784 2
+0.9999863527078541 6
+0.9999534578789027 1
+0.9999452341716648 1
+EOF
+$_pagesCachedNoexternal <<EOF
+0.9999825501267164 3
+0.999990204089243 75
+0.9999748961641899 6
+0.9999978580517694 7
+0.9999442803140839 4
+0.9999289723890308 2
+0.9999519342766103 3
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/max-potential-fid/max-potential-fid_pages+cached_pages+cached+nointeractive_pages+cached+noadtech_pages+cached+noexternal+hist.png"
+set boxwidth 0.014999867150219202
+set style fill transparent solid 0.5 noborder
+set yrange [0:75]
+plot $_pagesCached title "pages+cached" with boxes ,$_pagesCachedNointeractive title "pages+cached+nointeractive" with boxes ,$_pagesCachedNoadtech title "pages+cached+noadtech" with boxes ,$_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,

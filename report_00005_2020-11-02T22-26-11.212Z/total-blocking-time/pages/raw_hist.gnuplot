@@ -1,0 +1,21 @@
+$_pages <<EOF
+208.70256721226102 1
+282.36229681658847 51
+270.0856752158672 8
+306.9155400180309 8
+319.19216161875215 1
+110.48959440649114 1
+294.6389184173097 24
+0 1
+405.1285128238008 1
+147.31945920865485 2
+184.14932401081856 1
+171.8727024100973 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/total-blocking-time/pages//raw_hist.png"
+set yrange [0:51]
+set boxwidth 12.276621600721237
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

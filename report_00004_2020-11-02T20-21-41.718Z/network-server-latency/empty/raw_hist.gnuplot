@@ -1,0 +1,20 @@
+$_empty <<EOF
+8.05920439430126 1
+1.6694066245338322 1
+1.3240121504923497 9
+1.0361834221244477 1
+1.5542751331866713 4
+1.3815778961659302 5
+1.2664464048187694 14
+1.2088806591451888 42
+1.1513149134716085 17
+1.4391436418395105 2
+1.093749167798028 4
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/network-server-latency/empty//raw_hist.png"
+set yrange [0:42]
+set boxwidth 0.05756574567358042
+set style fill transparent solid 0.5 noborder
+plot $_empty title "empty" with boxes ,

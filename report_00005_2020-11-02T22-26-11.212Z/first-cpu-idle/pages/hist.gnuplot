@@ -1,0 +1,20 @@
+$_pages <<EOF
+0.5205700113642218 1
+0.9948671328294016 85
+0.9930874062948232 1
+0 1
+0.9913076797602446 2
+0.9904178164929553 4
+0.9877482266910875 1
+0.9672813715434344 1
+0.9939772695621124 2
+0.9895279532256661 1
+0.7385865118500925 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/first-cpu-idle/pages//hist.png"
+set yrange [0:85]
+set boxwidth 0.000889863267289268
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

@@ -1,0 +1,22 @@
+$_pagesCachedNoadtech <<EOF
+0.07872289021093536 15
+0.06297831216874829 30
+0.055106023147654754 13
+0.09446746825312244 1
+0.07085060118984182 26
+0.16531806944296426 1
+0.04723373412656122 7
+0.08659517923202889 1
+0.10233975727421597 2
+0.2440409596538996 1
+0.1495734914007772 1
+0.11808433531640304 1
+0.22829638161171253 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/network-rtt/pages+cached+noadtech//raw_hist.png"
+set yrange [0:30]
+set boxwidth 0.007872289021093536
+set style fill transparent solid 0.5 noborder
+plot $_pagesCachedNoadtech title "pages+cached+noadtech" with boxes ,

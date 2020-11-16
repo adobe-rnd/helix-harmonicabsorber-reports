@@ -1,0 +1,19 @@
+$_pages <<EOF
+0.4461862840960731 3
+0.46808499742594173 8
+0.4708223365921753 75
+0.46534765825970814 3
+0.44892362326230667 2
+0.44344894492983955 1
+0.46261031909347455 4
+0.45987297992724097 1
+0.45713564076100743 2
+0.5091450849194454 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/render-blocking-resources/pages//hist.png"
+set yrange [0:75]
+set boxwidth 0.0027373391662335773
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

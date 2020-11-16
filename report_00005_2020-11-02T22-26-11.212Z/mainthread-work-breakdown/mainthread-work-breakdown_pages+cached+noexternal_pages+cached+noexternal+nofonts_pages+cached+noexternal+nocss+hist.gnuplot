@@ -1,0 +1,44 @@
+$_pagesCachedNoexternal <<EOF
+0.9985942828264394 21
+0.9987489837223071 16
+0.9984395819305716 28
+0.9989036846181749 14
+0.998130180138836 8
+0.9982848810347038 8
+0.9990583855140427 3
+0.9979754792429683 1
+0.9978207783471005 1
+EOF
+$_pagesCachedNoexternalNofonts <<EOF
+0.999708683124758 11
+0.9997593089759316 14
+0.9996580572735844 25
+0.9995568055712373 13
+0.9996074314224108 26
+0.9994555538688901 3
+0.9994049280177165 3
+0.9995061797200636 5
+EOF
+$_pagesCachedNoexternalNocss <<EOF
+0.9999605548665813 15
+0.9999642138389362 37
+0.9999532369218715 6
+0.9999495779495167 3
+0.9999568958942264 6
+0.999971531783646 7
+0.9999678728112911 19
+0.9999751907560008 1
+0.9999422600048069 1
+0.9999898266454205 1
+0.9998873754194836 1
+0.9999934856177753 1
+0.999938601032452 1
+0.9999349420600971 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/mainthread-work-breakdown/mainthread-work-breakdown_pages+cached+noexternal_pages+cached+noexternal+nofonts_pages+cached+noexternal+nocss+hist.png"
+set boxwidth 0.000043454145413497345
+set style fill transparent solid 0.5 noborder
+set yrange [0:37]
+plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,$_pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes ,$_pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes ,

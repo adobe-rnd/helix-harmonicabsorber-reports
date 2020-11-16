@@ -1,0 +1,32 @@
+$_empty <<EOF
+1 100
+EOF
+$_pages <<EOF
+0.25638591634296837 1
+0.09614471862861314 1
+0.04006029942858881 1
+0.06409647908574209 17
+0.07210853897145986 29
+0.08813265874289537 30
+0.05608441920002433 5
+0.08012059885717762 10
+0.04807235931430657 4
+0.4086150541716058 1
+0.1041567785143309 1
+EOF
+$_pagesCached <<EOF
+0.07402930841551728 1
+0.05277336837541826 20
+0.044710770429173805 1
+0.05167392320093038 73
+0.0505744780264425 3
+0.054239295274735436 1
+0.055338740449223316 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/unused-javascript/unused-javascript_empty_pages_pages+cached+hist.png"
+set boxwidth 0.019198794011428225
+set style fill transparent solid 0.5 noborder
+set yrange [0:100]
+plot $_empty title "empty" with boxes ,$_pages title "pages" with boxes ,$_pagesCached title "pages+cached" with boxes ,

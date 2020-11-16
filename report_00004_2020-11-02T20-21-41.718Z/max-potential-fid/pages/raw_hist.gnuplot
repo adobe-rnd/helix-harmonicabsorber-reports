@@ -1,0 +1,20 @@
+$_pages <<EOF
+358.5473362837094 1
+283.29666076737533 20
+292.1496814163558 24
+287.7231710918656 19
+309.85572271431676 1
+278.87015044288506 14
+296.57619174084607 11
+274.44364011839485 1
+301.0027020653363 7
+318.70874336329723 1
+270.0171297939046 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00004_2020-11-02T20-21-41.718Z/max-potential-fid/pages//raw_hist.png"
+set yrange [0:24]
+set boxwidth 4.4265103244902395
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

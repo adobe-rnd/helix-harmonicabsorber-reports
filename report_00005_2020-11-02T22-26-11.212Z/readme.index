@@ -1,0 +1,160 @@
+<h1 id="analysis-report-4--5">Analysis (Report 4 &amp; 5)</h1>
+<p>Repeat analysis for the datasets from report 2 (repeated in report 4) and 3 (repeated here). This analysis covers the results from both repeats.</p>
+<p><strong>Goal (summary)</strong> This report contains statistical indicators, graphs and histogram on every specific subscore and raw scores instead of just the overall performance score. This allows us to model the distribution of measurement points in greater detail which is a prerequisite for developing statistical methods that can measure the <em>true</em> performance score quickly.<br />
+This report also contains graphs comparing subscores to each other in order toAa allow us to see correlations and aid in the development of outlier detection methods.</p>
+<p><strong>Results (summary)</strong></p>
+<p><strong>Next Steps</strong></p>
+<ul>
+<li>Include weight corrected variance</li>
+<li>Include p90, wight-corrected p90 variance</li>
+<li>Include outlier-indicator (variance-p90variance) + weight corrected</li>
+<li>Track variance size as a separate optimization target?</li>
+<li>Automatically generate ranking with subscore impact</li>
+<li>Provide indicator for score localization of effect on specific scores (multiplier on the variance of all scores vs reduction in specific scores )</li>
+</ul>
+<h2 id="goal">Goal</h2>
+<p>At the moment, single measurements are used by devs to measure the impact a change in their code has on the lighthouse score of their website. These single measurments have a high variance and are thus only suitable to detect effect sizes of <code>±10%</code>. It is thus necessary to use statistical methods to generate a good estimate of the effect size from multiple measurements.<br />
+Right now this project is using a sort of brute-force approach to measurement; collecting 100 values and taking the mean. However, this takes a lot of time; in order to be usable in a live development the number of measurements required should be reduced. In technical terms we would like to develop methods that minimise the uncertainty when producing a score estimation from a fixed number of measurements. In order to develop these methods, we will need to know precisely what statistical distributions the scores and subscores follow.<br />
+Methods of detection outliers are of particular interest. These are singular measurement results which skew the average of our measurements overproportionally. These are generally relatively rare measurements which are either (1) rare values occurring as a normal part of our statistical distribution (2) as measurement mistakes. With enough samples collected outliers wouldn't be a problem; they would just average out; however when the number of samples is small, these will occur in some measurement groups and not others; thereby creating a false-positive effect on the score. We can combat this either by collecting enough samples (slow) or by developing methods to filter outliers.</p>
+<h2 id="methods">Methods</h2>
+<p>Past reports compared overall lighthouse score measurement series to each other. This report focuses sub scores and introduces:</p>
+<ul>
+<li><p>Graphs comparing all subscores and the overall score for a measurement value to make correlations easier to see.</p></li>
+<li><p>For each subscore graphs comparing results across measurments (e.g. for cumulative layout shift, pages vs pages+cached).</p></li>
+<li><p>For each subscore and each measurment series (e.g. cumulative layout shift IN pages)</p>
+<ul>
+<li>The score graph</li>
+<li>A histogram</li>
+<li>Statistical indicators</li>
+<li>The raw value graph (not mapped into a score)</li>
+<li>The raw value histogram</li>
+<li>Raw value statistical indicators</li>
+</ul></li>
+</ul>
+<p>Note that this represents a massive increase in the amount of data being analyzed. Previous reports dealt with less than ten graphs. This one deals with thousands. Dealing with this much data is difficult; work on the data analysis tools had to focus on increasing performance.</p>
+<p>When first confronted with the automatically generated portions of this report I tried to generate an exhaustive analysis of each distribution and histogram, but doing so would take days or weeks. Manual analysis will focus samples of some key features I was able to find.</p>
+<p>Datasets used:</p>
+<ul>
+<li>Report 4 (as the basis to draw conclusions from)</li>
+<li>Report 5 (to validate conclusions)</li>
+</ul>
+<p>Experiments inside the reports used:</p>
+<ul>
+<li>pages (baseline)</li>
+<li>pages+cached (this excludes network effects)</li>
+<li>pages+cached+noexternal (this excludes adware effects)</li>
+<li>pages+cached+noexternal+nofonts+nosvg+noimg (excludes media rendering)</li>
+<li>pages+cached+noexternal+nofonts+nosvg+noimg+nocss (excludes layouting)</li>
+</ul>
+<p>Again in order to make analysis easier, this report will focus on data from report 4 and use data from report 5 only to validate the conclusions.</p>
+<h3 id="histograms">Histograms</h3>
+<p>Since histograms needed to be generated for very disparate distributions, a fully automated way of choosing bin sizes for our histograms was needed.</p>
+<p>In the beginning I tried to use the <a href="https://papers.nips.cc/paper/3140-a-recipe-for-optimizing-a-time-histogram.pdf">Shimazaki-Shinomoto</a> method (which maps each dataset/bin size combination to a cost score, recommended bin size is indicated by the minimum of the function), but this yielded unusable results for some of the not normally distributed data sets. I might reevaluate this method again in the future but for now Scott's rule over the set of data within the 90th percentile (this prevents outliers from skewing the bin size) is used to estimate a good bin size.</p>
+<p>The same method is used for the histograms containing multiple datasets; the width of the bars however is clamped at a size that is visible which leads to multiple bars overlapping in many cases (this is still better than the bars being so thin they are invisible).</p>
+<h3 id="jittervariance-comparison-graphs">Jitter/Variance comparison graphs</h3>
+<p>These displays the compound score as well as the constituent scores in a single graph. (Under the "Experiments" heading below).</p>
+<p>The compound score is displayed first and the compound scores are sorted by their 90th percentile standard deviations so more jittery scores are shown first.</p>
+<p>Each measurement series is scaled to their range; this graph should not be used to compare absolute values; should only be used to spot correlations.</p>
+<h2 id="results">Results</h2>
+<p><a href="../report_00004_2020-11-02T20-21-41.718Z/exp-empty/">empty reference correlation graph 4</a><br />
+<a href="../report_00005_2020-11-02T22-26-11.212Z/exp-empty/">empty reference correlation graph 5</a></p>
+<p>This is still our baseline measurement. All graphs except cpu dependant ones are equal to one. Jitter in cpu graphs is minimal; stddev below 1/1000. Measurements seem to be spread in a normal distribution.</p>
+<h3 id="which-scores-have-an-impact-on-jitter">Which scores have an impact on jitter?</h3>
+<p><strong>pages=19:</strong> third-party-summary=357, cumulative-layout-shift=206, uses-rel-preload=116, unminified-js=61, speed-index=93, uses-http2=55, unminified-css=53, unused-css-rules=58, max-potential-fid=24, unused-js=40</p>
+<p><strong>pages+cached=16:</strong> third-party-summary=500, cumulative-layout-shift=172, speed-index=59, unused-css-rules=51, unminified-css=51, max-potential-fid=40, uses-http2=47, total-blocking-time=23, first-meaningful-paint=13, first-contentful-paint=13<br />
+No longer part of the ranking: uses-rel-preload=linear, unminified-js=linear,unused-js=close-to-linear,</p>
+<p><strong>pages+cached+noexternal=11:</strong> cumulative-layout-shift=195, render-blocking-resources=105, uses-http2=72, first-meaningful-paint=12, first-contentful-paint=12, speed-index=3, largest-contentful-paint=3, first-cpu-idle=2, interactive=2, uses-rel-preload=linear<br />
+No longer part of the ranking: third-party-summary=linear, unused-css-rules=linear, unminified-css=linear, max-potential-fid=linear, total-blocking-time=linear</p>
+<p><strong>pages+cached+noexternal+nofonts+nosvg+noimg=10:</strong> cumulative-layout-shift=178, render-blocking-resources=118, first-meaningful-paint=19, first-contentful-paint=19, largest-contentful-paint=10, speed-index=3, first-cpu-idle=2, interactive=2, uses-rel-preload=linear, mainthread-work-breakdown=linear<br />
+No longer part of the ranking: uses-http2=linear.</p>
+<p><strong>pages+cached+noexternal+nofonts+nosvg+noimg+nocss=4:</strong> cumulative-layout-shift=72, largest-contentful-paint=4<br />
+All other scores had ranges below zero or where linear.</p>
+<p>These are the rankings of</p>
+<ul>
+<li>What values have the highest impact on score variance?</li>
+<li>Which measurment follows which sort of distribution?
+<ul>
+<li>Which are discrete, which are normal? Which are antinormal?</li>
+</ul></li>
+<li>Outlier rejection on score, subscore or raw values?</li>
+<li>How does raw variance change in relation to score variance?</li>
+<li>Differences from one version to the next?</li>
+<li>Impact of log normal distribution on</li>
+</ul>
+<h3 id="unmodified-helix-pages-pages">Unmodified Helix Pages <code>pages</code></h3>
+<p><a href="../report_00004_2020-11-02T20-21-41.718Z/exp-pages/">empty reference correlation graph 4</a><br />
+<a href="../report_00005_2020-11-02T22-26-11.212Z/exp-pages/">empty reference correlation graph 5</a></p>
+<h4 id="manual-outlier-tagging">Manual outlier tagging</h4>
+<pre><code>Outliers: 4/0, 4/85, 5/0, 5/10, 5/18, 5/80; potential: 5/40</code></pre>
+<p>Note how some of these outliers can be clearly identified from producing massively spikes even in constant measurement series. Notice also how <code>4/85</code> seems to be spread around. Some sequences (mainthread-work-breakdown, interactive, bootup-time, uses-long-cache-ttl, larges-contentful-paint) seem to have outliers just after <code>4/85</code>. Maybe the underlying reason for the outlier had an impact on CPU load?</p>
+<h4 id="statistical-distribution-analysis">Statistical distribution analysis</h4>
+<p>Most values are constant (that is they exhibit no variance at all); I will not explicitly name these.</p>
+<p>LINK performance_score: Hard to classify. Could be normally distributed but the values are very skewed and irregular. LINK third-party-summary: Seems to pivot between zero and one. Measuring this is a hard one, because we basically need to measure the density of pulses and that works only over many values. LINK cumulative-layout-shift: In report 4 this seems to pivot between discrete values while in report 5 this all over the place. Hart to classify. LINK uses-rel-preload: This looks mostly constant with upwards outliers. LINK unminified-javascript: Looks binary in 4 and constant in 5. Binary version is pretty close to the mean &amp; median values.aaa LINK speed-index: Finally a continuous distribution. But weirdly skewed. LINK uses-http2: This is a discrete distribution but weirdly distributed. Not quite Poisson. LINK unminified-css: This looks very Poisson with 4 possible values. LINK unused-css-rules: Poisson. 3-4 valued. LINK max-potential-fid: Poisson, but with enough values to start to approach normal. LINK unused-javascript: Poisson approaching normal. LINK total-blocking-time: Poisson approaching normal. With regular spikes towards one (secondary Poisson approaching normal near 1). LINK mainthread-work-breakdown: Finally a normal distribution. Dataset from report 4 is skewed, but probably measurement error. LINK first-meaningful-paint: Approaching one. Maybe normal, if normal heavily skewed towards one. LINK first-contentful-paint: Similar to first-meaningful-paint LINK render-blocking-resources: Poisson approaching normal, skewed towards one. Not close to one. LINK interactive: normal. LINK first-cpu-idle: Normal, but almost constant. Really close to one. LINK bootup-time: Normal. Very low variance, almost constant. LINK uses-long-cache-ttl: Continually counts down. Report 4 graph looks funny because we can see the counter reset.AAAa LINK uses-rel-preconnect: Constant with tiny outliers.a</p>
+<h3 id="cached-pages-pagescached">Cached Pages <code>pages+cached</code></h3>
+<h4 id="manual-outlier-tagging-1">Manual outlier tagging</h4>
+<pre><code>4/0, 4/1, 5/0, 5/1</code></pre>
+<p>Potentially more. Very hard to identify.</p>
+<h4 id="distribution-analysis">Distribution analysis</h4>
+<p>LINK performance_score: Seems more normally distributed than before. LINK uses-rel-preload: Now looks more discrete and almost constant, except for what seem to be pretty specific rounding errors. LINK unminified-javascript: Now constant. LINK speed-index: Bit all over the place. Looks almost like a sawtooth distribution? Much more inconclusive.</p>
+<h1 id="report">Report</h1>
+<p><a href="./performance_score/">Peformance Score</a></p>
+<p><a href="./first-contentful-paint/">first-contentful-paint</a><br />
+<a href="./largest-contentful-paint/">largest-contentful-paint</a><br />
+<a href="./first-meaningful-paint/">first-meaningful-paint</a><br />
+<a href="./speed-index/">speed-index</a><br />
+<a href="./estimated-input-latency/">estimated-input-latency</a><br />
+<a href="./total-blocking-time/">total-blocking-time</a><br />
+<a href="./max-potential-fid/">max-potential-fid</a><br />
+<a href="./cumulative-layout-shift/">cumulative-layout-shift</a><br />
+<a href="./server-response-time/">server-response-time</a><br />
+<a href="./first-cpu-idle/">first-cpu-idle</a><br />
+<a href="./interactive/">interactive</a><br />
+<a href="./redirects/">redirects</a><br />
+<a href="./mainthread-work-breakdown/">mainthread-work-breakdown</a><br />
+<a href="./bootup-time/">bootup-time</a><br />
+[uses-rel-preload](./use <a href="./uses-rel-preconnect/">uses-rel-preconnect</a><br />
+<a href="./font-display/">font-display</a><br />
+<a href="./network-rtt/">network-rtt</a><br />
+<a href="./network-server-latency/">network-server-latency</a><br />
+<a href="./metrics/">metrics</a><br />
+<a href="./uses-long-cache-ttl/">uses-long-cache-ttl</a><br />
+<a href="./total-byte-weight/">total-byte-weight</a><br />
+<a href="./offscreen-images/">offscreen-images</a><br />
+<a href="./render-blocking-resources/">render-blocking-resources</a><br />
+<a href="./unminified-css/">unminified-css</a><br />
+<a href="./unminified-javascript/">unminified-javascript</a><br />
+<a href="./unused-css-rules/">unused-css-rules</a><br />
+<a href="./unused-javascript/">unused-javascript</a><br />
+<a href="./uses-webp-images/">uses-webp-images</a><br />
+<a href="./uses-optimized-images/">uses-optimized-images</a><br />
+<a href="./uses-text-compression/">uses-text-compression</a><br />
+<a href="./uses-responsive-images/">uses-responsive-images</a><br />
+<a href="./efficient-animated-content/">efficient-animated-content</a><br />
+<a href="./duplicated-javascript/">duplicated-javascript</a><br />
+<a href="./legacy-javascript/">legacy-javascript</a><br />
+<a href="./dom-size/">dom-size</a><br />
+<a href="./no-document-write/">no-document-write</a><br />
+<a href="./uses-http2/">uses-http2</a><br />
+<a href="./uses-passive-event-listeners/">uses-passive-event-listeners</a><br />
+<a href="./third-party-summary/">third-party-summary</a><br />
+<a href="./unsized-images/">unsized-images</a></p>
+<h1 id="experiments">Experiments</h1>
+<p><a href="./exp-empty/">empty</a><br />
+<a href="./exp-pages/">pages</a><br />
+<a href="./exp-pages+cached/">pages+cached</a><br />
+<a href="./exp-pages+cached+noadtech/">pages+cached+noadtech</a><br />
+<a href="./exp-pages+cached+noexternal/">pages+cached+noexternal</a><br />
+<a href="./exp-pages+cached+noexternal+nocss/">pages+cached+noexternal+nocss</a><br />
+<a href="./exp-pages+cached+noexternal+nofonts/">pages+cached+noexternal+nofonts</a><br />
+<a href="./exp-pages+cached+noexternal+nofonts+nosvg+noimg/">pages+cached+noexternal+nofonts+nosvg+noimg</a><br />
+<a href="./exp-pages+cached+noexternal+nofonts+nosvg+noimg+nocss/">pages+cached+noexternal+nofonts+nosvg+noimg+nocss</a><br />
+<a href="./exp-pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs/">pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs</a><br />
+<a href="./exp-pages+cached+noexternal+noimg/">pages+cached+noexternal+noimg</a><br />
+<a href="./exp-pages+cached+noexternal+nojs/">pages+cached+noexternal+nojs</a><br />
+<a href="./exp-pages+cached+noexternal+nosvg/">pages+cached+noexternal+nosvg</a><br />
+<a href="./exp-pages+cached+nointeractive/">pages+cached+nointeractive</a></p>
+<style>
+  img {
+    max-width: 80%;
+  }
+</style>

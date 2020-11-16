@@ -1,0 +1,44 @@
+$_pagesCachedNoexternal <<EOF
+0.9999999909262406 6
+0.9999999880476168 22
+0.9999999808510573 1
+0.999999985168993 16
+0.9999999894869287 13
+0.9999999866083049 27
+0.9999999837296811 9
+0.9999999794117455 1
+0.9999999822903692 4
+0.9999999938048644 1
+EOF
+$_pagesCachedNoexternalNofonts <<EOF
+0.999999987148558 23
+0.9999999858299005 21
+0.999999984511243 17
+0.9999999884672156 16
+0.9999999897858731 15
+0.9999999911045306 1
+0.9999999831925853 3
+0.9999999805552703 1
+0.9999999818739278 2
+0.9999999792366127 1
+EOF
+$_pagesCachedNoexternalNocss <<EOF
+0.9999999999336937 18
+0.9999999999133673 23
+0.9999999998727144 12
+0.9999999998930408 27
+0.9999999999540201 2
+0.999999999852388 10
+0.9999999998117352 4
+0.99999994080414 1
+0.9999999998320616 1
+0.9999999808878388 1
+0.9999999997914087 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00005_2020-11-02T22-26-11.212Z/bootup-time/bootup-time_pages+cached+noexternal_pages+cached+noexternal+nofonts_pages+cached+noexternal+nocss+hist.png"
+set boxwidth 1.1829976021004994e-9
+set style fill transparent solid 0.5 noborder
+set yrange [0:27]
+plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,$_pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes ,$_pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes ,
