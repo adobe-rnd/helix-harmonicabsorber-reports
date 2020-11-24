@@ -1,0 +1,23 @@
+$_min <<EOF
+1.384
+0.0968
+0.0395
+0.038900000000000004
+0.041999999999999996
+0.0269
+0.028699999999999996
+EOF
+$_max <<EOF
+5.4239999999999995
+4.784
+0.16660000000000003
+0.28479999999999994
+0.09050000000000001
+0.087
+0.0938
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/network-rtt/progession_min_max.png"
+set yrange [-0.08104199999999998:5.531941999999999]
+plot $_min title "min" with line ,$_max title "max" with line ,

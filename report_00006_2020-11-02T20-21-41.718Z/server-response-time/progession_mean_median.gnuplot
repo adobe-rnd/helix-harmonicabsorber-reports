@@ -1,0 +1,23 @@
+$_mean <<EOF
+278.42171999999994
+2.4950300000000003
+1.6229899999999997
+1.7857299999999992
+1.6823899999999992
+1.690909999999999
+1.6314299999999997
+EOF
+$_median <<EOF
+74.189
+1.5195
+1.6065
+1.7540000000000002
+1.6919999999999997
+1.696
+1.5705
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/server-response-time/progession_mean_median.png"
+set yrange [-4.018544399999999:283.9597643999999]
+plot $_mean title "mean" with line ,$_median title "median" with line ,

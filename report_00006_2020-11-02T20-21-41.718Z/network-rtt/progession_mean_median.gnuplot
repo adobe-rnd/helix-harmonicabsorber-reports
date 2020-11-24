@@ -1,0 +1,23 @@
+$_mean <<EOF
+3.357279999999999
+0.356126
+0.07516199999999999
+0.07759900000000002
+0.065181
+0.06445599999999997
+0.061888999999999986
+EOF
+$_median <<EOF
+3.4865000000000004
+0.3005
+0.0681
+0.0678
+0.06475
+0.0654
+0.06369999999999999
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/network-rtt/progession_mean_median.png"
+set yrange [-0.006603220000000021:3.5549922200000004]
+plot $_mean title "mean" with line ,$_median title "median" with line ,

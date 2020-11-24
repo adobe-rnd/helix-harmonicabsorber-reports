@@ -1,0 +1,11 @@
+$_pagesCachedNoexternalNocss <<EOF
+450 92
+300 8
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/uses-text-compression/pages+cached+noexternal+nocss//raw_hist.png"
+set yrange [0:92]
+set boxwidth 0.1
+set style fill transparent solid 0.5 noborder
+plot $_pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes ,

@@ -1,0 +1,34 @@
+$_empty <<EOF
+0 100
+EOF
+$_pages <<EOF
+1217.1220942309026 3
+1020.8120790323699 4
+1007.724744685801 33
+1033.8994133789388 2
+994.6374103392322 45
+1190.947425537765 1
+1046.9867477255075 1
+1060.0740820720764 3
+1099.336085111783 1
+1073.1614164186453 2
+1177.860091191196 1
+1112.4234194583519 1
+1125.5107538049206 1
+732.8907234078554 1
+1204.0347598843337 1
+EOF
+$_pagesCached <<EOF
+1004.7458167522777 1
+973.347509978769 37
+910.5508964317517 17
+926.250049818506 10
+957.6483565920147 35
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/render-blocking-resources/render-blocking-resources_empty_pages_pages+cached+hist.png"
+set boxwidth 24.34244188461805
+set style fill transparent solid 0.5 noborder
+set yrange [0:100]
+plot $_empty title "empty" with boxes ,$_pages title "pages" with boxes ,$_pagesCached title "pages+cached" with boxes ,

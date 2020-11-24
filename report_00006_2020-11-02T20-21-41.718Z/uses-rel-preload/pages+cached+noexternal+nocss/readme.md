@@ -1,0 +1,71 @@
+# Report pages+cached+noexternal+nocss
+
+[parent..](./..)  
+
+
+## Scores
+
+![score](./score.png)  
+
+## Score Histogram
+
+![hist](./hist.png)  
+
+## Score Indicators
+
+```yaml
+min: 0.49929411764705883
+max: 0.4995294117647059
+range: 0.00023529411764705577
+mean: 0.49945058823529415
+median: 0.49941176470588233
+stdev: 0.00006455597608621584
+skewness: -0.024367312743344714
+eccentricity: 1.494371150186408
+quanta: 3
+quantaRatio: 0.03
+p90range: 0.00011764705882355564
+p90stdev: 0.49941176470588233
+p90eccentricity: 1.494371150186408
+p90quanta: 2
+p90quantaRatio: 0.022222222222222223
+outlandishness: 0.9999931951717652
+
+```
+
+## Raw Values
+
+![raw](./raw.png)  
+
+## Raw Values Histogram
+
+![raw hist](./raw_hist.png)  
+
+## Raw Indicators
+
+```yaml
+min: 754
+max: 756
+range: 2
+mean: 754.67
+median: 755
+stdev: 0.5487257967327578
+skewness: 0.02436731274231132
+eccentricity: 1.4943711501856165
+quanta: 3
+quantaRatio: 0.03
+p90range: 1
+p90stdev: 755
+p90eccentricity: 1.4943711501856165
+p90quanta: 2
+p90quantaRatio: 0.022222222222222223
+outlandishness: 1.0000382812597737
+
+```
+
+<style>
+  img {
+    max-width: 80%;
+  }
+</style>
+      

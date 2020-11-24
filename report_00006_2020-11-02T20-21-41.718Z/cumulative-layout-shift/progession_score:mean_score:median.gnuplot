@@ -1,0 +1,23 @@
+$_scoreMean <<EOF
+0.2691658441976626
+0.4492966066631856
+0.6266888717565642
+0.5655700440945245
+0.6718162656167128
+0.526804957843013
+1
+EOF
+$_scoreMedian <<EOF
+0.1201259912813884
+0.5108242979213455
+0.6478936866255779
+0.5978316776798642
+0.6313938914065288
+0.5499689372766312
+1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/cumulative-layout-shift/progession_score:mean_score:median.png"
+set yrange [0.10252851110701616:1.0175974801743721]
+plot $_scoreMean title "score:mean" with line ,$_scoreMedian title "score:median" with line ,

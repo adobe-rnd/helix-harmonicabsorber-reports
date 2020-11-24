@@ -1,0 +1,56 @@
+# Report pages+cached+noexternal+nofonts+nosvg+noimg+nocss
+
+[parent..](./..)  
+
+
+## Scores
+
+![score](./score.png)  
+
+## Score Histogram
+
+![hist](./hist.png)  
+
+## Score Indicators
+
+```yaml
+{}
+
+```
+
+## Raw Values
+
+![raw](./raw.png)  
+
+## Raw Values Histogram
+
+![raw hist](./raw_hist.png)  
+
+## Raw Indicators
+
+```yaml
+min: 1661
+max: 1676
+range: 15
+mean: 1664.39
+median: 1664
+stdev: 2.1208253110522794
+skewness: 2.074389172162483
+eccentricity: 1.329671041412058
+quanta: 11
+quantaRatio: 0.11
+p90range: 5
+p90stdev: 1664
+p90eccentricity: 1.329671041412058
+p90quanta: 6
+p90quantaRatio: 0.06666666666666667
+outlandishness: 1.000348567116056
+
+```
+
+<style>
+  img {
+    max-width: 80%;
+  }
+</style>
+      

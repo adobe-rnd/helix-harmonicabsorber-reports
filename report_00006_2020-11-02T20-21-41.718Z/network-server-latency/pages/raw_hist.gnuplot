@@ -1,0 +1,21 @@
+$_pages <<EOF
+943.1094627731745 1
+735.1798174373565 20
+742.6058761993501 11
+720.3276999133695 30
+712.901641151376 10
+824.2925225812786 1
+727.7537586753631 16
+750.0319349613436 3
+839.1446401052656 2
+846.570698867259 2
+802.0143462952981 1
+853.9967576292526 3
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/network-server-latency/pages//raw_hist.png"
+set yrange [0:30]
+set boxwidth 7.426058761993501
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

@@ -1,0 +1,23 @@
+$_eccentricity <<EOF
+0.5547692191716945
+1.3435345676306623
+0.5870499333393037
+1.760681148551707
+1.13732816479869
+0.845645550604758
+1.5712913530743358
+EOF
+$_p90Eccentricity <<EOF
+0.5547692191716945
+1.3435345676306623
+0.5870499333393037
+1.760681148551707
+1.13732816479869
+0.845645550604758
+1.5712913530743358
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/largest-contentful-paint/progession_eccentricity_p90eccentricity.png"
+set yrange [0.5306509805840943:1.7847993871393073]
+plot $_eccentricity title "eccentricity" with line ,$_p90Eccentricity title "p90eccentricity" with line ,

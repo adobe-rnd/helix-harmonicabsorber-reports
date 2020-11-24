@@ -1,0 +1,34 @@
+$_empty <<EOF
+16 100
+EOF
+$_pages <<EOF
+358.5782908320104 1
+282.64406453817287 23
+291.0812007930437 28
+286.8626326656083 17
+307.9554733027854 1
+278.4254964107375 6
+295.29976892047915 13
+274.20692828330203 1
+303.73690517535 5
+299.51833704791454 3
+316.3926095576562 1
+269.98836015586664 1
+EOF
+$_pagesCached <<EOF
+284.7763765920858 5
+293.96271132086275 30
+275.59004186330884 41
+330.7080502359706 1
+266.4037071345319 8
+321.5217155071936 3
+303.1490460496397 11
+349.08071969352454 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/max-potential-fid/max-potential-fid_empty_pages_pages+cached+hist.png"
+set boxwidth 6.851565816640208
+set style fill transparent solid 0.5 noborder
+set yrange [0:100]
+plot $_empty title "empty" with boxes ,$_pages title "pages" with boxes ,$_pagesCached title "pages+cached" with boxes ,

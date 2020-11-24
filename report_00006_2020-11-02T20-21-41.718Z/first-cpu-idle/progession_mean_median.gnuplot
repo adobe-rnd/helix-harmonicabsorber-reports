@@ -1,0 +1,23 @@
+$_mean <<EOF
+2036.17191
+2036.6339199999995
+1948.8976089999994
+1938.5034780000008
+1621.093204
+1664.38667
+1508.9373759999999
+EOF
+$_median <<EOF
+1952.831
+1974.9586999999997
+1976.7597
+1973.8833
+1510.4596500000002
+1663.92325
+1509.0353
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/first-cpu-idle/progession_mean_median.png"
+set yrange [1498.3834451199998:2047.1878508799996]
+plot $_mean title "mean" with line ,$_median title "median" with line ,

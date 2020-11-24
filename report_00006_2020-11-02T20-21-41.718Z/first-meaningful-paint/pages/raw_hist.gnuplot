@@ -1,0 +1,21 @@
+$_pages <<EOF
+5079.85622573199 1
+1957.3757934013172 78
+2003.9799789584913 4
+2143.792535630014 1
+2190.396721187188 2
+1934.07370062273 5
+2050.5841645156656 2
+2027.2820717370785 3
+2120.490442851427 1
+2073.8862572942526 1
+4870.137390724706 1
+2167.0946284086012 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/first-meaningful-paint/pages//raw_hist.png"
+set yrange [0:78]
+set boxwidth 23.30209277858711
+set style fill transparent solid 0.5 noborder
+plot $_pages title "pages" with boxes ,

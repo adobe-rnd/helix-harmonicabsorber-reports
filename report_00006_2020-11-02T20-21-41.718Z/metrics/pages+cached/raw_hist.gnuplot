@@ -1,0 +1,20 @@
+$_pagesCached <<EOF
+11495.69575619618 1
+10964.216671577522 17
+11013.427697931102 1
+11003.585492660386 3
+10944.532261036089 25
+10983.901082118953 7
+10954.374466306806 23
+10974.058876848238 20
+11023.269903201817 1
+10993.743287389669 1
+10934.690055765373 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/metrics/pages+cached//raw_hist.png"
+set yrange [0:25]
+set boxwidth 9.842205270715908
+set style fill transparent solid 0.5 noborder
+plot $_pagesCached title "pages+cached" with boxes ,

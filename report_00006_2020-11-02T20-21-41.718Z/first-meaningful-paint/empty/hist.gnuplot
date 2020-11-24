@@ -1,0 +1,20 @@
+$_empty <<EOF
+0.9999941185064317 1
+0.9999950336790567 8
+0.9999948506445318 39
+0.9999945760927442 4
+0.9999947591272692 17
+0.9999949421617943 13
+0.9999951251963193 8
+0.9999944845754818 1
+0.9999943930582192 4
+0.9999940269891693 1
+0.9999946676100068 4
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/first-meaningful-paint/empty//hist.png"
+set yrange [0:39]
+set boxwidth 9.151726249999833e-8
+set style fill transparent solid 0.5 noborder
+plot $_empty title "empty" with boxes ,

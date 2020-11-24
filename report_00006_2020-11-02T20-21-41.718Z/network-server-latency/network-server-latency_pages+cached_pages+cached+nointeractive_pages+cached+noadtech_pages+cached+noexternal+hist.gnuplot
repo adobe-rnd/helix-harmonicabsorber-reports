@@ -1,0 +1,51 @@
+$_pagesCached <<EOF
+730.7817883959791 1
+10.062399840220023 8
+5.031199920110011 10
+11.320199820247526 5
+8.80459986019252 18
+6.288999900137514 42
+7.5467998801650165 16
+EOF
+$_pagesCachedNointeractive <<EOF
+7.21097962436524 5
+5.899892419935196 34
+5.244348817720175 33
+6.555436022150218 6
+8.522066828795284 5
+4.588805215505153 4
+9.177610431010306 5
+7.866523226580262 7
+9.833154033225327 1
+EOF
+$_pagesCachedNoadtech <<EOF
+7.237781999484302 25
+7.794534460983094 21
+6.681029537985509 19
+8.351286922481886 13
+6.124277076486717 11
+9.464791845479471 1
+11.691801691474641 1
+4.454019691990339 1
+5.567524614987924 6
+8.908039383980679 1
+5.010772153489132 1
+EOF
+$_pagesCachedNoexternal <<EOF
+7.334892686288697 2
+5.134424880402087 14
+5.867914149030957 22
+5.501169514716523 23
+6.601403417659827 14
+6.234658783345392 17
+4.767680246087653 6
+6.968148051974262 1
+7.701637320603131 1
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/network-server-latency/network-server-latency_pages+cached_pages+cached+nointeractive_pages+cached+noadtech_pages+cached+noexternal+hist.png"
+set boxwidth 14.526555374079775
+set style fill transparent solid 0.5 noborder
+set yrange [0:42]
+plot $_pagesCached title "pages+cached" with boxes ,$_pagesCachedNointeractive title "pages+cached+nointeractive" with boxes ,$_pagesCachedNoadtech title "pages+cached+noadtech" with boxes ,$_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,

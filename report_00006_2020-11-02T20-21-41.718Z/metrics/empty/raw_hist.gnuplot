@@ -1,0 +1,20 @@
+$_empty <<EOF
+635.7689270765022 1
+625.7882531820516 10
+627.7843879609417 40
+630.7785901292768 4
+628.7824553503867 17
+626.7863205714966 12
+624.7901857926065 6
+631.7766575187219 1
+632.774724908167 4
+636.7669944659473 1
+629.7805227398318 4
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/metrics/empty//raw_hist.png"
+set yrange [0:40]
+set boxwidth 0.9980673894450584
+set style fill transparent solid 0.5 noborder
+plot $_empty title "empty" with boxes ,

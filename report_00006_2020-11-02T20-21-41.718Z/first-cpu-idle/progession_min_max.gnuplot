@@ -1,0 +1,23 @@
+$_min <<EOF
+1945.0035000000003
+1947.971
+1815.857
+1816.8288000000002
+1508.0034
+1660.8732000000005
+1506.9898
+EOF
+$_max <<EOF
+5079.971500000001
+2404.5526000000004
+2055.00835
+2054.36825
+2123.4029499999997
+1675.9770999999996
+1510.459
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/first-cpu-idle/progession_min_max.png"
+set yrange [1435.530166:5151.431134]
+plot $_min title "min" with line ,$_max title "max" with line ,

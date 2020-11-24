@@ -1,0 +1,23 @@
+$_range <<EOF
+232.4699999999999
+725.8717
+7.1369
+3.0571
+1.8148000000000004
+2.2903000000000002
+2.222899999999999
+EOF
+$_p90Range <<EOF
+36.06500000000017
+6.253500000000002
+2.7197999999999984
+1.7110000000000003
+1.366
+1.4807000000000001
+1.5812999999999997
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/network-server-latency/progession_range_p90range.png"
+set yrange [-13.124114000000002:740.361814]
+plot $_range title "range" with line ,$_p90Range title "p90range" with line ,

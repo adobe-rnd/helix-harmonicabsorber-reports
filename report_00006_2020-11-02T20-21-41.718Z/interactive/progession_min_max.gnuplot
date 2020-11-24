@@ -1,0 +1,23 @@
+$_min <<EOF
+11391.3985
+10937.099700000002
+1815.857
+1816.8288000000002
+1508.0034
+1660.8732000000005
+1506.9898
+EOF
+$_max <<EOF
+12706.438999999998
+11499.187000000002
+2055.00835
+2054.36825
+2123.4029499999997
+1675.9770999999996
+1510.459
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/interactive/progession_min_max.png"
+set yrange [1283.000816:12930.427983999998]
+plot $_min title "min" with line ,$_max title "max" with line ,

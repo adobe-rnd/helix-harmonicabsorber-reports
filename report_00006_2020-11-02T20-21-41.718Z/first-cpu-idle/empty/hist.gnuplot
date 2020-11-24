@@ -1,0 +1,19 @@
+$_empty <<EOF
+0.9999996716726518 2
+0.9999997276872514 7
+0.9999997175027787 39
+0.9999997022260698 4
+0.9999997124105424 18
+0.9999997225950151 16
+0.9999996971338334 1
+0.9999996920415971 4
+0.9999997073183061 4
+0.9999997327794877 5
+EOF
+set key outside below
+set terminal pngcairo
+set output "report_00006_2020-11-02T20-21-41.718Z/first-cpu-idle/empty//hist.png"
+set yrange [0:39]
+set boxwidth 5.092236326450606e-9
+set style fill transparent solid 0.5 noborder
+plot $_empty title "empty" with boxes ,
