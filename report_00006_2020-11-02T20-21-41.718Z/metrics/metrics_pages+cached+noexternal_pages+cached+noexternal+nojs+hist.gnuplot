@@ -11,4 +11,4 @@ set output "report_00006_2020-11-02T20-21-41.718Z/metrics/metrics_pages+cached+n
 set boxwidth 5.0211771461105625
 set style fill transparent solid 0.5 noborder
 set yrange [0:45]
-plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,$_pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes ,
+plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,

@@ -1,20 +1,20 @@
 $_mean <<EOF
-4315.4
-4556.5
-0
-0
-0
-0
-0
+0 4315.4
+1 4556.5
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 $_median <<EOF
-4370
-4560
-0
-0
-0
-0
-0
+0 4370
+1 4560
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 set key outside below
 set terminal pngcairo

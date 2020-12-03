@@ -1,11 +1,11 @@
 $_outlandishness <<EOF
-0.9874634496395271
-1.0133364902699085
-NaN
-NaN
-NaN
-NaN
-NaN
+0 0.9874634496395271
+1 1.0133364902699085
+2 NaN
+3 NaN
+4 NaN
+5 NaN
+6 NaN
 EOF
 set key outside below
 set terminal pngcairo

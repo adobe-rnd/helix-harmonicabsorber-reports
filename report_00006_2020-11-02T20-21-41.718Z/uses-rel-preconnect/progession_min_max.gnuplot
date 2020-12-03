@@ -1,20 +1,20 @@
 $_min <<EOF
-0
-0
-0
-0
-0
-0
-0
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 $_max <<EOF
-309.376
-300
-0
-0
-0
-0
-0
+0 309.376
+1 300
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 set key outside below
 set terminal pngcairo

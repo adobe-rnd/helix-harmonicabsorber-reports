@@ -1,20 +1,20 @@
 $_range <<EOF
-450
-450
-0
-0
-0
-0
-0
+0 450
+1 450
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 $_p90Range <<EOF
-150
-150
-0
-0
-0
-0
-0
+0 150
+1 150
+2 0
+3 0
+4 0
+5 0
+6 0
 EOF
 set key outside below
 set terminal pngcairo

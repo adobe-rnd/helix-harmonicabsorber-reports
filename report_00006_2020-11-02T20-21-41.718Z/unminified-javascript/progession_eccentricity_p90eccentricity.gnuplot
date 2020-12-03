@@ -1,20 +1,20 @@
 $_eccentricity <<EOF
-1.6329931618554518
-NaN
-NaN
-NaN
-NaN
-NaN
-NaN
+0 1.6329931618554518
+1 NaN
+2 NaN
+3 NaN
+4 NaN
+5 NaN
+6 NaN
 EOF
 $_p90Eccentricity <<EOF
-1.6329931618554518
-NaN
-NaN
-NaN
-NaN
-NaN
-NaN
+0 1.6329931618554518
+1 NaN
+2 NaN
+3 NaN
+4 NaN
+5 NaN
+6 NaN
 EOF
 set key outside below
 set terminal pngcairo

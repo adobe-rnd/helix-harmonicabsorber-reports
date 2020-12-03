@@ -9,4 +9,4 @@ set output "report_00006_2020-11-02T20-21-41.718Z/uses-rel-preconnect/uses-rel-p
 set boxwidth 0
 set style fill transparent solid 0.5 noborder
 set yrange [0:100]
-plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,$_pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes ,
+plot $_pagesCachedNoexternal title "pages+cached+noexternal" with boxes ,

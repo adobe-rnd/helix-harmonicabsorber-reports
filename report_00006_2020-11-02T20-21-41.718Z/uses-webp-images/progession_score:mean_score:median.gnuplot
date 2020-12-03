@@ -1,20 +1,20 @@
 $_scoreMean <<EOF
-0.01625
-0.0075
-0
-0
-1
-1
-1
+0 0.01625
+1 0.0075
+2 0
+3 0
+4 1
+5 1
+6 1
 EOF
 $_scoreMedian <<EOF
-0
-0
-0
-0
-1
-1
-1
+0 0
+1 0
+2 0
+3 0
+4 1
+5 1
+6 1
 EOF
 set key outside below
 set terminal pngcairo

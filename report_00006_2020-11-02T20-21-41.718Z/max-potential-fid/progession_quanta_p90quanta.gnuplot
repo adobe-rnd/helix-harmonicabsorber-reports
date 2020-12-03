@@ -1,20 +1,20 @@
 $_quanta <<EOF
-49
-50
-10
-10
-15
-2
-1
+0 49
+1 50
+2 10
+3 10
+4 15
+5 2
+6 1
 EOF
 $_p90Quanta <<EOF
-42
-41
-8
-7
-10
-1
-1
+0 42
+1 41
+2 8
+3 7
+4 10
+5 1
+6 1
 EOF
 set key outside below
 set terminal pngcairo
