@@ -1,0 +1,21 @@
+reset
+set terminal svg size 640, 490
+set output "reprap/uses-rel-preload/samples/pages+cached+noexternal+nofonts/raw/histogram.svg"
+
+$raw <<EOF
+600 97
+605 1
+604 1
+603 1
+EOF
+
+set key outside below
+set boxwidth 0.1
+set yrange [0:100]
+set style fill transparent solid 0.5 noborder
+
+plot \
+  $raw title "raw" with boxes, \
+
+
+reset
