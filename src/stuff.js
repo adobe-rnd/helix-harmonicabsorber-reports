@@ -42,3 +42,11 @@ export const catchall = (f) => {
     // pass
   }
 }
+
+export const asyncMaskErrors = async (msg, fn) => {
+  try {
+    return await fn();
+  } catch (e) {
+    console.warn(`[WARNING] ${msg}:`, e);
+  }
+}

@@ -1,6 +1,8 @@
 /// Application settings
-
+import os from 'os';
+import process from 'process';
 import { mkdirSync, rmdirSync } from 'fs';
+import { v4 as uuidgen } from 'uuid';
 
 export const cakey = `../${__dirname}/assets/do_not_trust.key.pem`;
 export const cacert = `../${__dirname}/assets/do_not_trust.crt.pem`;

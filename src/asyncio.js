@@ -5,7 +5,7 @@ import assert from 'assert';
 import process from 'process';
 import child_process from 'child_process';
 import { resolve, dirname, basename } from 'path';
-import { typename, type, isdef, curry, map, } from 'ferrum';
+import { typename, type, isdef, curry, map, concat } from 'ferrum';
 import { create } from './ferrumpp';
 
 const { assign } = Object;

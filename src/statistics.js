@@ -1,25 +1,30 @@
 import jstat from 'jstat';
-import { NewFn, createFrom, coerce_list, } from './ferrumpp';
-import { lerpSeq } from './math';
 import {
-  identity, type, isdef, is_a,
+  identity, type, isdef, is_a, dict, list, pairs, plus,
   mapSort, sum, empty, each, map, uniq,
 } from 'ferrum';
 
+import { lerpSeq } from './math';
+import {
+  NewFn, createFrom, coerce_list, parallel_foldl1,
+} from './ferrumpp';
+
 const { assign } = Object;
-const { ceil, round } = Math;
+const { ceil, round, min, max, } = Math;
 
 /// Various statistical functions on a population of samples.
 export class Samples extends NewFn {
-  static corerce(data) {
+  static coerce(data) {
     return is_a(data, this) ? data : this.new(data);
   }
 
   constructor(data) {
     super();
-    assign(this, {
-      _cache: { data: coerce_list(data) }
-    });
+    if (is_a(data, Map)) {
+      assign(this, { _cache: { points: data } });
+    } else {
+      assign(this, { _cache: { data: coerce_list(data) } });
+    }
   }
 
   _uncache(prop, fn) {
@@ -30,7 +35,17 @@ export class Samples extends NewFn {
   }
 
   data() {
-    return this._cache.data || this._cache.sorted || this._cache.sortedByVariance;
+    const d = this._cache.data || this._cache.sorted || this._cache.sortedByVariance;
+    if (isdef(d)) {
+      return d;
+    } else if (isdef(this._cache.points)) {
+      this._cache.data = list(this._cache.points.values());
+      return this._cache.data;
+    }
+  }
+
+  points() {
+    return this._uncache('points', dict(pairs(this.data())));
   }
 
   sorted() {
@@ -169,7 +184,7 @@ export class Samples extends NewFn {
       const k = round(v/binSize)*binSize;
       r.set(k, (r.get(k) || 0) + 1);
     });
-    return r;
+    return createFrom(type(this), { _cache: { points: r }});
   }
 
   /// Return some key infos about this distribution
@@ -183,7 +198,7 @@ export class Samples extends NewFn {
       p90median: this.p90().median(),
       p90stdev: this.p90().stdev(),
       p90skewness: this.p90().skewness(),
-      p90excentricity: this.p90().excentricity(),
+      p90eccentricity: this.p90().eccentricity(),
       p90discretization: this.p90().discretization(),
       outlandishness: this.outlandishness(),
     }

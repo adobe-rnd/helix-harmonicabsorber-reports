@@ -9,10 +9,11 @@ import {
   cartesian2, enumerate, filter,
   setdefault,
 } from 'ferrum';
+
 const { assign } = Object;
 
 // Like assign, but curryable
-export assignProps = curry('assign', (targ, src) =>
+export const assignProps = curry('assign', (targ, src) =>
     assign(targ, src));
 
 /// Base class that implements the new function
@@ -126,3 +127,12 @@ export const throws = (fn) => {
     return true;
   }
 };
+
+/// Determine if a sequence is empty
+export const empty_seq = (seq) => {
+  for (const _ of iter(seq)) return false;
+  return true;
+}
+
+/// Empty function
+export const nop = () => {};

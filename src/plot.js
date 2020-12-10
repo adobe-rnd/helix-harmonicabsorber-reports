@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises';
 import { camelCase } from 'lodash';
 import {
   each, empty, map, first, enumerate, isdef, filter, pipe,
+  dict, values, flat,
   multiline as M
 } from 'ferrum';
 import { NewFn, mapValue, is_a } from './ferrumpp';
@@ -187,7 +188,7 @@ export const histogram = (plots_) => {
   const src = Gnuplot.new();
   
   src.datatables(mapValue(plots, ([n, p]) =>
-    [n, p.histogram(binSz)]));
+    [n, p.histogram(binSz).points()]));
 
   src.writeln(M(`
 
