@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 620
+set terminal svg size 640, 620 enhanced background rgb 'white'
 set output "reprap/first-cpu-idle/comparison/sorted/all_raw.svg"
 
 $empty <<EOF

@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 610
+set terminal svg size 640, 610 enhanced background rgb 'white'
 set output "reprap/speed-index/comparison/sorted/all_score.svg"
 
 $empty <<EOF

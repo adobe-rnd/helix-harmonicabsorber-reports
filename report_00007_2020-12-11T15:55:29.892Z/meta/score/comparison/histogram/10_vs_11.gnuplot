@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/meta/score/comparison/histogram/10_vs_11.svg"
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF

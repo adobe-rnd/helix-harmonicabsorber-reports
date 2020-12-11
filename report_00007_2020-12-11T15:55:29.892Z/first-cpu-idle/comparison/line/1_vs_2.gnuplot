@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/first-cpu-idle/comparison/line/1_vs_2.svg"
 
 $pages <<EOF

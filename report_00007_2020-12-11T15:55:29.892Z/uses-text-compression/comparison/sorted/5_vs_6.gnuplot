@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/uses-text-compression/comparison/sorted/5_vs_6.svg"
 
 $pagesCachedNoexternal <<EOF

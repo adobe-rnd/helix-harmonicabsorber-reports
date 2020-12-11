@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 3840
+set terminal svg size 640, 3840 enhanced background rgb 'white'
 set output "reprap/correlation/pages+cached+noexternal+nojs/correlation.svg"
 
 $totalBlockingTimeP90Stdev0ScoreP90Stdev0Range00 <<EOF

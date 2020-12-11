@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/server-response-time/comparison/histogram/4_vs_5.svg"
 
 $pagesCachedNoadtech <<EOF

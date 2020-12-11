@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/network-server-latency/comparison/line/10_vs_11.svg"
 
 $pagesCachedNoexternalNojs <<EOF

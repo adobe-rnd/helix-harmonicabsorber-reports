@@ -11,7 +11,7 @@
 
 <g id="gnuplot_canvas">
 
-<rect x="0" y="0" width="640" height="4440" fill="none"/>
+<rect x="0" y="0" width="640" height="4440" fill="#ffffff"/>
 <defs>
 
 	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
@@ -31,7 +31,7 @@
 	<path id='gpPt13' stroke-width='0.222' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
 	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
 	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
-	  <feFlood flood-color='white' flood-opacity='1' result='bgnd'/>
+	  <feFlood flood-color='#FFFFFF' flood-opacity='1' result='bgnd'/>
 	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
 	</filter>
 	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
@@ -39,7 +39,7 @@
 	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
 	</filter>
 </defs>
-<g fill="none" color="white" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -639,7 +639,7 @@
 		L549.0,60.6 L555.0,68.0 L561.0,68.4 L567.0,69.1 L573.0,46.3 L579.0,76.6 L585.0,68.0 L591.0,84.6
 		L597.0,67.9 L603.0,61.5 L609.0,46.2 L615.0,108.0  '/></g>
 	</g>
-<g fill="none" color="white" stroke="rgb(240, 228,  66)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb(240, 228,  66)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -658,108 +658,4 @@
 	<g transform="translate(34.9,3953.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
 		<text><tspan font-family="Arial" >redirects, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
 	</g>
-	<g transform="translate(34.9,3835.2)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-rel-preload, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3716.8)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-rel-preconnect, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3598.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-long-cache-ttl, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3479.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >total-byte-weight, p90stdev=0, score:p90stdev=0, range=[292:292]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3361.5)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >offscreen-images, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3243.1)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >render-blocking-resources, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3124.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >unminified-css, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,3006.2)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >unminified-javascript, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2887.8)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >unused-css-rules, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2769.4)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >unused-javascript, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2651.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-webp-images, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2532.5)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-optimized-images, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2414.1)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-text-compression, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2295.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-responsive-images, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2177.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >efficient-animated-content, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,2058.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >duplicated-javascript, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1940.4)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >legacy-javascript, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1822.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >dom-size, p90stdev=0, score:p90stdev=0, range=[2:2]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1703.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >uses-http2, p90stdev=0, score:p90stdev=0, range=[0:0]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1585.2)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >bootup-time, p90stdev=0.367, score:p90stdev=0, range=[4.844:7.452]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1466.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >estimated-input-latency, p90stdev=0, score:p90stdev=0, range=[12.8:12.8]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1348.3)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >max-potential-fid, p90stdev=0, score:p90stdev=0, range=[16:16]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1229.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >mainthread-work-breakdown, p90stdev=1.858, score:p90stdev=0, range=[80.164:102.924]</tspan></text>
-	</g>
-	<g transform="translate(34.9,1111.5)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >speed-index, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,993.1)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >first-cpu-idle, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,874.6)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >largest-contentful-paint, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,756.2)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >interactive, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,637.8)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >first-contentful-paint, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,519.4)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >first-meaningful-paint, p90stdev=1.278, score:p90stdev=0, range=[625.162:636.549]</tspan></text>
-	</g>
-	<g transform="translate(34.9,401.0)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >network-rtt, p90stdev=0.002, score:p90stdev=0.002, range=[0.03:0.31]</tspan></text>
-	</g>
-	<g transform="translate(34.9,282.5)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >network-server-latency, p90stdev=0.063, score:p90stdev=0.063, range=[1.038:8.067]</tspan></text>
-	</g>
-	<g transform="translate(34.9,164.1)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >metrics, p90stdev=1.259, score:p90stdev=1.259, range=[625:637]</tspan></text>
-	</g>
-	<g transform="translate(34.9,45.7)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="start">
-		<text><tspan font-family="Arial" >score, p90stdev=0, score:p90stdev=0, range=[1:1]</tspan></text>
-	</g>
-</g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
-</g>
-</svg>
-
+	<g transform="translate(34.9,3835.2)" stroke="none" fill=

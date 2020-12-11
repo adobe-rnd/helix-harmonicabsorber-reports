@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 620
+set terminal svg size 640, 620 enhanced background rgb 'white'
 set output "reprap/font-display/comparison/sorted/all_score.svg"
 
 $empty <<EOF

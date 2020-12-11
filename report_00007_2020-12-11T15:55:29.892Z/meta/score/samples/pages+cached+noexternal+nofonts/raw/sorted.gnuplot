@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/meta/score/samples/pages+cached+noexternal+nofonts/raw/sorted.svg"
 
 $raw <<EOF

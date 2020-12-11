@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/first-contentful-paint/samples/pages+cached+noexternal+nofonts+nosvg+noimg/raw/histogram.svg"
 
 $raw <<EOF

@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/max-potential-fid/samples/pages+cached+noexternal+nocss/raw/values.svg"
 
 $raw <<EOF

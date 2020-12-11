@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/uses-rel-preconnect/comparison/sorted/9_vs_10.svg"
 
 $pagesCachedNoexternalNocss <<EOF

@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/unused-javascript/comparison/histogram/7_vs_8.svg"
 
 $pagesCachedNoexternalNosvg <<EOF

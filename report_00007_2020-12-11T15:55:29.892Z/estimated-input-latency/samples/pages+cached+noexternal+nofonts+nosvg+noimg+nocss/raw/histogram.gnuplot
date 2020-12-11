@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 490
+set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "reprap/estimated-input-latency/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/histogram.svg"
 
 $raw <<EOF

@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/uses-rel-preconnect/comparison/line/3_vs_4.svg"
 
 $pagesCachedNointeractive <<EOF

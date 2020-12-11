@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 520
+set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "reprap/network-server-latency/progression/value.svg"
 
 $p90Min <<EOF

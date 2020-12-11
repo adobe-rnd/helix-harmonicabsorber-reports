@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 4440
+set terminal svg size 640, 4440 enhanced background rgb 'white'
 set output "reprap/correlation/pages+cached+noexternal+nosvg/correlation.svg"
 
 $serverResponseTimeP90Stdev0211ScoreP90Stdev0Range13272575 <<EOF

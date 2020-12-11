@@ -1,5 +1,5 @@
 reset
-set terminal svg size 640, 500
+set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "reprap/network-rtt/comparison/line/9_vs_10.svg"
 
 $pagesCachedNoexternalNocss <<EOF
