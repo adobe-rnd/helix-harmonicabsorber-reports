@@ -1,66 +1,66 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/server-response-time/comparison/histogram/all_score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/comparison/histogram/all_score.svg"
 
 $empty <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pages <<EOF
 0 2
-0.9627231260499607 98
+1 98
 EOF
 
 $pagesCached <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNointeractive <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoadtech <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-0.9627231260499607 100
+1 100
 EOF
 
 set key outside below
-set boxwidth 0.08022692717083006
+set boxwidth 0.1
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

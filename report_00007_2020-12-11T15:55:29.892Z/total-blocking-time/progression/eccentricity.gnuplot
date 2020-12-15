@@ -1,32 +1,32 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/total-blocking-time/progression/eccentricity.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/total-blocking-time/progression/eccentricity.svg"
 
 $p90Eccentricity <<EOF
-1 0.9999999999999997
-2 0.9999999999999999
-3 1.0000000000000004
+1 1.0000000000000009
+2 1.0000000000000007
+3 0.9999999999999992
 EOF
 
 $p90Discretization <<EOF
-0 90
-1 1.8
-2 1.3846153846153846
-3 1.6363636363636365
-4 90
-5 90
-6 90
-7 90
-8 90
-9 90
-10 90
-11 90
-12 90
-13 90
+0 91
+1 1.8571428571428572
+2 1.378787878787879
+3 1.625
+4 91
+5 91
+6 91
+7 91
+8 91
+9 91
+10 91
+11 91
+12 91
+13 91
 EOF
 
 set key outside below
-set yrange [-0.7800000000000004:91.78]
+set yrange [-0.8000000000000008:92.8]
 
 plot \
   $p90Eccentricity title "p90eccentricity" with linespoints, \

@@ -29,13 +29,13 @@
 p90min: 0
 p90max: 1
 p90range: 1
-p90mean: 0.4666666666666667
-p90median: 0
-p90stdev: 0.4988876515698584
-p90skewness: 0.13363062095621203
-p90eccentricity: 1
-p90discretization: 45
-outlandishness: 1.2416326530612245
+p90mean: 0.5714285714285714
+p90median: 1
+p90stdev: 0.49487165930539384
+p90skewness: -0.2886751345948121
+p90eccentricity: 0.9999999999999988
+p90discretization: 45.5
+outlandishness: 0.8281000000000001
 
 ```
 

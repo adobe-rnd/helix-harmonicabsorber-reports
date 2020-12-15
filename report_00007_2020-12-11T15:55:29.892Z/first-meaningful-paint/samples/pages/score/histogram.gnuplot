@@ -1,14 +1,17 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/first-meaningful-paint/samples/pages/score/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/samples/pages/score/histogram.svg"
 
 $score <<EOF
-0.2374811055172454 2
-0.9499244220689816 98
+0.2847138605649565 1
+0.9546288266001483 90
+0.9378809524492685 5
+0.9211330782983886 3
+0.31820960886671606 1
 EOF
 
 set key outside below
-set boxwidth 0.2374811055172454
+set boxwidth 0.016747874150879794
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

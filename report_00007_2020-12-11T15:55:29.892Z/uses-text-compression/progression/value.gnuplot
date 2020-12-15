@@ -1,18 +1,18 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-text-compression/progression/value.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-text-compression/progression/value.svg"
 
 $p90Min <<EOF
 0 0
-1 3150
+1 5550
 2 5700
-3 5700
+3 5710
 4 450
 5 450
 6 150
 7 450
 8 450
-9 300
+9 450
 10 300
 11 300
 12 450
@@ -21,15 +21,15 @@ EOF
 
 $p90Mean <<EOF
 0 0
-1 5722.666666666667
-2 5708.333333333333
-3 5709.444444444444
+1 5773.626373626374
+2 5709.2307692307695
+3 5710
 4 450
 5 450
 6 150
 7 450
 8 450
-9 436.6666666666667
+9 450
 10 300
 11 300
 12 450
@@ -38,7 +38,7 @@ EOF
 
 $p90Median <<EOF
 0 0
-1 5700
+1 5780
 2 5710
 3 5710
 4 450
@@ -55,8 +55,8 @@ EOF
 
 $p90Max <<EOF
 0 0
-1 5850
-2 5710
+1 5870
+2 5720
 3 5710
 4 450
 5 450
@@ -71,7 +71,7 @@ $p90Max <<EOF
 EOF
 
 set key outside below
-set yrange [-117:5967]
+set yrange [-117.4:5987.4]
 
 plot \
   $p90Min title "p90min" with linespoints, \

@@ -1,16 +1,17 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+nojs/score/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/samples/pages+cached+noexternal+nojs/score/histogram.svg"
 
 $score <<EOF
-0.9990668493401241 40
-0.999108567514892 56
-0.9990251311653563 3
-0.9989834129905885 1
+0.9990841536142362 59
+0.9990705624816881 6
+0.9990977447467844 31
+0.9990026068189474 2
+0.9990161979514955 2
 EOF
 
 set key outside below
-set boxwidth 0.00004171817476783548
+set boxwidth 0.000013591132548146323
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

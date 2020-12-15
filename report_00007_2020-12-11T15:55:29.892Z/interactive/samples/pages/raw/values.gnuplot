@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/interactive/samples/pages/raw/values.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/interactive/samples/pages/raw/values.svg"
 
 $raw <<EOF
 0 12706.438999999998

@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/metrics/samples/pages+cached+noadtech/raw/values.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/metrics/samples/pages+cached+noadtech/raw/values.svg"
 
 $raw <<EOF
 0 2044

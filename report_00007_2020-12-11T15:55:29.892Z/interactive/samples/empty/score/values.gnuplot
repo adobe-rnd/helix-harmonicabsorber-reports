@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/interactive/samples/empty/score/values.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/interactive/samples/empty/score/values.svg"
 
 $score <<EOF
 0 0.9999990373920784

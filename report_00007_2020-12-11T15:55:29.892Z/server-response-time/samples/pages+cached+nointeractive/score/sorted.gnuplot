@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/server-response-time/samples/pages+cached+nointeractive/score/sorted.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/samples/pages+cached+nointeractive/score/sorted.svg"
 
 $score <<EOF
 0 1

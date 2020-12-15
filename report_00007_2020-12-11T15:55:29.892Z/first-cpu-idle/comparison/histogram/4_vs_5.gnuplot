@@ -1,19 +1,19 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/comparison/histogram/4_vs_5.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/comparison/histogram/4_vs_5.svg"
 
 $pagesCachedNoadtech <<EOF
-2025.0188642695787 60
-1771.8915062358813 40
+1984.2891363915637 60
+1736.2529943426182 40
 EOF
 
 $pagesCachedNoexternal <<EOF
-1771.8915062358813 45
-2025.0188642695787 55
+1736.2529943426182 45
+1984.2891363915637 55
 EOF
 
 set key outside below
-set boxwidth 253.12735803369733
+set boxwidth 248.03614204894546
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

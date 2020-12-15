@@ -1,21 +1,21 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/comparison/histogram/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
 0 100
 EOF
 
 $pages <<EOF
-339.58939333523136 100
+340.4455752159077 100
 EOF
 
 $pagesCached <<EOF
-339.58939333523136 100
+340.4455752159077 100
 EOF
 
 $pagesCachedNointeractive <<EOF
-339.58939333523136 100
+340.4455752159077 100
 EOF
 
 $pagesCachedNoadtech <<EOF
@@ -59,7 +59,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 169.79469666761568
+set boxwidth 170.22278760795385
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

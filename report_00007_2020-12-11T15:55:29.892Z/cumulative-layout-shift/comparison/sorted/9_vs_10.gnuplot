@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/comparison/sorted/9_vs_10.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/comparison/sorted/9_vs_10.svg"
 
 $pagesCachedNoexternalNocss <<EOF
 0 0.24537114122178816

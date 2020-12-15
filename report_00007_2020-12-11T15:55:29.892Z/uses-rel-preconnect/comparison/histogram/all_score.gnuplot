@@ -1,64 +1,64 @@
 reset
 set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "reprap/uses-rel-preconnect/comparison/histogram/all_score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/comparison/histogram/all_score.svg"
 
 $empty <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pages <<EOF
-0.9897491074550894 2
-0.7069636481822067 98
+1 2
+0.7000000000000001 18
+0.8 80
 EOF
 
 $pagesCached <<EOF
-0.7069636481822067 1
-0.9897491074550894 98
-0.848356377818648 1
+0.8 2
+1 98
 EOF
 
 $pagesCachedNointeractive <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoadtech <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-0.9897491074550894 100
+1 100
 EOF
 
 set key outside below
-set boxwidth 0.14139272963644134
+set boxwidth 0.1
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

@@ -1,10 +1,10 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-rel-preconnect/progression/stddev.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/progression/stddev.svg"
 
 $p90Stdev <<EOF
 0 0
-1 44.22330745293191
+1 0.10784502291490473
 2 0
 3 0
 4 0
@@ -19,11 +19,11 @@ $p90Stdev <<EOF
 EOF
 
 $p90Outlandishness <<EOF
-1 1.0063241139032428
+1 0.9619776495068586
 EOF
 
 set key outside below
-set yrange [-0.8844661490586383:45.10777360199055]
+set yrange [-0.019239552990137174:0.9812172024969957]
 
 plot \
   $p90Stdev title "p90stdev" with linespoints, \

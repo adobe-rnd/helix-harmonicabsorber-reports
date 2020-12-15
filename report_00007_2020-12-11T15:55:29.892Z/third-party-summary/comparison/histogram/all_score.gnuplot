@@ -1,64 +1,64 @@
 reset
 set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "reprap/third-party-summary/comparison/histogram/all_score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/third-party-summary/comparison/histogram/all_score.svg"
 
 $pages <<EOF
 0 85
-0.7036329726262575 15
+1.0353093504611262 15
 EOF
 
 $pagesCached <<EOF
 0 48
-0.7036329726262575 52
+1.0353093504611262 52
 EOF
 
 $pagesCachedNointeractive <<EOF
 0 31
-0.7036329726262575 69
+1.0353093504611262 69
 EOF
 
 $pagesCachedNoadtech <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-0.7036329726262575 100
+1.0353093504611262 100
 EOF
 
 set key outside below
-set boxwidth 0.7036329726262575
+set boxwidth 0.3451031168203754
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

@@ -1,12 +1,12 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/unused-javascript/progression/value.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unused-javascript/progression/value.svg"
 
 $p90Min <<EOF
 0 0
-1 1500
-2 4370
-3 4530
+1 4200
+2 4550
+3 4550
 4 0
 5 0
 6 0
@@ -21,9 +21,9 @@ EOF
 
 $p90Mean <<EOF
 0 0
-1 4287.444444444444
-2 4555.111111111111
-3 4558.111111111111
+1 4346.483516483517
+2 4558.021978021978
+3 4559.450549450549
 4 0
 5 0
 6 0
@@ -55,7 +55,7 @@ EOF
 
 $p90Max <<EOF
 0 0
-1 4480
+1 4530
 2 4560
 3 4560
 4 0

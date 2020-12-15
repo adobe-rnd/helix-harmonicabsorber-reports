@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "reprap/meta/score/comparison/sorted/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/sorted/all_raw.svg"
 
 $empty <<EOF
 0 0.999998883113331

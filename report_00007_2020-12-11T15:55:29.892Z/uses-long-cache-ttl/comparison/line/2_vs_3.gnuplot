@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/comparison/line/2_vs_3.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-long-cache-ttl/comparison/line/2_vs_3.svg"
 
 $pagesCached <<EOF
 0 559090.7185985723

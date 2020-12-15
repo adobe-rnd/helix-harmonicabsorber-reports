@@ -1,17 +1,17 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/network-rtt/samples/pages+cached/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/network-rtt/samples/pages+cached/raw/histogram.svg"
 
 $raw <<EOF
-4.798812955880837 1
-0.21812786163094713 56
-2.8356622012023127 1
-0 3
-0.43625572326189427 39
+4.718898611858818 1
+0.20516950486342686 50
+2.872373068087976 1
+0 2
+0.4103390097268537 46
 EOF
 
 set key outside below
-set boxwidth 0.21812786163094713
+set boxwidth 0.20516950486342686
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

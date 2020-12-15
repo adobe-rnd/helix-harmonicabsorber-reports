@@ -1,18 +1,18 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/histogram/11_vs_12.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/largest-contentful-paint/comparison/histogram/11_vs_12.svg"
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-2751.458814491694 14
-2913.3093329912053 86
+2783.0621703016272 14
+2946.7717097311347 86
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-2751.458814491694 100
+2783.0621703016272 100
 EOF
 
 set key outside below
-set boxwidth 161.8505184995114
+set boxwidth 163.7095394295075
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

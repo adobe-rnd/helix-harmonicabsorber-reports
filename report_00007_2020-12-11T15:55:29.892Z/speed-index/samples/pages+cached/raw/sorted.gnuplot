@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached/raw/sorted.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/samples/pages+cached/raw/sorted.svg"
 
 $raw <<EOF
 0 4185.297575146969

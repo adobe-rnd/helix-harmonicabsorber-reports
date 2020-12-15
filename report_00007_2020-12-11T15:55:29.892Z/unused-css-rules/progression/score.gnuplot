@@ -1,12 +1,12 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/unused-css-rules/progression/score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unused-css-rules/progression/score.svg"
 
 $scoreP90Min <<EOF
 0 1
-1 0.5833333333333334
-2 0.6666666666666666
-3 0.875
+1 0.75
+2 0.875
+3 1
 4 0.75
 5 0.75
 6 1
@@ -21,9 +21,9 @@ EOF
 
 $scoreP90Mean <<EOF
 0 1
-1 0.8606481481481483
-2 0.9796296296296295
-3 0.9972222222222222
+1 0.864010989010989
+2 0.9945054945054945
+3 1
 4 0.75
 5 0.75
 6 1
@@ -71,7 +71,7 @@ $scoreP90Max <<EOF
 EOF
 
 set key outside below
-set yrange [0.5750000000000001:1.0083333333333333]
+set yrange [0.745:1.005]
 
 plot \
   $scoreP90Min title "score:p90min" with linespoints, \

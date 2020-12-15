@@ -1,11 +1,11 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-rel-preconnect/progression/score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/progression/score.svg"
 
 $scoreP90Min <<EOF
 0 1
-1 0.7447911111111111
-2 0.75
+1 0.7496466666666667
+2 1
 3 1
 4 1
 5 1
@@ -20,8 +20,8 @@ EOF
 
 $scoreP90Mean <<EOF
 0 1
-1 0.7498331975308642
-2 0.9952794444384399
+1 0.7499836630036628
+2 1
 3 1
 4 1
 5 1
@@ -67,7 +67,7 @@ $scoreP90Max <<EOF
 EOF
 
 set key outside below
-set yrange [0.7396869333333332:1.0051041777777778]
+set yrange [0.7446396000000001:1.0050070666666666]
 
 plot \
   $scoreP90Min title "score:p90min" with linespoints, \

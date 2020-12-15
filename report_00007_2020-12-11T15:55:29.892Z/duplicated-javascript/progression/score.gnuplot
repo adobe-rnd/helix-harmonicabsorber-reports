@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/duplicated-javascript/progression/score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/duplicated-javascript/progression/score.svg"
 
 $scoreP90Min <<EOF
 0 1

@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/comparison/sorted/1_vs_2.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/comparison/sorted/1_vs_2.svg"
 
 $pages <<EOF
 0 1945.0035000000003

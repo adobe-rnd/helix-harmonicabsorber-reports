@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+nosvg/raw/sorted.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/samples/pages+cached+noexternal+nosvg/raw/sorted.svg"
 
 $raw <<EOF
 0 1814.9948000000002

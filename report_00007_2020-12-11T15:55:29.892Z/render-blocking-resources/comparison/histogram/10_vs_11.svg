@@ -39,7 +39,7 @@
 	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
 	</filter>
 </defs>
-<g fill="none" color="#FFFFFF" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M53.9,428.0 L62.9,428.0 M615.0,428.0 L606.0,428.0  '/>	<g transform="translate(45.6,431.9)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -146,8 +146,8 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='geometricPrecision'>
 		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '491.8,468.5 534.0,468.5 534.0,459.5 491.8,459.5 '/>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '115.8,428.0 123.1,428.0 123.1,218.9 115.8,218.9 '/>
-		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '108.5,428.0 115.9,428.0 115.9,243.4 108.5,243.4 '/>
+		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '115.6,428.0 122.8,428.0 122.8,218.9 115.6,218.9 '/>
+		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '108.5,428.0 115.7,428.0 115.7,243.4 108.5,243.4 '/>
 		<polygon fill = 'rgb(148,   0, 211)' fill-opacity = '0.500000' points = '101.3,428.0 108.6,428.0 108.6,411.5 101.3,411.5 '/>
 	</g>
 </g>
@@ -161,9 +161,10 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g stroke='none' shape-rendering='crispEdges'>
 		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '491.8,486.5 534.0,486.5 534.0,477.5 491.8,477.5 '/>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '108.5,428.0 115.9,428.0 115.9,95.9 108.5,95.9 '/>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '564.4,428.0 571.7,428.0 571.7,370.5 564.4,370.5 '/>
-		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '419.6,428.0 427.0,428.0 427.0,419.7 419.6,419.7 '/>
+		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '108.5,428.0 115.7,428.0 115.7,95.9 108.5,95.9 '/>
+		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '564.6,428.0 571.8,428.0 571.8,370.5 564.6,370.5 '/>
+		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '414.9,428.0 422.2,428.0 422.2,423.8 414.9,423.8 '/>
+		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '422.1,428.0 429.3,428.0 429.3,423.8 422.1,423.8 '/>
 		<polygon fill = 'rgb(  0, 158, 115)' fill-opacity = '0.500000' points = '101.3,428.0 108.6,428.0 108.6,415.6 101.3,415.6 '/>
 	</g>
 </g>

@@ -1,11 +1,11 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/dom-size/progression/value.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/dom-size/progression/value.svg"
 
 $p90Min <<EOF
 0 2
-1 300
-2 309
+1 422
+2 422
 3 422
 4 172
 5 172
@@ -21,8 +21,8 @@ EOF
 
 $p90Mean <<EOF
 0 2
-1 420.6111111111111
-2 420.74444444444447
+1 422
+2 422
 3 422
 4 172
 5 172

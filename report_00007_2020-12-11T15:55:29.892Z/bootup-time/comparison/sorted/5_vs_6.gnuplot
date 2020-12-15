@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/bootup-time/comparison/sorted/5_vs_6.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/bootup-time/comparison/sorted/5_vs_6.svg"
 
 $pagesCachedNoexternal <<EOF
 0 41.99599999999999

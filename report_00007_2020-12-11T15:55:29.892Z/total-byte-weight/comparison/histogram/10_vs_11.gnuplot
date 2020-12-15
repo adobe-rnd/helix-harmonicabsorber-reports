@@ -1,9 +1,9 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/total-byte-weight/comparison/histogram/10_vs_11.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/total-byte-weight/comparison/histogram/10_vs_11.svg"
 
 $pagesCachedNoexternalNojs <<EOF
-405315.3678954726 100
+406265.51390440814 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
@@ -11,7 +11,7 @@ $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
 EOF
 
 set key outside below
-set boxwidth 405315.3678954726
+set boxwidth 406265.51390440814
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

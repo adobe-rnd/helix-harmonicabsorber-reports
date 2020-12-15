@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/speed-index/comparison/line/12_vs_13.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/line/12_vs_13.svg"
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
 0 1663.0569999999998

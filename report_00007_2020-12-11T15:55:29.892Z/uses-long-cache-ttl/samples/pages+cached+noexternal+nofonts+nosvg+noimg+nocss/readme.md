@@ -16,7 +16,7 @@ p90median: 2684
 p90stdev: 0
 p90skewness: .nan
 p90eccentricity: .nan
-p90discretization: 90
+p90discretization: 91
 outlandishness: 1
 
 ```
@@ -34,7 +34,7 @@ p90median: 0.9994787290782654
 p90stdev: 1.6653345369377348e-15
 p90skewness: 1
 p90eccentricity: 1
-p90discretization: 90
+p90discretization: 91
 outlandishness: 0.9999999999999998
 
 ```

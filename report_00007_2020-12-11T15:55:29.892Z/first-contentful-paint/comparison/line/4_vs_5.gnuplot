@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-contentful-paint/comparison/line/4_vs_5.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-contentful-paint/comparison/line/4_vs_5.svg"
 
 $pagesCachedNoadtech <<EOF
 0 2043.9419500000004

@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/dom-size/samples/empty/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/dom-size/samples/empty/raw/histogram.svg"
 
 $raw <<EOF
 2 100

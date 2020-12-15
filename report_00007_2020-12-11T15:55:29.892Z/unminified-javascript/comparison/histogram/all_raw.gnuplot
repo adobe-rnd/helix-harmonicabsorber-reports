@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/unminified-javascript/comparison/histogram/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unminified-javascript/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
 0 100
@@ -8,7 +8,7 @@ EOF
 
 $pages <<EOF
 0 40
-178.13146588449553 60
+178.7132806916214 60
 EOF
 
 $pagesCached <<EOF
@@ -33,7 +33,7 @@ EOF
 
 $pagesCachedNoexternalNosvg <<EOF
 0 99
-178.13146588449553 1
+178.7132806916214 1
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
@@ -41,7 +41,7 @@ $pagesCachedNoexternalNoimg <<EOF
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-178.13146588449553 100
+178.7132806916214 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
@@ -53,7 +53,7 @@ $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-178.13146588449553 100
+178.7132806916214 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
@@ -61,7 +61,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 89.06573294224776
+set boxwidth 89.3566403458107
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

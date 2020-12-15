@@ -1,11 +1,11 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/total-blocking-time/progression/value.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/total-blocking-time/progression/value.svg"
 
 $p90Min <<EOF
 0 0
-1 178
-2 178
+1 276
+2 267.9999999999982
 3 264
 4 0
 5 0
@@ -21,9 +21,9 @@ EOF
 
 $p90Mean <<EOF
 0 0
-1 289.5577944444443
-2 281.2415166666661
-3 277.0666666666662
+1 294.2408131868132
+2 284.0879120879116
+3 277.2857142857138
 4 0
 5 0
 6 0
@@ -38,9 +38,9 @@ EOF
 
 $p90Median <<EOF
 0 0
-1 292.9999999999991
-2 277.99999999999864
-3 272.49999999999864
+1 294
+2 280
+3 272.99999999999636
 4 0
 5 0
 6 0
@@ -55,9 +55,9 @@ EOF
 
 $p90Max <<EOF
 0 0
-1 305.0000000000018
-2 304
-3 296
+1 309
+2 308.9999999999982
+3 297
 4 0
 5 0
 6 0
@@ -71,7 +71,7 @@ $p90Max <<EOF
 EOF
 
 set key outside below
-set yrange [-6.100000000000037:311.10000000000184]
+set yrange [-6.18:315.18]
 
 plot \
   $p90Min title "p90min" with linespoints, \

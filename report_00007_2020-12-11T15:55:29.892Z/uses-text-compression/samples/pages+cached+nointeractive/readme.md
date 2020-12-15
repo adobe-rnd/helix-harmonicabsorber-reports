@@ -8,16 +8,16 @@
 
 
 ```yaml
-p90min: 5700
+p90min: 5710
 p90max: 5710
-p90range: 10
-p90mean: 5709.444444444444
+p90range: 0
+p90mean: 5710
 p90median: 5710
-p90stdev: 2.290614236454256
-p90skewness: -3.8805700005811983
-p90eccentricity: 0.9999999999999962
-p90discretization: 45
-outlandishness: 1.000124553844117
+p90stdev: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 91
+outlandishness: 0.9999299486874351
 
 ```
 
@@ -34,7 +34,7 @@ p90median: 0
 p90stdev: 0
 p90skewness: .nan
 p90eccentricity: .nan
-p90discretization: 90
+p90discretization: 91
 outlandishness: .nan
 
 ```

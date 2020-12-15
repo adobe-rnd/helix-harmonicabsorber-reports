@@ -1,34 +1,34 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/unused-css-rules/comparison/histogram/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unused-css-rules/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
 0 100
 EOF
 
 $pages <<EOF
-272.115151022481 91
+272.2279869079567 91
 0 8
-544.230302044962 1
+544.4559738159134 1
 EOF
 
 $pagesCached <<EOF
-544.230302044962 1
-272.115151022481 12
+544.4559738159134 1
+272.2279869079567 12
 0 87
 EOF
 
 $pagesCachedNointeractive <<EOF
 0 98
-272.115151022481 2
+272.2279869079567 2
 EOF
 
 $pagesCachedNoadtech <<EOF
-272.115151022481 100
+272.2279869079567 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-272.115151022481 100
+272.2279869079567 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
@@ -36,11 +36,11 @@ $pagesCachedNoexternalNofonts <<EOF
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-272.115151022481 100
+272.2279869079567 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-272.115151022481 100
+272.2279869079567 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
@@ -48,7 +48,7 @@ $pagesCachedNoexternalNocss <<EOF
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-272.115151022481 100
+272.2279869079567 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
@@ -64,7 +64,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 272.115151022481
+set boxwidth 272.2279869079567
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

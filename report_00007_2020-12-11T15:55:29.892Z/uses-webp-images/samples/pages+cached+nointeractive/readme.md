@@ -11,13 +11,13 @@
 p90min: 27450
 p90max: 27600
 p90range: 150
-p90mean: 27550
+p90mean: 27565.384615384617
 p90median: 27600
-p90stdev: 70.71067811865476
-p90skewness: -0.7071067811865451
-p90eccentricity: 0.9999999999999999
-p90discretization: 45
-outlandishness: 1.0003630093445013
+p90stdev: 63.19875663521146
+p90skewness: -1.2780193008454708
+p90eccentricity: 0.9999999999999988
+p90discretization: 45.5
+outlandishness: 0.999246688595227
 
 ```
 
@@ -34,7 +34,7 @@ p90median: 0
 p90stdev: 0
 p90skewness: .nan
 p90eccentricity: .nan
-p90discretization: 90
+p90discretization: 91
 outlandishness: .nan
 
 ```

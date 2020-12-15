@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/efficient-animated-content/samples/pages+cached+noadtech/score/sorted.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/efficient-animated-content/samples/pages+cached+noadtech/score/sorted.svg"
 
 $score <<EOF
 0 1

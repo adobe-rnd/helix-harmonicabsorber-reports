@@ -1,17 +1,17 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/samples/pages/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/samples/pages/raw/histogram.svg"
 
 $raw <<EOF
-358.63227739410667 1
-289.66453174139383 67
-275.8709826108513 19
-303.45808087193643 12
-317.251630002479 1
+358.158554956594 1
+289.2819097726336 67
+275.5065807358415 19
+303.05723880942566 12
+316.8325678462177 1
 EOF
 
 set key outside below
-set boxwidth 13.793549130542564
+set boxwidth 13.775329036792076
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

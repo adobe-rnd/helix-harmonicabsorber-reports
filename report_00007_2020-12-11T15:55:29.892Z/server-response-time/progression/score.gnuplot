@@ -1,10 +1,10 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/server-response-time/progression/score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/progression/score.svg"
 
 $scoreP90Min <<EOF
 0 1
-1 0
+1 1
 2 1
 3 1
 4 1
@@ -21,7 +21,7 @@ EOF
 
 $scoreP90Mean <<EOF
 0 1
-1 0.9777777777777777
+1 1
 2 1
 3 1
 4 1
@@ -71,7 +71,7 @@ $scoreP90Max <<EOF
 EOF
 
 set key outside below
-set yrange [-0.02:1.02]
+set yrange [0.999:1.001]
 
 plot \
   $scoreP90Min title "score:p90min" with linespoints, \

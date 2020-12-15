@@ -1,15 +1,15 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/network-server-latency/samples/pages+cached+noexternal+nofonts+nosvg+noimg/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/samples/pages+cached+noexternal+nofonts+nosvg+noimg/raw/histogram.svg"
 
 $raw <<EOF
-4.116655559973737 63
-3.29332444797899 25
-4.9399866719684855 12
+4.237607040235959 58
+3.390085632188767 33
+5.08512844828315 9
 EOF
 
 set key outside below
-set boxwidth 0.8233311119947475
+set boxwidth 0.8475214080471918
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

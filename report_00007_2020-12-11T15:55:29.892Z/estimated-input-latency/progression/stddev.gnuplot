@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/progression/stddev.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/estimated-input-latency/progression/stddev.svg"
 
 $p90Stdev <<EOF
 0 2.3092638912203256e-14

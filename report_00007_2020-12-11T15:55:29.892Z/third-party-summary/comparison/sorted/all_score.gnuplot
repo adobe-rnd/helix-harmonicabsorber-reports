@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "reprap/third-party-summary/comparison/sorted/all_score.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/third-party-summary/comparison/sorted/all_score.svg"
 
 $pages <<EOF
 0 0

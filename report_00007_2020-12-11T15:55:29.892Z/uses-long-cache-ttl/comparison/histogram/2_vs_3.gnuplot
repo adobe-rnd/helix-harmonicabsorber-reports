@@ -1,20 +1,23 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/comparison/histogram/2_vs_3.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-long-cache-ttl/comparison/histogram/2_vs_3.svg"
 
 $pagesCached <<EOF
-559072.2490451519 1
-559328.3908819165 85
-559285.7005757891 14
+559096.789501736 1
+559336.2899929247 19
+559319.1828149826 54
+559302.0756370405 25
+559353.3971708666 1
 EOF
 
 $pagesCachedNointeractive <<EOF
-559328.3908819165 86
-559285.7005757891 14
+559319.1828149826 68
+559302.0756370405 25
+559336.2899929247 7
 EOF
 
 set key outside below
-set boxwidth 42.69030612745509
+set boxwidth 17.107177942039534
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

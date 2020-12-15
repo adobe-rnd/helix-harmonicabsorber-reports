@@ -1,19 +1,19 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-webp-images/comparison/histogram/5_vs_6.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-webp-images/comparison/histogram/5_vs_6.svg"
 
 $pagesCachedNoexternal <<EOF
-27665.262811838715 43
-27508.07381858963 57
+27616.506484769463 43
+27458.697876285067 57
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-27508.07381858963 73
-27665.262811838715 27
+27458.697876285067 73
+27616.506484769463 27
 EOF
 
 set key outside below
-set boxwidth 157.1889932490836
+set boxwidth 157.80860848439693
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

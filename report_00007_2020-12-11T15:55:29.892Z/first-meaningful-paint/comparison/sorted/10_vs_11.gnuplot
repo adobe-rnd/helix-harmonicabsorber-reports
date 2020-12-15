@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-meaningful-paint/comparison/sorted/10_vs_11.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/comparison/sorted/10_vs_11.svg"
 
 $pagesCachedNoexternalNojs <<EOF
 0 1512.2695999999999

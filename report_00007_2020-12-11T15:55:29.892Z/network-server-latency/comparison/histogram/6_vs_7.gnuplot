@@ -1,20 +1,20 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/network-server-latency/comparison/histogram/6_vs_7.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/comparison/histogram/6_vs_7.svg"
 
 $pagesCachedNoexternalNofonts <<EOF
-6.100307790376399 1
-4.066871860250933 99
+4.114310620620541 99
+2.0571553103102707 1
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-6.100307790376399 81
-4.066871860250933 11
-8.133743720501865 8
+6.171465930930812 82
+4.114310620620541 12
+8.228621241241083 6
 EOF
 
 set key outside below
-set boxwidth 2.0334359301254663
+set boxwidth 2.0571553103102707
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

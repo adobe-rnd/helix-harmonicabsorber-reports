@@ -1,20 +1,20 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/network-rtt/comparison/histogram/1_vs_2.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/network-rtt/comparison/histogram/1_vs_2.svg"
 
 $pages <<EOF
-3.5054524944973027 83
-7.010904988994605 2
+3.5267544148082997 83
+7.053508829616599 2
 0 15
 EOF
 
 $pagesCached <<EOF
-3.5054524944973027 2
+3.5267544148082997 2
 0 98
 EOF
 
 set key outside below
-set boxwidth 3.5054524944973027
+set boxwidth 3.5267544148082997
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

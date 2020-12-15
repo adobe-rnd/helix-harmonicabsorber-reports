@@ -8,16 +8,16 @@
 
 
 ```yaml
-p90min: 71.747
-p90max: 89.887
-p90range: 18.14
-p90mean: 74.56389999999998
-p90median: 74.0055
-p90stdev: 2.3715225397762225
-p90skewness: 3.7272145227709257
+p90min: 72.68499999999999
+p90max: 111.77499999999999
+p90range: 39.09
+p90mean: 77.16384615384614
+p90median: 74.264
+p90stdev: 8.460693476790155
+p90skewness: 3.017157161776073
 p90eccentricity: 1.0000000000000002
-p90discretization: 1.0112359550561798
-outlandishness: 13.942767758282292
+p90discretization: 1.011111111111111
+outlandishness: 13.019025906084183
 
 ```
 
@@ -26,16 +26,16 @@ outlandishness: 13.942767758282292
 
 
 ```yaml
-p90min: 0
+p90min: 1
 p90max: 1
-p90range: 1
-p90mean: 0.9777777777777777
+p90range: 0
+p90mean: 1
 p90median: 1
-p90stdev: 0.14740554623801777
-p90skewness: -6.482493908421965
-p90eccentricity: 0.9999999999999937
-p90discretization: 45
-outlandishness: 1.0045506198347105
+p90stdev: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 91
+outlandishness: 0.9603999999999999
 
 ```
 

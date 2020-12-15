@@ -1,20 +1,20 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/server-response-time/comparison/histogram/1_vs_2.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/comparison/histogram/1_vs_2.svg"
 
 $pages <<EOF
-12145.195851894643 1
-84.34163786037946 98
-8181.138872456808 1
+12098.366329737953 1
+88.95857595395555 98
+8184.1889877639105 1
 EOF
 
 $pagesCached <<EOF
-84.34163786037946 1
+88.95857595395555 1
 0 99
 EOF
 
 set key outside below
-set boxwidth 84.34163786037946
+set boxwidth 88.95857595395555
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

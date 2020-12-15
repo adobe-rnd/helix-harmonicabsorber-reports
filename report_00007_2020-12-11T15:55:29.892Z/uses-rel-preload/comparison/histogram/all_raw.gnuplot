@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/uses-rel-preload/comparison/histogram/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
 0 100
@@ -8,40 +8,41 @@ EOF
 
 $pages <<EOF
 0 7
-478.82315129960017 93
+851.5144507922976 83
+425.7572253961488 10
 EOF
 
 $pagesCached <<EOF
 0 1
-478.82315129960017 99
+425.7572253961488 99
 EOF
 
 $pagesCachedNointeractive <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoadtech <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-957.6463025992003 100
+851.5144507922976 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
@@ -49,11 +50,11 @@ $pagesCachedNoexternalNojs <<EOF
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-478.82315129960017 100
+425.7572253961488 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
@@ -61,7 +62,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 478.82315129960017
+set boxwidth 425.7572253961488
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

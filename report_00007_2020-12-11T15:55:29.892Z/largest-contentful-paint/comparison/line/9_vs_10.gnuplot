@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/line/9_vs_10.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/largest-contentful-paint/comparison/line/9_vs_10.svg"
 
 $pagesCachedNoexternalNocss <<EOF
 0 2507.0122999999994

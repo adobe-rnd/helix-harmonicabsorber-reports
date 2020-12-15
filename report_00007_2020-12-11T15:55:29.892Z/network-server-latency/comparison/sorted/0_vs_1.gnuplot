@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/network-server-latency/comparison/sorted/0_vs_1.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/comparison/sorted/0_vs_1.svg"
 
 $empty <<EOF
 0 1.0379999999999998

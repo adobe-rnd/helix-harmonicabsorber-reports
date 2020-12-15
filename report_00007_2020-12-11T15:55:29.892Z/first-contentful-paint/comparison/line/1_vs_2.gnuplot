@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-contentful-paint/comparison/line/1_vs_2.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-contentful-paint/comparison/line/1_vs_2.svg"
 
 $pages <<EOF
 0 2407.3655

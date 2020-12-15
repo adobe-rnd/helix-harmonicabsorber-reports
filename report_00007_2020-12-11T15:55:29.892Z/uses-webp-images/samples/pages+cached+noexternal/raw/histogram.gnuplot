@@ -1,14 +1,13 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/uses-webp-images/samples/pages+cached+noexternal/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-webp-images/samples/pages+cached+noexternal/raw/histogram.svg"
 
 $raw <<EOF
-27631.925544919504 43
-27453.655057532927 57
+27536.820058888152 100
 EOF
 
 set key outside below
-set boxwidth 178.27048738657746
+set boxwidth 178.81051986291007
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

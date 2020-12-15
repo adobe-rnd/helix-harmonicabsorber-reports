@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/efficient-animated-content/progression/value.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/efficient-animated-content/progression/value.svg"
 
 $p90Min <<EOF
 0 0

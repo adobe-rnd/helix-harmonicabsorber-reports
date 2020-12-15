@@ -1,6 +1,6 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/first-meaningful-paint/samples/pages+cached+noexternal+nocss/score/values.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/samples/pages+cached+noexternal+nocss/score/values.svg"
 
 $score <<EOF
 0 0.9814153584728598

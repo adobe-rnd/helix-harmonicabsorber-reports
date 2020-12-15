@@ -1,16 +1,16 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+nocss/raw/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/samples/pages+cached+noexternal+nocss/raw/histogram.svg"
 
 $raw <<EOF
-1669.2701776185297 63
-1665.8773520542645 32
-1672.6630031827951 4
-1662.484526489999 1
+1669.6925792928828 53
+1666.5658141631209 39
+1663.439049033359 4
+1672.819344422645 4
 EOF
 
 set key outside below
-set boxwidth 3.3928255642653045
+set boxwidth 3.126765129761953
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

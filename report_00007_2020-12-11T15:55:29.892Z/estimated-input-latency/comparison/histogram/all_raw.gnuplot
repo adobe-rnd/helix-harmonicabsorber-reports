@@ -1,67 +1,67 @@
 reset
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/comparison/histogram/all_raw.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/estimated-input-latency/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pages <<EOF
-21.199999999999942 1
-12.80000000000002 98
-18.560000000000237 1
+21.20000000000018 1
+12.800000000000109 98
+18.56000000000016 1
 EOF
 
 $pagesCached <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNointeractive <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoadtech <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-12.80000000000002 100
+12.800000000000109 100
 EOF
 
 set key outside below
-set boxwidth 5.9067629444106e-13
+set boxwidth 5.942198868922145e-13
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

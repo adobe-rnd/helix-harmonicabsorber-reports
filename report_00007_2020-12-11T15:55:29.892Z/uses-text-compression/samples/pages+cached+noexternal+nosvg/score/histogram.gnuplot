@@ -1,14 +1,14 @@
 reset
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/uses-text-compression/samples/pages+cached+noexternal+nosvg/score/histogram.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-text-compression/samples/pages+cached+noexternal+nosvg/score/histogram.svg"
 
 $score <<EOF
-0.6469810830935465 99
-0.5175848664748373 1
+0.6666666666666662 99
+0.5000000000000007 1
 EOF
 
 set key outside below
-set boxwidth 0.04313207220623644
+set boxwidth 2.1909383235727226e-15
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 

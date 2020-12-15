@@ -1,31 +1,31 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/unused-css-rules/progression/eccentricity.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unused-css-rules/progression/eccentricity.svg"
 
 $p90Eccentricity <<EOF
-1 0.9999999999999969
-2 0.9999999999999999
+1 1.0000000000000002
+2 1.000000000000005
 EOF
 
 $p90Discretization <<EOF
-0 90
-1 45
-2 45
-3 90
-4 90
-5 90
-6 90
-7 90
-8 90
-9 90
-10 90
-11 90
-12 90
-13 90
+0 91
+1 45.5
+2 45.5
+3 91
+4 91
+5 91
+6 91
+7 91
+8 91
+9 91
+10 91
+11 91
+12 91
+13 91
 EOF
 
 set key outside below
-set yrange [-0.7800000000000031:91.78]
+set yrange [-0.7999999999999998:92.8]
 
 plot \
   $p90Eccentricity title "p90eccentricity" with linespoints, \

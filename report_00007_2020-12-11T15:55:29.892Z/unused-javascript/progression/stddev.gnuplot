@@ -1,12 +1,12 @@
 reset
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/unused-javascript/progression/stddev.svg"
+set output "report_00007_2020-12-11T15:55:29.892Z/unused-javascript/progression/stddev.svg"
 
 $p90Stdev <<EOF
 0 0
-1 344.00439632562546
-2 20.343955938063683
-3 5.352973097975957
+1 86.71506487079645
+2 3.983421749536676
+3 2.2787298190470042
 4 0
 5 0
 6 0
@@ -20,13 +20,13 @@ $p90Stdev <<EOF
 EOF
 
 $p90Outlandishness <<EOF
-1 1.0130831760748287
-2 1.0006099085605291
-3 1.000126762176964
+1 0.985748308594466
+2 0.9993322875905435
+3 0.9995392302603727
 EOF
 
 set key outside below
-set yrange [-6.880087926512509:350.88448425213795]
+set yrange [-1.734301297415929:88.44936616821238]
 
 plot \
   $p90Stdev title "p90stdev" with linespoints, \
