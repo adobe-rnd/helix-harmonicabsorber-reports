@@ -39,7 +39,7 @@
 	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
 	</filter>
 </defs>
-<g fill="none" color="#FFFFFF" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M62.2,464.3 L71.2,464.3 M615.0,464.3 L606.0,464.3  '/>	<g transform="translate(53.9,468.2)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -211,4 +211,4 @@
 </g>
 	</g>
 	<g id="gnuplot_plot_4" ><title>p90max</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" 
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap=
