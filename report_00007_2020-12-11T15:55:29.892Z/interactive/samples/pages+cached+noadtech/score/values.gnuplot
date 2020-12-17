@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/interactive/samples/pages+cached+noadtech/score/values.svg"
 
 $score <<EOF
 0 0.9934999104686717
@@ -106,10 +104,11 @@ $score <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [0.9923050876219027:0.9976824254944384]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/interactive/samples/pages+cached+noadtech/score/values.svg"
 
-plot \
-  $score title "score" with line, \
-
+plot $score title "score" with line
 
 reset

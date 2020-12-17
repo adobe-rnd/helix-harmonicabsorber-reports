@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/samples/pages/raw/values.svg"
 
 $raw <<EOF
 0 0.30492057545979817
@@ -106,10 +104,13 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [0.19471533809238006:0.5864528591156006]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/samples/pages/raw/values.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line, \
+     0.1 title "score p10=0.1", \
+     0.25 title "score median=0.25"
 
 reset

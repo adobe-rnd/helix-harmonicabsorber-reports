@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/comparison/histogram/9_vs_10.svg"
 
 $pagesCachedNoexternalNocss <<EOF
 0.2870064581430235 95
@@ -13,12 +11,17 @@ EOF
 
 set key outside below
 set boxwidth 0.2870064581430235
+set xrange [0:0.7674015206231011]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 
-plot \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
-  $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes, \
+set parametric
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/comparison/histogram/9_vs_10.svg"
 
+plot $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
+     $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes, \
+     0.1,t title "score p10=0.1", \
+     0.25,t title "score median=0.25"
 
 reset

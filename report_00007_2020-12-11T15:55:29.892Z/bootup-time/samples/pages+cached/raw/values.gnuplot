@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/bootup-time/samples/pages+cached/raw/values.svg"
 
 $raw <<EOF
 0 568.8520000000005
@@ -106,10 +104,13 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [535.9056800000004:631.9143200000001]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/bootup-time/samples/pages+cached/raw/values.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line, \
+     1282 title "score p10=1282", \
+     3500 title "score median=3500"
 
 reset

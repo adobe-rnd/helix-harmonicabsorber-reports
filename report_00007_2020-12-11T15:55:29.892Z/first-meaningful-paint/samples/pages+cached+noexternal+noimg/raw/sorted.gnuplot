@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/samples/pages+cached+noexternal+noimg/raw/sorted.svg"
 
 $raw <<EOF
 0 1814.6572999999999
@@ -106,10 +104,13 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [1809.9371029999998:2055.3873470000003]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/samples/pages+cached+noexternal+noimg/raw/sorted.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line, \
+     2336 title "score p10=2336", \
+     4000 title "score median=4000"
 
 reset

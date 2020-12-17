@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 4440 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/correlation/pages/correlation.svg"
 
 $serverResponseTimeP90Stdev8461ScoreP90Stdev0Range7174712103054 <<EOF
 0 212.2483396265029
@@ -3815,6 +3813,7 @@ EOF
 
 unset key
 unset tics
+set xrange [0:99]
 set yrange [0:37.2]
 
 set label "server-response-time, p90stdev=8.461, score:p90stdev=0, range=[71.747:12103.054]" at character 4.2, first 1 left front
@@ -3854,44 +3853,45 @@ set label "network-rtt, p90stdev=0.926, score:p90stdev=0.926, range=[1.384:5.424
 set label "network-server-latency, p90stdev=12.174, score:p90stdev=12.174, range=[712.569:945.039]" at character 4.2, first 35 left front
 set label "metrics, p90stdev=62.4, score:p90stdev=62.4, range=[11391:12706]" at character 4.2, first 36 left front
 set label "score, p90stdev=0.015, score:p90stdev=0.015, range=[0.417:0.515]" at character 4.2, first 37 left front
-plot \
-  $serverResponseTimeP90Stdev8461ScoreP90Stdev0Range7174712103054 with line, \
-  $redirectsP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $offscreenImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $usesWebpImagesP90Stdev56479ScoreP90Stdev0Range15027900 with line, \
-  $usesOptimizedImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $usesTextCompressionP90Stdev78061ScoreP90Stdev0Range31506030 with line, \
-  $usesResponsiveImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $efficientAnimatedContentP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $duplicatedJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $legacyJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
-  $estimatedInputLatencyP90Stdev0ScoreP90Stdev0Range128212 with line, \
-  $domSizeP90Stdev0ScoreP90Stdev0Range300422 with line, \
-  $totalByteWeightP90Stdev27884ScoreP90Stdev0Range17049567948796 with line, \
-  $largestContentfulPaintP90Stdev56071ScoreP90Stdev0Range1256956717128032 with line, \
-  $usesRelPreconnectP90Stdev0108ScoreP90Stdev0Range0309376 with line, \
-  $usesLongCacheTtlP90Stdev531297ScoreP90Stdev0Range558157909559995103 with line, \
-  $bootupTimeP90Stdev11729ScoreP90Stdev0001Range554564745176 with line, \
-  $firstCpuIdleP90Stdev25492ScoreP90Stdev0001Range19450045079972 with line, \
-  $renderBlockingResourcesP90Stdev19059ScoreP90Stdev0002Range7321220 with line, \
-  $firstContentfulPaintP90Stdev20145ScoreP90Stdev0002Range19450042407366 with line, \
-  $interactiveP90Stdev62484ScoreP90Stdev0003Range1139139912706439 with line, \
-  $firstMeaningfulPaintP90Stdev2981ScoreP90Stdev0007Range19450045079972 with line, \
-  $mainthreadWorkBreakdownP90Stdev42996ScoreP90Stdev0008Range1901856257216 with line, \
-  $totalBlockingTimeP90Stdev7502ScoreP90Stdev0008Range178394 with line, \
-  $unusedJavascriptP90Stdev86715ScoreP90Stdev001Range15004640 with line, \
-  $maxPotentialFidP90Stdev5584ScoreP90Stdev0015Range272357 with line, \
-  $usesRelPreloadP90Stdev50707ScoreP90Stdev0028Range0681 with line, \
-  $unminifiedCssP90Stdev55655ScoreP90Stdev0031Range0450 with line, \
-  $unusedCssRulesP90Stdev42475ScoreP90Stdev0035Range0600 with line, \
-  $usesHttp2P90Stdev56542ScoreP90Stdev0042Range160900 with line, \
-  $speedIndexP90Stdev329986ScoreP90Stdev0054Range514058829476905 with line, \
-  $unminifiedJavascriptP90Stdev7109ScoreP90Stdev0059Range0150 with line, \
-  $cumulativeLayoutShiftP90Stdev0154ScoreP90Stdev0191Range02020579 with line, \
-  $networkRttP90Stdev0926ScoreP90Stdev0926Range13845424 with line, \
-  $networkServerLatencyP90Stdev12174ScoreP90Stdev12174Range712569945039 with line, \
-  $metricsP90Stdev624ScoreP90Stdev624Range1139112706 with line, \
-  $scoreP90Stdev0015ScoreP90Stdev0015Range04170515 with line, \
+set terminal svg size 640, 4440 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/correlation/pages/correlation.svg"
 
+plot $serverResponseTimeP90Stdev8461ScoreP90Stdev0Range7174712103054 with line, \
+     $redirectsP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $offscreenImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $usesWebpImagesP90Stdev56479ScoreP90Stdev0Range15027900 with line, \
+     $usesOptimizedImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $usesTextCompressionP90Stdev78061ScoreP90Stdev0Range31506030 with line, \
+     $usesResponsiveImagesP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $efficientAnimatedContentP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $duplicatedJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $legacyJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
+     $estimatedInputLatencyP90Stdev0ScoreP90Stdev0Range128212 with line, \
+     $domSizeP90Stdev0ScoreP90Stdev0Range300422 with line, \
+     $totalByteWeightP90Stdev27884ScoreP90Stdev0Range17049567948796 with line, \
+     $largestContentfulPaintP90Stdev56071ScoreP90Stdev0Range1256956717128032 with line, \
+     $usesRelPreconnectP90Stdev0108ScoreP90Stdev0Range0309376 with line, \
+     $usesLongCacheTtlP90Stdev531297ScoreP90Stdev0Range558157909559995103 with line, \
+     $bootupTimeP90Stdev11729ScoreP90Stdev0001Range554564745176 with line, \
+     $firstCpuIdleP90Stdev25492ScoreP90Stdev0001Range19450045079972 with line, \
+     $renderBlockingResourcesP90Stdev19059ScoreP90Stdev0002Range7321220 with line, \
+     $firstContentfulPaintP90Stdev20145ScoreP90Stdev0002Range19450042407366 with line, \
+     $interactiveP90Stdev62484ScoreP90Stdev0003Range1139139912706439 with line, \
+     $firstMeaningfulPaintP90Stdev2981ScoreP90Stdev0007Range19450045079972 with line, \
+     $mainthreadWorkBreakdownP90Stdev42996ScoreP90Stdev0008Range1901856257216 with line, \
+     $totalBlockingTimeP90Stdev7502ScoreP90Stdev0008Range178394 with line, \
+     $unusedJavascriptP90Stdev86715ScoreP90Stdev001Range15004640 with line, \
+     $maxPotentialFidP90Stdev5584ScoreP90Stdev0015Range272357 with line, \
+     $usesRelPreloadP90Stdev50707ScoreP90Stdev0028Range0681 with line, \
+     $unminifiedCssP90Stdev55655ScoreP90Stdev0031Range0450 with line, \
+     $unusedCssRulesP90Stdev42475ScoreP90Stdev0035Range0600 with line, \
+     $usesHttp2P90Stdev56542ScoreP90Stdev0042Range160900 with line, \
+     $speedIndexP90Stdev329986ScoreP90Stdev0054Range514058829476905 with line, \
+     $unminifiedJavascriptP90Stdev7109ScoreP90Stdev0059Range0150 with line, \
+     $cumulativeLayoutShiftP90Stdev0154ScoreP90Stdev0191Range02020579 with line, \
+     $networkRttP90Stdev0926ScoreP90Stdev0926Range13845424 with line, \
+     $networkServerLatencyP90Stdev12174ScoreP90Stdev12174Range712569945039 with line, \
+     $metricsP90Stdev624ScoreP90Stdev624Range1139112706 with line, \
+     $scoreP90Stdev0015ScoreP90Stdev0015Range04170515 with line
 
 reset

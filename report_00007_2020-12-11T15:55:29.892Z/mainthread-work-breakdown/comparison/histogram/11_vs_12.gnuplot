@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/histogram/11_vs_12.svg"
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
 550.1637745272052 100
@@ -12,12 +10,17 @@ EOF
 
 set key outside below
 set boxwidth 183.38792484240173
+set xrange [348.948:604.8239999999998]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 
-plot \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
+set parametric
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/histogram/11_vs_12.svg"
 
+plot $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
+     2017,t title "score p10=2017", \
+     4000,t title "score median=4000"
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/line/1_vs_2.svg"
 
 $pages <<EOF
 0 0.4172165056100327
@@ -209,11 +207,12 @@ $pagesCached <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [0.4142466056601818:0.5686814030524296]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/line/1_vs_2.svg"
 
-plot \
-  $pages title "pages" with line, \
-  $pagesCached title "pages+cached" with line, \
-
+plot $pages title "pages" with line, \
+     $pagesCached title "pages+cached" with line
 
 reset

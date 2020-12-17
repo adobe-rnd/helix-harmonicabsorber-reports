@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/metrics/comparison/sorted/4_vs_5.svg"
 
 $pagesCachedNoadtech <<EOF
 0 1816
@@ -209,11 +207,12 @@ $pagesCachedNoexternal <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [1811.22:2059.78]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/metrics/comparison/sorted/4_vs_5.svg"
 
-plot \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with line, \
-
+plot $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with line
 
 reset

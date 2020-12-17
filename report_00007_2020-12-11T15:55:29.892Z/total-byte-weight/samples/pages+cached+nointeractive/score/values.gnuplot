@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/total-byte-weight/samples/pages+cached+nointeractive/score/values.svg"
 
 $score <<EOF
 0 0.018019708361126485
@@ -106,10 +104,11 @@ $score <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [0.016836487798513988:0.01902027229989761]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/total-byte-weight/samples/pages+cached+nointeractive/score/values.svg"
 
-plot \
-  $score title "score" with line, \
-
+plot $score title "score" with line
 
 reset

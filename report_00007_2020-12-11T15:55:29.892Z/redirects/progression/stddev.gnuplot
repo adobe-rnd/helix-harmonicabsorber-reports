@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/redirects/progression/stddev.svg"
 
 $p90Stdev <<EOF
 0 0
@@ -20,10 +18,11 @@ $p90Stdev <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [-0.001:0.001]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/redirects/progression/stddev.svg"
 
-plot \
-  $p90Stdev title "p90stdev" with linespoints, \
-
+plot $p90Stdev title "p90stdev" with linespoints
 
 reset

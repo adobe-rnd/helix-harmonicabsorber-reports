@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/samples/pages/score/histogram.svg"
 
 $score <<EOF
 0.9728735630994 6
@@ -12,11 +10,12 @@ EOF
 
 set key outside below
 set boxwidth 0.06949096879281429
+set xrange [0.5383333333333333:1]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/samples/pages/score/histogram.svg"
 
-plot \
-  $score title "score" with boxes, \
-
+plot $score title "score" with boxes
 
 reset

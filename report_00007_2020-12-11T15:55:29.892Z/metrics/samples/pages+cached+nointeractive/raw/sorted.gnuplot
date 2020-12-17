@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/metrics/samples/pages+cached+nointeractive/raw/sorted.svg"
 
 $raw <<EOF
 0 10937
@@ -106,10 +104,11 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [10935.6:11008.4]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/metrics/samples/pages+cached+nointeractive/raw/sorted.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line
 
 reset

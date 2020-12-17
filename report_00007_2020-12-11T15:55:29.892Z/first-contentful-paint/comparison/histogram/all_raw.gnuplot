@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/first-contentful-paint/comparison/histogram/all_raw.svg"
 
 $empty <<EOF
 439.2059859188297 100
@@ -71,24 +69,29 @@ EOF
 
 set key outside below
 set boxwidth 439.2059859188297
+set xrange [625.16225:2407.3655]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 
-plot \
-  $empty title "empty" with boxes, \
-  $pages title "pages" with boxes, \
-  $pagesCached title "pages+cached" with boxes, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes, \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with boxes, \
-  $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes, \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
-  $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with boxes, \
+set parametric
+set terminal svg size 640, 620 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/first-contentful-paint/comparison/histogram/all_raw.svg"
 
+plot $empty title "empty" with boxes, \
+     $pages title "pages" with boxes, \
+     $pagesCached title "pages+cached" with boxes, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with boxes, \
+     $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes, \
+     $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
+     $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
+     $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
+     $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with boxes, \
+     2336,t title "score p10=2336", \
+     4000,t title "score median=4000"
 
 reset

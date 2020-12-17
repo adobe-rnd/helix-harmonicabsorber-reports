@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/render-blocking-resources/samples/pages+cached+noadtech/raw/values.svg"
 
 $raw <<EOF
 0 464
@@ -106,10 +104,11 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [150.62:482.38]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/render-blocking-resources/samples/pages+cached+noadtech/raw/values.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/largest-contentful-paint/progression/value.svg"
 
 $p90Min <<EOF
 0 625.20675
@@ -67,13 +65,16 @@ $p90Max <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [47.08243200000038:30109.546967999984]
+set terminal svg size 640, 520 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/largest-contentful-paint/progression/value.svg"
 
-plot \
-  $p90Min title "p90min" with linespoints, \
-  $p90Mean title "p90mean" with linespoints, \
-  $p90Median title "p90median" with linespoints, \
-  $p90Max title "p90max" with linespoints, \
-
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints, \
+     2500 title "score p10=2500", \
+     4000 title "score median=4000"
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/histogram/2_vs_3.svg"
 
 $pagesCached <<EOF
 0.5130771175635616 30
@@ -18,12 +16,13 @@ EOF
 
 set key outside below
 set boxwidth 0.02700405881913482
+set xrange [0.4913536541653386:0.5657115031025787]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/histogram/2_vs_3.svg"
 
-plot \
-  $pagesCached title "pages+cached" with boxes, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes, \
-
+plot $pagesCached title "pages+cached" with boxes, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes
 
 reset

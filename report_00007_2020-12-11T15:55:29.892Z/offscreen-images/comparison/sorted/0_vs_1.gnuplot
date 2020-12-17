@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/offscreen-images/comparison/sorted/0_vs_1.svg"
 
 $empty <<EOF
 0 0
@@ -209,11 +207,12 @@ $pages <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [-0.001:0.001]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/offscreen-images/comparison/sorted/0_vs_1.svg"
 
-plot \
-  $empty title "empty" with line, \
-  $pages title "pages" with line, \
-
+plot $empty title "empty" with line, \
+     $pages title "pages" with line
 
 reset

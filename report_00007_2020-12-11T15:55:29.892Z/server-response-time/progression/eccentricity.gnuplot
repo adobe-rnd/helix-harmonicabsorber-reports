@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/progression/eccentricity.svg"
 
 $p90Eccentricity <<EOF
 0 1.0000000000000002
@@ -37,11 +35,12 @@ $p90Discretization <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [0.9969620253164551:1.1549367088607594]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/progression/eccentricity.svg"
 
-plot \
-  $p90Eccentricity title "p90eccentricity" with linespoints, \
-  $p90Discretization title "p90discretization" with linespoints, \
-
+plot $p90Eccentricity title "p90eccentricity" with linespoints, \
+     $p90Discretization title "p90discretization" with linespoints
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/comparison/line/0_vs_1.svg"
 
 $empty <<EOF
 0 636.067
@@ -209,11 +207,14 @@ $pages <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [536.066065:5169.067685000001]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/comparison/line/0_vs_1.svg"
 
-plot \
-  $empty title "empty" with line, \
-  $pages title "pages" with line, \
-
+plot $empty title "empty" with line, \
+     $pages title "pages" with line, \
+     3572 title "score p10=3572", \
+     6500 title "score median=6500"
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/duplicated-javascript/progression/eccentricity.svg"
 
 $p90Discretization <<EOF
 0 91
@@ -20,10 +18,11 @@ $p90Discretization <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [90.999:91.001]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/duplicated-javascript/progression/eccentricity.svg"
 
-plot \
-  $p90Discretization title "p90discretization" with linespoints, \
-
+plot $p90Discretization title "p90discretization" with linespoints
 
 reset

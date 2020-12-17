@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/total-blocking-time/samples/pages+cached/score/histogram.svg"
 
 $score <<EOF
 0.9747689076781717 2
@@ -12,11 +10,12 @@ EOF
 
 set key outside below
 set boxwidth 0.033612720954419716
+set xrange [0.821695891391382:0.9826442363466058]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/total-blocking-time/samples/pages+cached/score/histogram.svg"
 
-plot \
-  $score title "score" with boxes, \
-
+plot $score title "score" with boxes
 
 reset

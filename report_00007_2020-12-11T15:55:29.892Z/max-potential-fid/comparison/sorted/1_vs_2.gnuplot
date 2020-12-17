@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/comparison/sorted/1_vs_2.svg"
 
 $pages <<EOF
 0 271.9999999999982
@@ -209,11 +207,14 @@ $pagesCached <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [266.21999999999815:358.78000000000003]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/comparison/sorted/1_vs_2.svg"
 
-plot \
-  $pages title "pages" with line, \
-  $pagesCached title "pages+cached" with line, \
-
+plot $pages title "pages" with line, \
+     $pagesCached title "pages+cached" with line, \
+     130 title "score p10=130", \
+     250 title "score median=250"
 
 reset

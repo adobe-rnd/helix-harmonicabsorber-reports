@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/samples/pages+cached+noadtech/raw/sorted.svg"
 
 $raw <<EOF
 0 25
@@ -106,10 +104,13 @@ $raw <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [24.8:35.2]
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/samples/pages+cached+noadtech/raw/sorted.svg"
 
-plot \
-  $raw title "raw" with line, \
-
+plot $raw title "raw" with line, \
+     130 title "score p10=130", \
+     250 title "score median=250"
 
 reset

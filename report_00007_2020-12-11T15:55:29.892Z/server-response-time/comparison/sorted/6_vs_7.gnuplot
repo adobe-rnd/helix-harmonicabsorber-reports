@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/comparison/sorted/6_vs_7.svg"
 
 $pagesCachedNoexternalNofonts <<EOF
 0 1.266
@@ -209,11 +207,12 @@ $pagesCachedNoexternalNosvg <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [1.23888:2.64912]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/comparison/sorted/6_vs_7.svg"
 
-plot \
-  $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
-
+plot $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
+     $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line
 
 reset

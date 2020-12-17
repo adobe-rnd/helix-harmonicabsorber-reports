@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/line/0_vs_1.svg"
 
 $empty <<EOF
 0 636.067
@@ -209,11 +207,14 @@ $pages <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [48.12739937644096:30053.939631801513]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/line/0_vs_1.svg"
 
-plot \
-  $empty title "empty" with line, \
-  $pages title "pages" with line, \
-
+plot $empty title "empty" with line, \
+     $pages title "pages" with line, \
+     3387 title "score p10=3387", \
+     5800 title "score median=5800"
 
 reset

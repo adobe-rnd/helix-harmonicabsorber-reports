@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/progression/value.svg"
 
 $p90Min <<EOF
 0 0
@@ -67,13 +65,14 @@ $p90Max <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [-6.012720000000001:306.64872]
+set terminal svg size 640, 520 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/progression/value.svg"
 
-plot \
-  $p90Min title "p90min" with linespoints, \
-  $p90Mean title "p90mean" with linespoints, \
-  $p90Median title "p90median" with linespoints, \
-  $p90Max title "p90max" with linespoints, \
-
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints
 
 reset

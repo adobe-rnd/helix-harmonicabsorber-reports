@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/sorted/8_vs_9.svg"
 
 $pagesCachedNoexternalNoimg <<EOF
 0 685.3880000000013
@@ -209,11 +207,14 @@ $pagesCachedNoexternalNocss <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [395.94840000000005:794.4556000000007]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/sorted/8_vs_9.svg"
 
-plot \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
-
+plot $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
+     $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
+     2017 title "score p10=2017", \
+     4000 title "score median=4000"
 
 reset

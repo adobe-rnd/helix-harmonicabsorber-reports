@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/interactive/comparison/sorted/all_raw.svg"
 
 $empty <<EOF
 0 625.16225
@@ -1445,23 +1443,26 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [383.53671499999996:12948.064534999998]
+set terminal svg size 640, 620 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/interactive/comparison/sorted/all_raw.svg"
 
-plot \
-  $empty title "empty" with line, \
-  $pages title "pages" with line, \
-  $pagesCached title "pages+cached" with line, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with line, \
-  $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
-  $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with line, \
-
+plot $empty title "empty" with line, \
+     $pages title "pages" with line, \
+     $pagesCached title "pages+cached" with line, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with line, \
+     $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
+     $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
+     $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
+     $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
+     $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with line, \
+     3785 title "score p10=3785", \
+     7300 title "score median=7300"
 
 reset

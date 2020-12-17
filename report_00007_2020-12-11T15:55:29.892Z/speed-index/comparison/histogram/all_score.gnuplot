@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/histogram/all_score.svg"
 
 $empty <<EOF
 1.0275895001897994 100
@@ -62,23 +60,24 @@ EOF
 
 set key outside below
 set boxwidth 0.1712649166982999
+set xrange [0.00005371378454288589:0.9999999442069185]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 610 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/histogram/all_score.svg"
 
-plot \
-  $empty title "empty" with boxes, \
-  $pages title "pages" with boxes, \
-  $pagesCached title "pages+cached" with boxes, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes, \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with boxes, \
-  $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes, \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with boxes, \
-
+plot $empty title "empty" with boxes, \
+     $pages title "pages" with boxes, \
+     $pagesCached title "pages+cached" with boxes, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with boxes, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with boxes, \
+     $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with boxes, \
+     $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
+     $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
+     $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with boxes
 
 reset

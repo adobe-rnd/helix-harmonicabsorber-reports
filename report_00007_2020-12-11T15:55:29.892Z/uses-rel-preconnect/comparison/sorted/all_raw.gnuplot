@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 610 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/comparison/sorted/all_raw.svg"
 
 $empty <<EOF
 0 0
@@ -1342,22 +1340,23 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [-6.187519999999999:315.56352]
+set terminal svg size 640, 610 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/comparison/sorted/all_raw.svg"
 
-plot \
-  $empty title "empty" with line, \
-  $pages title "pages" with line, \
-  $pagesCached title "pages+cached" with line, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with line, \
-  $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
-  $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with line, \
-
+plot $empty title "empty" with line, \
+     $pages title "pages" with line, \
+     $pagesCached title "pages+cached" with line, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with line, \
+     $pagesCachedNoexternalNofonts title "pages+cached+noexternal+nofonts" with line, \
+     $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
+     $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
+     $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs" with line
 
 reset

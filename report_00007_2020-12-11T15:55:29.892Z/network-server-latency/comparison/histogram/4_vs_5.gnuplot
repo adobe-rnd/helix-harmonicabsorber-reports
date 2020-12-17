@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/comparison/histogram/4_vs_5.svg"
 
 $pagesCachedNoadtech <<EOF
 7.912770844283858 61
@@ -18,12 +16,13 @@ EOF
 
 set key outside below
 set boxwidth 1.9781927110709645
+set xrange [4.356800000000001:11.4937]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/comparison/histogram/4_vs_5.svg"
 
-plot \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
-  $pagesCachedNoexternal title "pages+cached+noexternal" with boxes, \
-
+plot $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
+     $pagesCachedNoexternal title "pages+cached+noexternal" with boxes
 
 reset

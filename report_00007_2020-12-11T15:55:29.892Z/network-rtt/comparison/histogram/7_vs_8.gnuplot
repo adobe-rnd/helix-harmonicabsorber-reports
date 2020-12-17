@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/network-rtt/comparison/histogram/7_vs_8.svg"
 
 $pagesCachedNoexternalNosvg <<EOF
 0.07803550973814538 49
@@ -25,12 +23,13 @@ EOF
 
 set key outside below
 set boxwidth 0.026011836579381796
+set xrange [0.0378:0.2759]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/network-rtt/comparison/histogram/7_vs_8.svg"
 
-plot \
-  $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
-  $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
-
+plot $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with boxes, \
+     $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes
 
 reset

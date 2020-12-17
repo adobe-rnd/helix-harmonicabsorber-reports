@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/comparison/line/2_vs_3.svg"
 
 $pagesCached <<EOF
 0 300
@@ -209,11 +207,12 @@ $pagesCachedNointeractive <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [-6:306]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/comparison/line/2_vs_3.svg"
 
-plot \
-  $pagesCached title "pages+cached" with line, \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
-
+plot $pagesCached title "pages+cached" with line, \
+     $pagesCachedNointeractive title "pages+cached+nointeractive" with line
 
 reset

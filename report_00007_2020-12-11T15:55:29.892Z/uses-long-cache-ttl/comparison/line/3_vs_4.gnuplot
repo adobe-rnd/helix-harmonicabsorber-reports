@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/uses-long-cache-ttl/comparison/line/3_vs_4.svg"
 
 $pagesCachedNointeractive <<EOF
 0 559325.3076379889
@@ -209,11 +207,14 @@ $pagesCachedNoadtech <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [40907.69668497703:569503.4690661713]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/uses-long-cache-ttl/comparison/line/3_vs_4.svg"
 
-plot \
-  $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
-  $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
-
+plot $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
+     28672 title "score p10=28672", \
+     131072 title "score median=131072"
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/progression/score.svg"
 
 $scoreP90Min <<EOF
 0 0.9999996999950614
@@ -71,13 +69,14 @@ $scoreP90Max <<EOF
 EOF
 
 set key outside below
+set xrange [0:13]
 set yrange [0.9886442437660908:1.000999730594105]
+set terminal svg size 640, 520 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/progression/score.svg"
 
-plot \
-  $scoreP90Min title "score:p90min" with linespoints, \
-  $scoreP90Mean title "score:p90mean" with linespoints, \
-  $scoreP90Median title "score:p90median" with linespoints, \
-  $scoreP90Max title "score:p90max" with linespoints, \
-
+plot $scoreP90Min title "score:p90min" with linespoints, \
+     $scoreP90Mean title "score:p90mean" with linespoints, \
+     $scoreP90Median title "score:p90median" with linespoints, \
+     $scoreP90Max title "score:p90max" with linespoints
 
 reset

@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/samples/empty/raw/histogram.svg"
 
 $raw <<EOF
 85.24425386366514 56
@@ -12,11 +10,16 @@ EOF
 
 set key outside below
 set boxwidth 4.7357918813147295
+set xrange [80.164:102.92399999999999]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 
-plot \
-  $raw title "raw" with boxes, \
+set parametric
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/samples/empty/raw/histogram.svg"
 
+plot $raw title "raw" with boxes, \
+     2017,t title "score p10=2017", \
+     4000,t title "score median=4000"
 
 reset

@@ -8,16 +8,16 @@
 
 
 ```yaml
-? p90min
-? p90max
-? p90range
-? p90mean
-? p90median
-? p90stdev
-? p90skewness
-? p90eccentricity
-? p90discretization
-? outlandishness
+p90min: null
+p90max: null
+p90range: 0
+p90mean: null
+p90median: null
+p90stdev: null
+p90skewness: null
+p90eccentricity: null
+p90discretization: null
+outlandishness: null
 
 ```
 

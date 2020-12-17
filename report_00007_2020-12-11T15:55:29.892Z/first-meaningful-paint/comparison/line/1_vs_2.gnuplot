@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/comparison/line/1_vs_2.svg"
 
 $pages <<EOF
 0 5079.971500000001
@@ -209,11 +207,14 @@ $pagesCached <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [1882.3041400000002:5142.67086]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/comparison/line/1_vs_2.svg"
 
-plot \
-  $pages title "pages" with line, \
-  $pagesCached title "pages+cached" with line, \
-
+plot $pages title "pages" with line, \
+     $pagesCached title "pages+cached" with line, \
+     2336 title "score p10=2336", \
+     4000 title "score median=4000"
 
 reset

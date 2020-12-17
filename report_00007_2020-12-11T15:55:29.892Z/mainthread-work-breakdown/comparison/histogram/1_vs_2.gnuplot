@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/histogram/1_vs_2.svg"
 
 $pages <<EOF
 1953.9460585362706 19
@@ -13,12 +11,17 @@ EOF
 
 set key outside below
 set boxwidth 488.48651463406765
+set xrange [1716.1960000000008:2572.1599999999935]
 set yrange [0:100]
 set style fill transparent solid 0.5 noborder
 
-plot \
-  $pages title "pages" with boxes, \
-  $pagesCached title "pages+cached" with boxes, \
+set parametric
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/comparison/histogram/1_vs_2.svg"
 
+plot $pages title "pages" with boxes, \
+     $pagesCached title "pages+cached" with boxes, \
+     2017,t title "score p10=2017", \
+     4000,t title "score median=4000"
 
 reset

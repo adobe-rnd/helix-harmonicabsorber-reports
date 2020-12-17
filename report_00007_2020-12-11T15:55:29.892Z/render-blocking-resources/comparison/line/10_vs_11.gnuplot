@@ -1,6 +1,4 @@
 reset
-set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "report_00007_2020-12-11T15:55:29.892Z/render-blocking-resources/comparison/line/10_vs_11.svg"
 
 $pagesCachedNoexternalNojs <<EOF
 0 12
@@ -209,11 +207,12 @@ $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
 EOF
 
 set key outside below
+set xrange [0:99]
 set yrange [-9.14:466.14]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00007_2020-12-11T15:55:29.892Z/render-blocking-resources/comparison/line/10_vs_11.svg"
 
-plot \
-  $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
-  $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
-
+plot $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
+     $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line
 
 reset
