@@ -1,7 +1,24 @@
 
 # Harmonicabsorber Mon Nov 02 2020 21:21:42 GMT+0100 (Central European Standard Time)
 
+This is yet another rerun of the report from dataset 2.
+
+The purpose of this report is primarily the verification of the
+rewrite of harmonicabsorber. Note the higher quality of all graphics,
+the inclusion of indicator progression plots and the inclusion of sorted
+data point plots (as alternatives to histograms).
+
+Note how with the improved histogram generation (multi-dataset) capabilitie
+our distributions are starting to look more normally distributed. It is as of
+yet unclear whether this is an artifact.
+
+The variance comparison plots now include raw data and are scaled to the
+p90 range. Note how outliers are now clearly visible (and the graphic is quite messy).
+This graphic might be improved by using a log-scale around the mean of the log
+and by including p90 marker lines instead of using this messy scaling.
+
 [Parent ../](../)
+
 ## Metas
 
 [score](meta/score)  
