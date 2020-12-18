@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.9989050328384271:1.0009911809529832]
+set trange [0.9989050328384271:1.0009911809529832]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/mainthread-work-breakdown/samples/pages+cached+noexternal+nocss/score/values.svg"
 

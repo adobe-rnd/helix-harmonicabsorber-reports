@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [1.23456:2.86944]
+set trange [1.23456:2.86944]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/server-response-time/comparison/sorted/5_vs_6.svg"
 

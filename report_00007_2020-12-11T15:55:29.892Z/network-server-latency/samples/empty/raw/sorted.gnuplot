@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.8974199999999999:8.207579999999993]
+set trange [0.8974199999999999:8.207579999999993]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/samples/empty/raw/sorted.svg"
 

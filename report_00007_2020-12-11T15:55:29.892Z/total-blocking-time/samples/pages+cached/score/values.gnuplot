@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.8184769244922775:0.9858632032457103]
+set trange [0.8184769244922775:0.9858632032457103]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/total-blocking-time/samples/pages+cached/score/values.svg"
 

@@ -67,6 +67,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [0.7446396000000001:1.0050070666666666]
+set trange [0.7446396000000001:1.0050070666666666]
 set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preconnect/progression/score.svg"
 

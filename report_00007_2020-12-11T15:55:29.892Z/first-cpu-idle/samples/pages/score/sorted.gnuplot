@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.695253217269186:1.0009787128293972]
+set trange [0.695253217269186:1.0009787128293972]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/first-cpu-idle/samples/pages/score/sorted.svg"
 

@@ -58,6 +58,7 @@ set key outside below
 set boxwidth 0.31160688466081554
 set xrange [0.4172165056100327:0.999999084589487]
 set yrange [0:100]
+set trange [0:100]
 set style fill transparent solid 0.5 noborder
 set terminal svg size 640, 610 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/meta/score/comparison/histogram/all_raw.svg"

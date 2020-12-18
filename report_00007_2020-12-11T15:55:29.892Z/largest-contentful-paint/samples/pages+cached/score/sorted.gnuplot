@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [-0.0009127025388592771:0.003311003265440925]
+set trange [-0.0009127025388592771:0.003311003265440925]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/largest-contentful-paint/samples/pages+cached/score/sorted.svg"
 

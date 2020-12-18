@@ -1342,6 +1342,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [48.12739937644096:30053.939631801513]
+set trange [48.12739937644096:30053.939631801513]
 set terminal svg size 640, 610 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/comparison/sorted/all_raw.svg"
 

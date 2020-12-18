@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [446.94:762.06]
+set trange [446.94:762.06]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/comparison/line/8_vs_9.svg"
 

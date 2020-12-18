@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [1095.56:1222.44]
+set trange [1095.56:1222.44]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-long-cache-ttl/comparison/line/5_vs_6.svg"
 

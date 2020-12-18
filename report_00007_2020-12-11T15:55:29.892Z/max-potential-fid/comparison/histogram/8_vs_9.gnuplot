@@ -13,6 +13,7 @@ set key outside below
 set boxwidth 13.076623210501971
 set xrange [16:38]
 set yrange [0:100]
+set trange [0:100]
 set style fill transparent solid 0.5 noborder
 
 set parametric

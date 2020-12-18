@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [-552.2:28162.2]
+set trange [-552.2:28162.2]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-webp-images/comparison/line/9_vs_10.svg"
 

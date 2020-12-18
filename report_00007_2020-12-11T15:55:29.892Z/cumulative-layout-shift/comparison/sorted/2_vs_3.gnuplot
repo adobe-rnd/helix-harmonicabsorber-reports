@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.0875808248731825:0.4163780942281086]
+set trange [0.0875808248731825:0.4163780942281086]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/comparison/sorted/2_vs_3.svg"
 

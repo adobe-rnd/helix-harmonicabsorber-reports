@@ -17,6 +17,7 @@ set key outside below
 set boxwidth 3.5970463514295186
 set xrange [4.706955205741551:730.832]
 set yrange [0:100]
+set trange [0:100]
 set style fill transparent solid 0.5 noborder
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/network-server-latency/comparison/histogram/2_vs_3.svg"

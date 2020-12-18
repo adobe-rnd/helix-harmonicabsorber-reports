@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [-0.004352941176470588:0.222]
+set trange [-0.004352941176470588:0.222]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-text-compression/samples/pages/score/values.svg"
 

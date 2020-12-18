@@ -209,6 +209,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [-0.07787999999999999:5.531879999999999]
+set trange [-0.07787999999999999:5.531879999999999]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/network-rtt/comparison/line/0_vs_1.svg"
 

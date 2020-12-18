@@ -25,6 +25,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [-0.7999999999999998:92.8]
+set trange [-0.7999999999999998:92.8]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/unused-css-rules/progression/eccentricity.svg"
 

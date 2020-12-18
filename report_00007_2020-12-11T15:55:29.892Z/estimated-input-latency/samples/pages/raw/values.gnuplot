@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [12.632000000000001:21.368000000000002]
+set trange [12.632000000000001:21.368000000000002]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/estimated-input-latency/samples/pages/raw/values.svg"
 

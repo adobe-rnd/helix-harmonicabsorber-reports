@@ -8,6 +8,7 @@ set key outside below
 set boxwidth 0.1
 set xrange [58.99:59.01]
 set yrange [0:100]
+set trange [0:100]
 set style fill transparent solid 0.5 noborder
 
 set parametric

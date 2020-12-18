@@ -71,6 +71,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [0.9203382284638831:1.0015570113072003]
+set trange [0.9203382284638831:1.0015570113072003]
 set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/first-meaningful-paint/progression/score.svg"
 

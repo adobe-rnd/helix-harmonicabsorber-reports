@@ -34,6 +34,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [-0.036559210005615086:1.8645197102863693]
+set trange [-0.036559210005615086:1.8645197102863693]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/cumulative-layout-shift/progression/stddev.svg"
 

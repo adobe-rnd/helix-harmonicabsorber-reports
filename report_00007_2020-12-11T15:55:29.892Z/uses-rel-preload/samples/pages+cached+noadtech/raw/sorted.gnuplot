@@ -106,6 +106,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [450.96:609.04]
+set trange [450.96:609.04]
 set terminal svg size 640, 490 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/samples/pages+cached+noadtech/raw/sorted.svg"
 

@@ -1445,6 +1445,7 @@ EOF
 set key outside below
 set xrange [0:99]
 set yrange [0.48928:1.0100141176470587]
+set trange [0.48928:1.0100141176470587]
 set terminal svg size 640, 620 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/comparison/sorted/all_score.svg"
 

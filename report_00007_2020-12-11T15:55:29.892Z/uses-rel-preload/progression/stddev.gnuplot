@@ -34,6 +34,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [-1.0141470503956058:51.721499570175894]
+set trange [-1.0141470503956058:51.721499570175894]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/uses-rel-preload/progression/stddev.svg"
 

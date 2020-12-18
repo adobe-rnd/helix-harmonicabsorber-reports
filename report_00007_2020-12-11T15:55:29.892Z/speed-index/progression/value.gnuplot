@@ -67,6 +67,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [505.7180778229835:6719.129031027844]
+set trange [505.7180778229835:6719.129031027844]
 set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/speed-index/progression/value.svg"
 

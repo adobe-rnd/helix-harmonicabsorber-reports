@@ -71,6 +71,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [0.1565662876893478:1.0165370854199915]
+set trange [0.1565662876893478:1.0165370854199915]
 set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/interactive/progression/score.svg"
 

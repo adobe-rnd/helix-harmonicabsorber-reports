@@ -71,6 +71,7 @@ EOF
 set key outside below
 set xrange [0:13]
 set yrange [10.240000000000038:309.7599999999982]
+set trange [10.240000000000038:309.7599999999982]
 set terminal svg size 640, 520 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/max-potential-fid/progression/value.svg"
 
