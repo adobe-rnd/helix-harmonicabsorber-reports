@@ -3887,11 +3887,3 @@ plot $totalBlockingTimeP90Stdev0ScoreP90Stdev0Range00 with line, \
      $firstContentfulPaintP90Stdev107806ScoreP90Stdev0012Range18168292054368 with line, \
      $firstMeaningfulPaintP90Stdev107806ScoreP90Stdev0012Range18168292054368 with line, \
      $networkRttP90Stdev0013ScoreP90Stdev0013Range00390285 with line, \
-     $usesHttp2P90Stdev75408ScoreP90Stdev0063Range0320 with line, \
-     $renderBlockingResourcesP90Stdev151269ScoreP90Stdev0103Range158475 with line, \
-     $cumulativeLayoutShiftP90Stdev0071ScoreP90Stdev0149Range00941129 with line, \
-     $networkServerLatencyP90Stdev0479ScoreP90Stdev0479Range46327689 with line, \
-     $metricsP90Stdev107775ScoreP90Stdev107775Range18172054 with line, \
-     $scoreP90Stdev0009ScoreP90Stdev0009Range0694074 with line
-
-reset

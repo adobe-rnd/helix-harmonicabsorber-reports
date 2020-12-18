@@ -3872,26 +3872,4 @@ plot $totalBlockingTimeP90Stdev0ScoreP90Stdev0Range00 with line, \
      $duplicatedJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
      $legacyJavascriptP90Stdev0ScoreP90Stdev0Range00 with line, \
      $estimatedInputLatencyP90Stdev0ScoreP90Stdev0Range128128 with line, \
-     $usesTextCompressionP90Stdev0ScoreP90Stdev0Range450450 with line, \
-     $domSizeP90Stdev0ScoreP90Stdev0Range172172 with line, \
-     $bootupTimeP90Stdev0653ScoreP90Stdev0Range3784844852 with line, \
-     $totalByteWeightP90Stdev9273ScoreP90Stdev0Range68271676837611 with line, \
-     $maxPotentialFidP90Stdev245ScoreP90Stdev0Range2535 with line, \
-     $usesLongCacheTtlP90Stdev4928ScoreP90Stdev0Range5107351097 with line, \
-     $mainthreadWorkBreakdownP90Stdev19123ScoreP90Stdev0Range746524924496 with line, \
-     $usesRelPreloadP90Stdev0534ScoreP90Stdev0Range454606 with line, \
-     $interactiveP90Stdev104296ScoreP90Stdev0001Range18158572055008 with line, \
-     $firstCpuIdleP90Stdev104296ScoreP90Stdev0002Range18158572055008 with line, \
-     $speedIndexP90Stdev49189ScoreP90Stdev0003Range25291972691167 with line, \
-     $largestContentfulPaintP90Stdev386175ScoreP90Stdev0003Range890824523055954 with line, \
-     $firstContentfulPaintP90Stdev104296ScoreP90Stdev0011Range18158572055008 with line, \
-     $firstMeaningfulPaintP90Stdev104296ScoreP90Stdev0011Range18158572055008 with line, \
-     $networkRttP90Stdev0014ScoreP90Stdev0014Range0040167 with line, \
-     $usesHttp2P90Stdev70125ScoreP90Stdev0058Range0320 with line, \
-     $renderBlockingResourcesP90Stdev146619ScoreP90Stdev01Range157476 with line, \
-     $cumulativeLayoutShiftP90Stdev0063ScoreP90Stdev0156Range0064038 with line, \
-     $networkServerLatencyP90Stdev0727ScoreP90Stdev0727Range435711494 with line, \
-     $metricsP90Stdev104385ScoreP90Stdev104385Range18162055 with line, \
-     $scoreP90Stdev0009ScoreP90Stdev0009Range070743 with line
-
-reset
+     $usesTextCompressionP90Stdev0ScoreP90Stdev0Rang
