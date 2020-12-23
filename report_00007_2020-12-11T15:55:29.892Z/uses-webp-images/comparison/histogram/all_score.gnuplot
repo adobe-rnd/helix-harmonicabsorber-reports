@@ -1,16 +1,16 @@
 reset
 
 $empty <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 $pages <<EOF
-0.9707341789204328 2
+0.9707341789204313 2
 0 98
 EOF
 
 $pagesCached <<EOF
-0.9707341789204328 1
+0.9707341789204313 1
 0 99
 EOF
 
@@ -35,7 +35,7 @@ $pagesCachedNoexternalNosvg <<EOF
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
@@ -43,23 +43,23 @@ $pagesCachedNoexternalNocss <<EOF
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-0.9707341789204328 100
+0.9707341789204313 100
 EOF
 
 set key outside below
-set boxwidth 0.9707341789204328
+set boxwidth 0.9707341789204313
 set xrange [0:1]
 set yrange [0:100]
 set trange [0:100]

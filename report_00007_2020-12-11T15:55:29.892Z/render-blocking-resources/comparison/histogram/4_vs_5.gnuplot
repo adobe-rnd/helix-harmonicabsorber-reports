@@ -1,17 +1,17 @@
 reset
 
 $pagesCachedNoadtech <<EOF
-348.3953431603898 60
+348.39534316038987 60
 0 40
 EOF
 
 $pagesCachedNoexternal <<EOF
 0 45
-348.3953431603898 55
+348.39534316038987 55
 EOF
 
 set key outside below
-set boxwidth 348.3953431603898
+set boxwidth 348.39534316038987
 set xrange [157:476]
 set yrange [0:100]
 set trange [0:100]

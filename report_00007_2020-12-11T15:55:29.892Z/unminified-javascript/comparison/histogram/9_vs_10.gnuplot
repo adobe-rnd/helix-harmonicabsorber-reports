@@ -1,7 +1,7 @@
 reset
 
 $pagesCachedNoexternalNocss <<EOF
-174.50707449766307 100
+174.50707449766352 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
@@ -9,7 +9,7 @@ $pagesCachedNoexternalNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 174.50707449766307
+set boxwidth 174.50707449766352
 set xrange [0:150]
 set yrange [0:100]
 set trange [0:100]

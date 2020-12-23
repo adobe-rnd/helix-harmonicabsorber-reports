@@ -13,8 +13,8 @@ p90max: 606
 p90range: 1
 p90mean: 605.6483516483516
 p90median: 606
-p90stdev: 0.47748485675605323
-p90skewness: -0.6213878670813775
+p90stdev: 0.4774848567560532
+p90skewness: -0.6213878670813774
 p90eccentricity: 1.0000000000000018
 p90discretization: 45.5
 outlandishness: 0.9998073177703664
@@ -29,14 +29,68 @@ outlandishness: 0.9998073177703664
 p90min: 0.58
 p90max: 0.5805555555555555
 p90range: 0.0005555555555555314
-p90mean: 0.5801953601953596
+p90mean: 0.5801953601953597
 p90median: 0.58
-p90stdev: 0.0002652693648644624
-p90skewness: 0.6213878670893171
-p90eccentricity: 1.0000000000000013
+p90stdev: 0.00026526936486446253
+p90skewness: 0.6213878670905723
+p90eccentricity: 0.9999999999999999
 p90discretization: 45.5
-outlandishness: 1.00011175024926
+outlandishness: 1.0001117502492596
 
 ```
 
 ![PLOT: score-values](./score/values.svg)![PLOT: score-sorted](./score/sorted.svg)![PLOT: score-histogram](./score/histogram.svg)
+## P Score
+
+
+```yaml
+p90min: 0.58
+p90max: 0.5805555555555555
+p90range: 0.0005555555555555314
+p90mean: 0.5801953601953597
+p90median: 0.58
+p90stdev: 0.00026526936486446253
+p90skewness: 0.6213878670905723
+p90eccentricity: 0.9999999999999999
+p90discretization: 45.5
+outlandishness: 1.0001117502492596
+
+```
+
+![PLOT: pScore-values](./pScore/values.svg)![PLOT: pScore-sorted](./pScore/sorted.svg)![PLOT: pScore-histogram](./pScore/histogram.svg)
+## Score Difference
+
+
+```yaml
+p90min: -0.0005555555555555314
+p90max: 0
+p90range: 0.0005555555555555314
+p90mean: -0.00019536019536018685
+p90median: 0
+p90stdev: 0.00026526936486446237
+p90skewness: -0.6213878670813693
+p90eccentricity: 1.0000000000000002
+p90discretization: 45.5
+outlandishness: 1.3594102539062767
+
+```
+
+![PLOT: score-difference-values](./score-difference/values.svg)![PLOT: score-difference-sorted](./score-difference/sorted.svg)![PLOT: score-difference-histogram](./score-difference/histogram.svg)
+## P Score Difference
+
+
+```yaml
+p90min: 0
+p90max: 0
+p90range: 0
+p90mean: 0
+p90median: 0
+p90stdev: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 91
+outlandishness: .nan
+
+```
+
+![PLOT: pScore-difference-values](./pScore-difference/values.svg)![PLOT: pScore-difference-sorted](./pScore-difference/sorted.svg)![PLOT: pScore-difference-histogram](./pScore-difference/histogram.svg)

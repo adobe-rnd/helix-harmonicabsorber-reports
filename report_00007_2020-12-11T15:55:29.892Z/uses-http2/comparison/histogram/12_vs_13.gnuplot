@@ -1,7 +1,7 @@
 reset
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-186.14087946417447 100
+186.14087946417382 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
@@ -9,7 +9,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 186.14087946417447
+set boxwidth 186.14087946417382
 set xrange [0:160]
 set yrange [0:100]
 set trange [0:100]

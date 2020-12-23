@@ -1,16 +1,16 @@
 reset
 
 $pagesCachedNoexternalNoimg <<EOF
-26.153246421003942 84
-39.22986963150591 16
+26.153246421003935 84
+39.229869631505906 16
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-13.076623210501971 100
+13.076623210501968 100
 EOF
 
 set key outside below
-set boxwidth 13.076623210501971
+set boxwidth 13.076623210501968
 set xrange [16:38]
 set yrange [0:100]
 set trange [0:100]

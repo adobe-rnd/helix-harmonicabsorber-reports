@@ -2,12 +2,12 @@ reset
 
 $raw <<EOF
 0 84
-543.9566589637068 14
-271.9783294818534 2
+543.9566589637069 14
+271.97832948185345 2
 EOF
 
 set key outside below
-set boxwidth 271.9783294818534
+set boxwidth 271.97832948185345
 set xrange [2:457]
 set yrange [0:100]
 set trange [0:100]

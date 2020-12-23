@@ -1,15 +1,15 @@
 reset
 
 $pagesCachedNoexternal <<EOF
-1135.4593647314634 100
+1135.459364731461 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-1277.3917853228963 100
+1277.3917853228936 100
 EOF
 
 set key outside below
-set boxwidth 141.93242059143293
+set boxwidth 141.93242059143262
 set xrange [1098:1220]
 set yrange [0:100]
 set trange [0:100]

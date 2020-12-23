@@ -1,7 +1,7 @@
 reset
 
 $pagesCachedNoexternalNosvg <<EOF
-31934.794633072263 100
+31934.794633072335 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
@@ -9,7 +9,7 @@ $pagesCachedNoexternalNoimg <<EOF
 EOF
 
 set key outside below
-set boxwidth 31934.794633072263
+set boxwidth 31934.794633072335
 set xrange [0:27450]
 set yrange [0:100]
 set trange [0:100]

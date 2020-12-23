@@ -1,8 +1,8 @@
 reset
 
 $p90Eccentricity <<EOF
-1 0.999999999999998
-2 1.000000000000005
+1 0.9999999999999981
+2 1.0000000000000024
 EOF
 
 $p90Discretization <<EOF
@@ -24,8 +24,8 @@ EOF
 
 set key outside below
 set xrange [0:13]
-set yrange [-0.800000000000002:92.8]
-set trange [-0.800000000000002:92.8]
+set yrange [-0.8000000000000019:92.8]
+set trange [-0.8000000000000019:92.8]
 set terminal svg size 640, 500 enhanced background rgb 'white'
 set output "report_00007_2020-12-11T15:55:29.892Z/unminified-css/progression/eccentricity.svg"
 

@@ -2,11 +2,11 @@ reset
 
 $score <<EOF
 0 48
-1.2207381530259198 52
+1.2207381530259203 52
 EOF
 
 set key outside below
-set boxwidth 1.2207381530259198
+set boxwidth 1.2207381530259203
 set xrange [0:1]
 set yrange [0:100]
 set trange [0:100]

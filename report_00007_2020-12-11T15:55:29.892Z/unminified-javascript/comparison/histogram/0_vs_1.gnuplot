@@ -6,11 +6,11 @@ EOF
 
 $pages <<EOF
 0 40
-146.9015826358649 60
+146.90158263586488 60
 EOF
 
 set key outside below
-set boxwidth 146.9015826358649
+set boxwidth 146.90158263586488
 set xrange [0:150]
 set yrange [0:100]
 set trange [0:100]

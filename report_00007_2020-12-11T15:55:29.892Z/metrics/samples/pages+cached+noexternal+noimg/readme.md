@@ -8,17 +8,16 @@
 
 
 ```yaml
-p90min: 1817
-p90max: 2051
-p90range: 234
-p90mean: 1968.7142857142858
-p90median: 2044
-p90stdev: 98.96866922529603
-p90skewness: -0.7411687595046931
-p90eccentricity: 1
-p90discretization: 3.9565217391304346
-outlandishness: 0.986045685439256
+p90min: null
+p90max: null
+p90range: 0
+p90mean: null
+p90median: null
+p90stdev: null
+p90skewness: null
+p90eccentricity: null
+p90discretization: null
+outlandishness: null
 
 ```
 
-![PLOT: raw-values](./raw/values.svg)![PLOT: raw-sorted](./raw/sorted.svg)![PLOT: raw-histogram](./raw/histogram.svg)

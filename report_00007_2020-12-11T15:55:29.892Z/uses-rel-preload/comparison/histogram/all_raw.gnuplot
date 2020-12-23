@@ -6,41 +6,41 @@ EOF
 
 $pages <<EOF
 0 7
-851.5144507922976 83
-425.7572253961488 10
+851.5144507922893 83
+425.75722539614463 10
 EOF
 
 $pagesCached <<EOF
 0 1
-425.7572253961488 99
+425.75722539614463 99
 EOF
 
 $pagesCachedNointeractive <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoadtech <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-851.5144507922976 100
+851.5144507922893 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
@@ -48,11 +48,11 @@ $pagesCachedNoexternalNojs <<EOF
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-425.7572253961488 100
+425.75722539614463 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
@@ -60,7 +60,7 @@ $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
 EOF
 
 set key outside below
-set boxwidth 425.7572253961488
+set boxwidth 425.75722539614463
 set xrange [0:756]
 set yrange [0:100]
 set trange [0:100]

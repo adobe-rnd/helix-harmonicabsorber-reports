@@ -1,7 +1,7 @@
 reset
 
 $pagesCachedNointeractive <<EOF
-5302.580654701962 100
+5302.58065470196 100
 EOF
 
 $pagesCachedNoadtech <<EOF
@@ -9,7 +9,7 @@ $pagesCachedNoadtech <<EOF
 EOF
 
 set key outside below
-set boxwidth 5302.580654701962
+set boxwidth 5302.58065470196
 set xrange [0:4570]
 set yrange [0:100]
 set trange [0:100]

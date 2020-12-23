@@ -2,7 +2,7 @@ reset
 
 $p90Eccentricity <<EOF
 1 1.0000000000000002
-2 1.000000000000005
+2 1.0000000000000024
 EOF
 
 $p90Discretization <<EOF

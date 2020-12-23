@@ -40,3 +40,57 @@ outlandishness: 0.9999987356576563
 ```
 
 ![PLOT: score-values](./score/values.svg)![PLOT: score-sorted](./score/sorted.svg)![PLOT: score-histogram](./score/histogram.svg)
+## P Score
+
+
+```yaml
+p90min: 0.9999543586940882
+p90max: 0.9999731094844447
+p90range: 0.00001875079035651428
+p90mean: 0.9999642808652887
+p90median: 0.9999649166091578
+p90stdev: 0.000004271580797390335
+p90skewness: -0.2991347161741328
+p90eccentricity: 1.0000000000000007
+p90discretization: 1.011111111111111
+outlandishness: 0.9999987356576563
+
+```
+
+![PLOT: pScore-values](./pScore/values.svg)![PLOT: pScore-sorted](./pScore/sorted.svg)![PLOT: pScore-histogram](./pScore/histogram.svg)
+## Score Difference
+
+
+```yaml
+p90min: 0.00002689051555526678
+p90max: 0.00004564130591178106
+p90range: 0.00001875079035651428
+p90mean: 0.00003571913471170393
+p90median: 0.00003508339084223877
+p90stdev: 0.000004271580797390337
+p90skewness: 0.2991347163103707
+p90eccentricity: 0.9999999999999993
+p90discretization: 1.011111111111111
+outlandishness: 1.0357087374215637
+
+```
+
+![PLOT: score-difference-values](./score-difference/values.svg)![PLOT: score-difference-sorted](./score-difference/sorted.svg)![PLOT: score-difference-histogram](./score-difference/histogram.svg)
+## P Score Difference
+
+
+```yaml
+p90min: 0
+p90max: 0
+p90range: 0
+p90mean: 0
+p90median: 0
+p90stdev: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 91
+outlandishness: .nan
+
+```
+
+![PLOT: pScore-difference-values](./pScore-difference/values.svg)![PLOT: pScore-difference-sorted](./pScore-difference/sorted.svg)![PLOT: pScore-difference-histogram](./pScore-difference/histogram.svg)

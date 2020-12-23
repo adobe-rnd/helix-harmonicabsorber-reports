@@ -1,12 +1,12 @@
 reset
 
 $empty <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pages <<EOF
 0 99
-0.6257537321475687 1
+0.6257537321475688 1
 EOF
 
 $pagesCached <<EOF
@@ -18,47 +18,47 @@ $pagesCachedNointeractive <<EOF
 EOF
 
 $pagesCachedNoadtech <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternal <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNofonts <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNosvg <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNoimg <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNocss <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNojs <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocss <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimgNocssNojs <<EOF
-1.2515074642951374 100
+1.2515074642951376 100
 EOF
 
 set key outside below
-set boxwidth 0.6257537321475687
+set boxwidth 0.6257537321475688
 set xrange [0.04235294117647059:1]
 set yrange [0:100]
 set trange [0:100]

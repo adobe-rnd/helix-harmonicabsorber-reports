@@ -2,7 +2,7 @@ reset
 
 $pages <<EOF
 0 40
-146.90158263586505 60
+146.90158263586503 60
 EOF
 
 $pagesCached <<EOF
@@ -10,7 +10,7 @@ $pagesCached <<EOF
 EOF
 
 set key outside below
-set boxwidth 146.90158263586505
+set boxwidth 146.90158263586503
 set xrange [0:150]
 set yrange [0:100]
 set trange [0:100]

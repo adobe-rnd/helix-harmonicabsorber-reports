@@ -5,11 +5,11 @@ $pagesCachedNoexternalNojs <<EOF
 EOF
 
 $pagesCachedNoexternalNofontsNosvgNoimg <<EOF
-131.46199612157284 100
+131.46199612157298 100
 EOF
 
 set key outside below
-set boxwidth 131.46199612157284
+set boxwidth 131.46199612157298
 set xrange [59:172]
 set yrange [0:100]
 set trange [0:100]

@@ -29,14 +29,68 @@ outlandishness: 1.0190309136153433
 p90min: 0.999999999999996
 p90max: 0.9999999999999998
 p90range: 3.774758283725532e-15
-p90mean: 0.9999999999999992
+p90mean: 0.9999999999999993
 p90median: 0.9999999999999989
 p90stdev: 1.1165491329479315e-15
-p90skewness: -1.8710207045195006
-p90eccentricity: 0.8860278139939155
+p90skewness: -1.8710207045195004
+p90eccentricity: 0.9999999999999996
 p90discretization: 3.5
-outlandishness: 0.9999999999999996
+outlandishness: 0.9999999999999993
 
 ```
 
 ![PLOT: score-values](./score/values.svg)![PLOT: score-sorted](./score/sorted.svg)![PLOT: score-histogram](./score/histogram.svg)
+## P Score
+
+
+```yaml
+p90min: 0.999999999999996
+p90max: 0.9999999999999998
+p90range: 3.774758283725532e-15
+p90mean: 0.9999999999999993
+p90median: 0.9999999999999989
+p90stdev: 1.1165491329479315e-15
+p90skewness: -1.8710207045195004
+p90eccentricity: 0.9999999999999996
+p90discretization: 3.5
+outlandishness: 0.9999999999999993
+
+```
+
+![PLOT: pScore-values](./pScore/values.svg)![PLOT: pScore-sorted](./pScore/sorted.svg)![PLOT: pScore-histogram](./pScore/histogram.svg)
+## Score Difference
+
+
+```yaml
+p90min: 2.220446049250313e-16
+p90max: 3.9968028886505635e-15
+p90range: 3.774758283725532e-15
+p90mean: 1.3615482367930492e-15
+p90median: 1.1102230246251565e-15
+p90stdev: 8.735449318359137e-16
+p90skewness: 1.0143505539353255
+p90eccentricity: 0.9999999999999992
+p90discretization: 3.5
+outlandishness: 1.7600682199130273
+
+```
+
+![PLOT: score-difference-values](./score-difference/values.svg)![PLOT: score-difference-sorted](./score-difference/sorted.svg)![PLOT: score-difference-histogram](./score-difference/histogram.svg)
+## P Score Difference
+
+
+```yaml
+p90min: 0
+p90max: 0
+p90range: 0
+p90mean: 0
+p90median: 0
+p90stdev: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 91
+outlandishness: .nan
+
+```
+
+![PLOT: pScore-difference-values](./pScore-difference/values.svg)![PLOT: pScore-difference-sorted](./pScore-difference/sorted.svg)![PLOT: pScore-difference-histogram](./pScore-difference/histogram.svg)
