@@ -1,0 +1,19 @@
+reset
+
+$pScore <<EOF
+0.7963216479772498 74
+0.6967814419800936 26
+EOF
+
+set key outside below
+set boxwidth 0.09954020599715623
+set xrange [0.6475964215263799:0.8383589612217753]
+set yrange [0:100]
+set trange [0:100]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "reprap/speed-index/samples/pages+cached+nointeractive/pScore/histogram.svg"
+
+plot $pScore title "pScore" with boxes
+
+reset
