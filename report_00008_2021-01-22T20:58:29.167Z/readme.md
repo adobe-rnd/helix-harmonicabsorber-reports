@@ -1,7 +1,49 @@
-
 # Harmonicabsorber Mon Nov 02 2020 21:21:42 GMT+0100 (Central European Standard Time)
 
+**TL;DR** We have working statistical methods to estimate how precise our data is. These
+still require a decent (20 an up) sample size because lighthouse scoring is inherently jittery.
+There are some ways to improve precision, we still need to collect a larger sample size.
+
+Yet another analysis round on the same old dataset. This time the only
+thing of real interest is the new meta score [scoreEstimate](meta/scoreEstimate).
+This meta score captures our tnew, custom scoring method over multiple samples
+using standard methods of staatistical analysis.
+
+Score estimate works as follows:
+
+1. For each subscore, collect multiple samples.
+2. Take their average and calculate the two sigma/95% confidence interval
+   (we take the mean because that is easy to calculate and always uses a
+   continuous value; moving to the median for non-discrete sub scores is planned)
+3. Map each of the confidence intervals into the scoring space using the
+   standard lighthouse score mapping
+4. Calculate the weighted average of the lighthouse score confidence intervals
+   (shamefully taken without validation from https://en.wikipedia.org/wiki/Propagation_of_uncertainty)
+6. We do this for both the modified site as well as the control. Subtract the control interval
+   from the modified score confidence interval.
+
+The graphs confirm that this method (as expected) yields smaller and smaller confidence intervals.
+All differentials resolve to a clear improvement/score decline except one which yields a null result.
+
+The first 10 measurements yield an insufficient confidence interval in all cases; these
+are probably an artifact of using discarding the 10% most extreme of the data for outlier rejection.
+(Better outlier rejection methods are planned.)
+
+A sample size of 20 and up is recommended; for data with as much variance as the test data the sample size of 100 was needed.
+Future improvements (using median instead of mean; collecting scores at the same time to correct for more environmental factors)
+will likely improve this situation, but not enough to reduce sample size by a large margin.
+
+This problem is (likely) fundamental. A sample size of 10 is just not a lot; statistically speaking and lighthouse data collection inherently has a variance.
+We need to collect more samples: Either by running more scores in parallel or by speeding up score collection (very unlikely; very hard).
+
+Recommendations:
+
+* Collect data in parallel
+* Use engineering solutions (i.e. cloud hardware and multiple runners) to horizontally scale data collection
+* Provide tools not only to measure variance; we need to provide tools for engineers to understand how their engineering affects variance and per-metric lighthouse score
+
 [Parent ../](../)
+
 ## Metas
 
 [pScore](meta/pScore)  
