@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9989999999963033:1.0009999999998735]
 set trange [0.9989999999963033:1.0009999999998735]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/mainthread-work-breakdown/samples/empty/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/mainthread-work-breakdown/samples/empty/score/values.svg"
 
 plot $score title "score" with line
 

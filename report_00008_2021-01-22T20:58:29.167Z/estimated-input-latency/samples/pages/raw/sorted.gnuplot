@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [12.632000000000001:21.368000000000002]
 set trange [12.632000000000001:21.368000000000002]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/samples/pages/raw/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/estimated-input-latency/samples/pages/raw/sorted.svg"
 
 plot $raw title "raw" with line, \
      58 title "score p10=58", \

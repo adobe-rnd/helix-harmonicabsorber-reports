@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [48.12739937644096:30053.939631801513]
 set trange [48.12739937644096:30053.939631801513]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/speed-index/comparison/line/0_vs_1.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/comparison/line/0_vs_1.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

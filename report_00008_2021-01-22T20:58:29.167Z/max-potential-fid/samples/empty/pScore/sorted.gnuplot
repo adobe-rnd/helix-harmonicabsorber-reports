@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9989999641342965:1.0009999641342964]
 set trange [0.9989999641342965:1.0009999641342964]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/samples/empty/pScore/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/max-potential-fid/samples/empty/pScore/sorted.svg"
 
 plot $pScore title "pScore" with line
 

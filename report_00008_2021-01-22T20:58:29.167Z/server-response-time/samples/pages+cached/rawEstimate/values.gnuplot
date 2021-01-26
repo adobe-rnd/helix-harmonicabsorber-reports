@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-18.740650871232212:113.58363905506043]
 set trange [-18.740650871232212:113.58363905506043]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/server-response-time/samples/pages+cached/rawEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/server-response-time/samples/pages+cached/rawEstimate/values.svg"
 
 plot $rawEstimateLower title "rawEstimate-lower" with line, \
      $rawEstimateUpper title "rawEstimate-upper" with line

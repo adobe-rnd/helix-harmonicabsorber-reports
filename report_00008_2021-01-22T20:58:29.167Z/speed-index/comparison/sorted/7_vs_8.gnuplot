@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [2377.3668676282136:2695.0804956622524]
 set trange [2377.3668676282136:2695.0804956622524]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/speed-index/comparison/sorted/7_vs_8.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/comparison/sorted/7_vs_8.svg"
 
 plot $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
      $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \

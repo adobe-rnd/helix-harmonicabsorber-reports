@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9974704063097833:0.9995330357963618]
 set trange [0.9974704063097833:0.9995330357963618]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached+noexternal+nocss/pScore/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/samples/pages+cached+noexternal+nocss/pScore/values.svg"
 
 plot $pScore title "pScore" with line
 

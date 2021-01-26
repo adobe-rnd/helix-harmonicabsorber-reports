@@ -37,7 +37,7 @@ set xrange [0:13]
 set yrange [-112.11116576792689:5750.064444220469]
 set trange [-112.11116576792689:5750.064444220469]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

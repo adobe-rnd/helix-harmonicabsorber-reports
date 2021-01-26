@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [171.999:172.001]
 set trange [171.999:172.001]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/dom-size/comparison/sorted/7_vs_8.svg"
+set output "report_00008_2021-01-22T20:58:29.167/dom-size/comparison/sorted/7_vs_8.svg"
 
 plot $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
      $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \

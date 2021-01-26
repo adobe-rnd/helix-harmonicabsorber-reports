@@ -417,7 +417,7 @@ set xrange [0:99]
 set yrange [0.39941295267044924:1.011775283378154]
 set trange [0.39941295267044924:1.011775283378154]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/meta/scoreEstimate/comparison/sorted/0_vs_1.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/scoreEstimate/comparison/sorted/0_vs_1.svg"
 
 plot $emptyLower title "empty-lower" with line, \
      $emptyUpper title "empty-upper" with line, \

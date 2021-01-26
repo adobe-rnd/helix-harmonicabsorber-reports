@@ -63,7 +63,7 @@ set yrange [0:100]
 set trange [0:100]
 set style fill transparent solid 0.5 noborder
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/legacy-javascript/comparison/histogram/all_score.svg"
+set output "report_00008_2021-01-22T20:58:29.167/legacy-javascript/comparison/histogram/all_score.svg"
 
 plot $empty title "empty" with boxes, \
      $pages title "pages" with boxes, \

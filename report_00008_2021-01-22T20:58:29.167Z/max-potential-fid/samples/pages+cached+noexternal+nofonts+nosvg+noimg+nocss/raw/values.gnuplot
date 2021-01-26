@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [15.74:29.26]
 set trange [15.74:29.26]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/max-potential-fid/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/values.svg"
 
 plot $raw title "raw" with line, \
      130 title "score p10=130", \

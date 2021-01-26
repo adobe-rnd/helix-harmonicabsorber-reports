@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [0.8489103316524985:0.8529488900551759]
 set trange [0.8489103316524985:0.8529488900551759]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/scoreEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/scoreEstimate/values.svg"
 
 plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
      $scoreEstimateUpper title "scoreEstimate-upper" with line

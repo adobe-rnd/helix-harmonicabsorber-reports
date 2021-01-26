@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [-0.00010015760748249749:0.0019962537992559417]
 set trange [-0.00010015760748249749:0.0019962537992559417]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+nojs/score-difference/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-cpu-idle/samples/pages+cached+noexternal+nojs/score-difference/values.svg"
 
 plot $scoreDifference title "score-difference" with line
 

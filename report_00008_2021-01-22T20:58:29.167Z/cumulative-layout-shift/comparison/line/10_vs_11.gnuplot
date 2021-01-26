@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-0.00637603759765625:0.32517791748046876]
 set trange [-0.00637603759765625:0.32517791748046876]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/comparison/line/10_vs_11.svg"
+set output "report_00008_2021-01-22T20:58:29.167/cumulative-layout-shift/comparison/line/10_vs_11.svg"
 
 plot $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
      $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \

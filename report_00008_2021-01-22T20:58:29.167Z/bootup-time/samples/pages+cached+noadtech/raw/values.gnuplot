@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [37.70792:44.99207999999999]
 set trange [37.70792:44.99207999999999]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/bootup-time/samples/pages+cached+noadtech/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/bootup-time/samples/pages+cached+noadtech/raw/values.svg"
 
 plot $raw title "raw" with line, \
      1282 title "score p10=1282", \

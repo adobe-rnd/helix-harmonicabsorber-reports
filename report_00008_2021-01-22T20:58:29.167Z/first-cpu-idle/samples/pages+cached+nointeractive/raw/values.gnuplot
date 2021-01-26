@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [1962.1552060000001:2210.356094]
 set trange [1962.1552060000001:2210.356094]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+nointeractive/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-cpu-idle/samples/pages+cached+nointeractive/raw/values.svg"
 
 plot $raw title "raw" with line, \
      3572 title "score p10=3572", \

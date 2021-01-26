@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [0.4316573426177749:0.8104377069979468]
 set trange [0.4316573426177749:0.8104377069979468]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/samples/pages+cached+noexternal+nofonts+nosvg+noimg/scoreEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/cumulative-layout-shift/samples/pages+cached+noexternal+nofonts+nosvg+noimg/scoreEstimate/values.svg"
 
 plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
      $scoreEstimateUpper title "scoreEstimate-upper" with line

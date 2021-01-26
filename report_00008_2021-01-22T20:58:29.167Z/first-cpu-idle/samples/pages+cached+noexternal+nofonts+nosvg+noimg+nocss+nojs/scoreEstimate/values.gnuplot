@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [0.9981102549871824:1.000120877625237]
 set trange [0.9981102549871824:1.000120877625237]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs/scoreEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-cpu-idle/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs/scoreEstimate/values.svg"
 
 plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
      $scoreEstimateUpper title "scoreEstimate-upper" with line

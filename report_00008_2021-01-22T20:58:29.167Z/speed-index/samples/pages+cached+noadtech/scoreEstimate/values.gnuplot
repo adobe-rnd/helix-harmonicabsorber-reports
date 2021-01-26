@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [0.9679973323081454:0.9758827666751757]
 set trange [0.9679973323081454:0.9758827666751757]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached+noadtech/scoreEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/samples/pages+cached+noadtech/scoreEstimate/values.svg"
 
 plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
      $scoreEstimateUpper title "scoreEstimate-upper" with line

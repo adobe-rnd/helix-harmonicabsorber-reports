@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [6804512.18:7982562.82]
 set trange [6804512.18:7982562.82]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/total-byte-weight/comparison/line/3_vs_4.svg"
+set output "report_00008_2021-01-22T20:58:29.167/total-byte-weight/comparison/line/3_vs_4.svg"
 
 plot $pagesCachedNointeractive title "pages+cached+nointeractive" with line, \
      $pagesCachedNoadtech title "pages+cached+noadtech" with line, \

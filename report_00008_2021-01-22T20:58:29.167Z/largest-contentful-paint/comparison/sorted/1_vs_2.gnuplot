@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [11185.914288:17244.544112]
 set trange [11185.914288:17244.544112]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/sorted/1_vs_2.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/comparison/sorted/1_vs_2.svg"
 
 plot $pages title "pages" with line, \
      $pagesCached title "pages+cached" with line, \

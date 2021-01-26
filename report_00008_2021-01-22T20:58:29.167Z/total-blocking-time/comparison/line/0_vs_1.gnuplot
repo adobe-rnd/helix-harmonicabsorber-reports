@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-7.8799999999999635:401.8799999999981]
 set trange [-7.8799999999999635:401.8799999999981]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/total-blocking-time/comparison/line/0_vs_1.svg"
+set output "report_00008_2021-01-22T20:58:29.167/total-blocking-time/comparison/line/0_vs_1.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

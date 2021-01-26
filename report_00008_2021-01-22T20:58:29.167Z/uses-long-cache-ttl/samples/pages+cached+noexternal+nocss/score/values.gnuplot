@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9989246292865362:1.0009246292865361]
 set trange [0.9989246292865362:1.0009246292865361]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/samples/pages+cached+noexternal+nocss/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-long-cache-ttl/samples/pages+cached+noexternal+nocss/score/values.svg"
 
 plot $score title "score" with line
 

@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [3092.4:6087.6]
 set trange [3092.4:6087.6]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-text-compression/samples/pages/raw/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-text-compression/samples/pages/raw/sorted.svg"
 
 plot $raw title "raw" with line
 

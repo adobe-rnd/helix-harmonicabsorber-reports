@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [604.94:608.06]
 set trange [604.94:608.06]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-rel-preload/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-rel-preload/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/sorted.svg"
 
 plot $raw title "raw" with line
 

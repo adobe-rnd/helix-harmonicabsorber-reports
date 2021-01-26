@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [36.61239999999999:52.39959999999998]
 set trange [36.61239999999999:52.39959999999998]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/bootup-time/comparison/sorted/7_vs_8.svg"
+set output "report_00008_2021-01-22T20:58:29.167/bootup-time/comparison/sorted/7_vs_8.svg"
 
 plot $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
      $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \

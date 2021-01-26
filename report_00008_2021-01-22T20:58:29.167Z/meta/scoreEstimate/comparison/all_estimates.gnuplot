@@ -2889,7 +2889,7 @@ set xrange [0:99]
 set yrange [0.39941295372884505:1.0117752293999682]
 set trange [0.39941295372884505:1.0117752293999682]
 set terminal svg size 640, 1040 enhanced background rgb 'white'
-set output "reprap/meta/scoreEstimate/comparison/all_estimates.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/scoreEstimate/comparison/all_estimates.svg"
 
 plot $emptyLower title "empty-lower" with line, \
      $emptyUpper title "empty-upper" with line, \

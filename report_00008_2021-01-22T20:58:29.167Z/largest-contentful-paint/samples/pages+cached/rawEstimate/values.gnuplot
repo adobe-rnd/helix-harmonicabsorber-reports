@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [11005.856911624194:15935.879516767125]
 set trange [11005.856911624194:15935.879516767125]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/samples/pages+cached/rawEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/samples/pages+cached/rawEstimate/values.svg"
 
 plot $rawEstimateLower title "rawEstimate-lower" with line, \
      $rawEstimateUpper title "rawEstimate-upper" with line

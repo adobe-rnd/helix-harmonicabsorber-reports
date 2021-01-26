@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9325744983612687:0.9909666987358438]
 set trange [0.9325744983612687:0.9909666987358438]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-meaningful-paint/samples/pages+cached+noexternal+nofonts/score/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-meaningful-paint/samples/pages+cached+noexternal+nofonts/score/sorted.svg"
 
 plot $score title "score" with line
 

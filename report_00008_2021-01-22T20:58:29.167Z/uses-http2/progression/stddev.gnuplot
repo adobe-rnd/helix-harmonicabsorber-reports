@@ -37,7 +37,7 @@ set xrange [0:13]
 set yrange [-1.5081567861730245:76.91599609482424]
 set trange [-1.5081567861730245:76.91599609482424]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-http2/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-http2/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

@@ -39,7 +39,7 @@ set xrange [0:13]
 set yrange [-3.6629325728891082:219.20455127354222]
 set trange [-3.6629325728891082:219.20455127354222]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/first-meaningful-paint/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-meaningful-paint/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [150.62:482.38]
 set trange [150.62:482.38]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/render-blocking-resources/comparison/line/4_vs_5.svg"
+set output "report_00008_2021-01-22T20:58:29.167/render-blocking-resources/comparison/line/4_vs_5.svg"
 
 plot $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
      $pagesCachedNoexternal title "pages+cached+noexternal" with line

@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [1.3153000000000001:2.4957]
 set trange [1.3153000000000001:2.4957]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/server-response-time/samples/pages+cached+noexternal+nocss/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/server-response-time/samples/pages+cached+noexternal+nocss/raw/values.svg"
 
 plot $raw title "raw" with line
 

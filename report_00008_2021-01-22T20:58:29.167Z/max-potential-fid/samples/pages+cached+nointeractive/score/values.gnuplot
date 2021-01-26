@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.29007697376501673:0.4518170866876626]
 set trange [0.29007697376501673:0.4518170866876626]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/samples/pages+cached+nointeractive/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/max-potential-fid/samples/pages+cached+nointeractive/score/values.svg"
 
 plot $score title "score" with line
 

@@ -417,7 +417,7 @@ set xrange [0:99]
 set yrange [0.7170975523464953:0.7760054338784975]
 set trange [0.7170975523464953:0.7760054338784975]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/meta/scoreEstimate/comparison/sorted/6_vs_7.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/scoreEstimate/comparison/sorted/6_vs_7.svg"
 
 plot $pagesCachedNoexternalNofontsLower title "pages+cached+noexternal+nofonts-lower" with line, \
      $pagesCachedNoexternalNofontsUpper title "pages+cached+noexternal+nofonts-upper" with line, \

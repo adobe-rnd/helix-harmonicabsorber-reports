@@ -66,7 +66,7 @@ set style fill transparent solid 0.5 noborder
 
 set parametric
 set terminal svg size 640, 620 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/comparison/histogram/all_raw.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-long-cache-ttl/comparison/histogram/all_raw.svg"
 
 plot $empty title "empty" with boxes, \
      $pages title "pages" with boxes, \

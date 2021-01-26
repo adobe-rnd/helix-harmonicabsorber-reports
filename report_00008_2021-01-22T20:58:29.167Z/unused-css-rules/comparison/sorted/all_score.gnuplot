@@ -1447,7 +1447,7 @@ set xrange [0:99]
 set yrange [0.5750000000000001:1.0083333333333333]
 set trange [0.5750000000000001:1.0083333333333333]
 set terminal svg size 640, 760 enhanced background rgb 'white'
-set output "reprap/unused-css-rules/comparison/sorted/all_score.svg"
+set output "report_00008_2021-01-22T20:58:29.167/unused-css-rules/comparison/sorted/all_score.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

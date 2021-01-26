@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.785499404347403:0.7876146671291339]
 set trange [0.785499404347403:0.7876146671291339]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/samples/pages+cached+noadtech/pScore/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-long-cache-ttl/samples/pages+cached+noadtech/pScore/values.svg"
 
 plot $pScore title "pScore" with line
 

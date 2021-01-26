@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9989993380488856:1.0009993380488855]
 set trange [0.9989993380488856:1.0009993380488855]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/samples/pages+cached+noexternal/score/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/estimated-input-latency/samples/pages+cached+noexternal/score/sorted.svg"
 
 plot $score title "score" with line
 

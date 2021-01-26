@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-0.001:0.001]
 set trange [-0.001:0.001]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/legacy-javascript/comparison/sorted/8_vs_9.svg"
+set output "report_00008_2021-01-22T20:58:29.167/legacy-javascript/comparison/sorted/8_vs_9.svg"
 
 plot $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line, \
      $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line

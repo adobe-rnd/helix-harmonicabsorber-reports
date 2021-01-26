@@ -15,7 +15,7 @@ set style fill transparent solid 0.5 noborder
 
 set parametric
 set terminal svg size 640, 490 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs/raw/histogram.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss+nojs/raw/histogram.svg"
 
 plot $raw title "raw" with boxes, \
      3387,t title "score p10=3387", \

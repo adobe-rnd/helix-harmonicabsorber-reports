@@ -39,7 +39,7 @@ set xrange [0:13]
 set yrange [-0.23833581534106618:12.155126582394375]
 set trange [-0.23833581534106618:12.155126582394375]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/max-potential-fid/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

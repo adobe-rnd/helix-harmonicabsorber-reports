@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.964157947131433:0.9766399224235794]
 set trange [0.964157947131433:0.9766399224235794]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached+noexternal/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/samples/pages+cached+noexternal/score/values.svg"
 
 plot $score title "score" with line
 

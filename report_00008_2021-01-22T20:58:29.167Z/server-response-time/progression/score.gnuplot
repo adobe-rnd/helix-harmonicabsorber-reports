@@ -73,7 +73,7 @@ set xrange [0:13]
 set yrange [0.999:1.001]
 set trange [0.999:1.001]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/server-response-time/progression/score.svg"
+set output "report_00008_2021-01-22T20:58:29.167/server-response-time/progression/score.svg"
 
 plot $scoreP90Min title "score:p90min" with linespoints, \
      $scoreP90Mean title "score:p90mean" with linespoints, \

@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9922353217589898:0.9978452734058874]
 set trange [0.9922353217589898:0.9978452734058874]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/first-cpu-idle/samples/pages+cached+noexternal+noimg/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/first-cpu-idle/samples/pages+cached+noexternal+noimg/score/values.svg"
 
 plot $score title "score" with line
 

@@ -37,7 +37,7 @@ set xrange [0:13]
 set yrange [-5.964274824405156:336.5730061008607]
 set trange [-5.964274824405156:336.5730061008607]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/speed-index/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

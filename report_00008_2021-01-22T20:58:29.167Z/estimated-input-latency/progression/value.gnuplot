@@ -73,7 +73,7 @@ set xrange [0:13]
 set yrange [12.798999999999978:12.801]
 set trange [12.798999999999978:12.801]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/progression/value.svg"
+set output "report_00008_2021-01-22T20:58:29.167/estimated-input-latency/progression/value.svg"
 
 plot $p90Min title "p90min" with linespoints, \
      $p90Mean title "p90mean" with linespoints, \

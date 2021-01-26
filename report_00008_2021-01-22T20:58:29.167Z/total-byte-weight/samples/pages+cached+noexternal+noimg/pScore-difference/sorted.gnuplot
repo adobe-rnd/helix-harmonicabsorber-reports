@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [-1.0009999836624357:-0.9989999836500553]
 set trange [-1.0009999836624357:-0.9989999836500553]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/total-byte-weight/samples/pages+cached+noexternal+noimg/pScore-difference/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/total-byte-weight/samples/pages+cached+noexternal+noimg/pScore-difference/sorted.svg"
 
 plot $pScoreDifference title "pScore-difference" with line
 

@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-9:459]
 set trange [-9:459]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/unminified-css/comparison/sorted/0_vs_1.svg"
+set output "report_00008_2021-01-22T20:58:29.167/unminified-css/comparison/sorted/0_vs_1.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line

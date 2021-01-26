@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-0.003169708377799739:0.003110417215445718]
 set trange [-0.003169708377799739:0.003110417215445718]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/meta/score-difference/comparison/line/4_vs_5.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/score-difference/comparison/line/4_vs_5.svg"
 
 plot $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
      $pagesCachedNoexternal title "pages+cached+noexternal" with line

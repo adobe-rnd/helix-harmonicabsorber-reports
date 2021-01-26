@@ -73,7 +73,7 @@ set xrange [0:13]
 set yrange [10.240000000000038:309.7599999999982]
 set trange [10.240000000000038:309.7599999999982]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/max-potential-fid/progression/value.svg"
+set output "report_00008_2021-01-22T20:58:29.167/max-potential-fid/progression/value.svg"
 
 plot $p90Min title "p90min" with linespoints, \
      $p90Mean title "p90mean" with linespoints, \

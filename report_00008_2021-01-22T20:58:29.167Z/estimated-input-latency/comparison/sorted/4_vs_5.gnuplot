@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [12.799000000000001:12.801]
 set trange [12.799000000000001:12.801]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/comparison/sorted/4_vs_5.svg"
+set output "report_00008_2021-01-22T20:58:29.167/estimated-input-latency/comparison/sorted/4_vs_5.svg"
 
 plot $pagesCachedNoadtech title "pages+cached+noadtech" with line, \
      $pagesCachedNoexternal title "pages+cached+noexternal" with line, \

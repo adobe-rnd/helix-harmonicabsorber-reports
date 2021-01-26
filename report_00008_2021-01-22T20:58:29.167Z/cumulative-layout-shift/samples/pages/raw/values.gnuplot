@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.19471533809238006:0.5864528591156006]
 set trange [0.19471533809238006:0.5864528591156006]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/samples/pages/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/cumulative-layout-shift/samples/pages/raw/values.svg"
 
 plot $raw title "raw" with line, \
      0.1 title "score p10=0.1", \

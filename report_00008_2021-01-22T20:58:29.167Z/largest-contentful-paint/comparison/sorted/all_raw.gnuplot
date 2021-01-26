@@ -1344,7 +1344,7 @@ set xrange [0:99]
 set yrange [47.03704200000027:30109.547857999987]
 set trange [47.03704200000027:30109.547857999987]
 set terminal svg size 640, 740 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/sorted/all_raw.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/comparison/sorted/all_raw.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

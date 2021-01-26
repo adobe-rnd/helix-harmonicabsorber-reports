@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [0.6627777215014595:0.6655516399512083]
 set trange [0.6627777215014595:0.6655516399512083]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-rel-preload/samples/pages+cached+noexternal+noimg/scoreEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-rel-preload/samples/pages+cached+noexternal+noimg/scoreEstimate/values.svg"
 
 plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
      $scoreEstimateUpper title "scoreEstimate-upper" with line

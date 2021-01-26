@@ -17,7 +17,7 @@ set style fill transparent solid 0.5 noborder
 
 set parametric
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/estimated-input-latency/comparison/histogram/10_vs_11.svg"
+set output "report_00008_2021-01-22T20:58:29.167/estimated-input-latency/comparison/histogram/10_vs_11.svg"
 
 plot $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with boxes, \
      $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \

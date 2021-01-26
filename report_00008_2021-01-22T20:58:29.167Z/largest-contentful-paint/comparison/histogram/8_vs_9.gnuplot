@@ -18,7 +18,7 @@ set style fill transparent solid 0.5 noborder
 
 set parametric
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/histogram/8_vs_9.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/comparison/histogram/8_vs_9.svg"
 
 plot $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with boxes, \
      $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with boxes, \

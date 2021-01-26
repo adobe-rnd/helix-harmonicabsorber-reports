@@ -1447,7 +1447,7 @@ set xrange [0:99]
 set yrange [-9.962640000000015:759.9826400000009]
 set trange [-9.962640000000015:759.9826400000009]
 set terminal svg size 640, 760 enhanced background rgb 'white'
-set output "reprap/bootup-time/comparison/sorted/all_raw.svg"
+set output "report_00008_2021-01-22T20:58:29.167/bootup-time/comparison/sorted/all_raw.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

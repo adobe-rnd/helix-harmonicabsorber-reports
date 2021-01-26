@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.9959441408137358:1.0001608015696941]
 set trange [0.9959441408137358:1.0001608015696941]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/mainthread-work-breakdown/samples/pages+cached+noadtech/score/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/mainthread-work-breakdown/samples/pages+cached+noadtech/score/values.svg"
 
 plot $score title "score" with line
 

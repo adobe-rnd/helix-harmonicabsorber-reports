@@ -38,7 +38,7 @@ set xrange [0:13]
 set yrange [-10.625930081809884:541.9224341723041]
 set trange [-10.625930081809884:541.9224341723041]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-long-cache-ttl/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints, \
      $p90Outlandishness title "p90outlandishness" with linespoints

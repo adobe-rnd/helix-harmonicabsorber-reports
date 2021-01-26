@@ -73,7 +73,7 @@ set xrange [0:13]
 set yrange [-6.4:430.4]
 set trange [-6.4:430.4]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/dom-size/progression/value.svg"
+set output "report_00008_2021-01-22T20:58:29.167/dom-size/progression/value.svg"
 
 plot $p90Min title "p90min" with linespoints, \
      $p90Mean title "p90mean" with linespoints, \

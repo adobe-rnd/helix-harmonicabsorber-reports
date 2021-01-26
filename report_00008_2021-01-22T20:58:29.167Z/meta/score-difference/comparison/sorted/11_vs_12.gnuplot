@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-0.0033349044948522413:0.0029128756595173267]
 set trange [-0.0033349044948522413:0.0029128756595173267]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/meta/score-difference/comparison/sorted/11_vs_12.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/score-difference/comparison/sorted/11_vs_12.svg"
 
 plot $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
      $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with line

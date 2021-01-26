@@ -417,7 +417,7 @@ set xrange [0:99]
 set yrange [0.40806248820194524:0.5706489712718588]
 set trange [0.40806248820194524:0.5706489712718588]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/meta/scoreEstimate/comparison/sorted/1_vs_2.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/scoreEstimate/comparison/sorted/1_vs_2.svg"
 
 plot $pagesLower title "pages-lower" with line, \
      $pagesUpper title "pages-upper" with line, \

@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [1660.5711220000005:1676.2791779999995]
 set trange [1660.5711220000005:1676.2791779999995]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/interactive/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/interactive/samples/pages+cached+noexternal+nofonts+nosvg+noimg+nocss/raw/values.svg"
 
 plot $raw title "raw" with line, \
      3785 title "score p10=3785", \

@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [449.96:608.04]
 set trange [449.96:608.04]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-rel-preload/comparison/sorted/7_vs_8.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-rel-preload/comparison/sorted/7_vs_8.svg"
 
 plot $pagesCachedNoexternalNosvg title "pages+cached+noexternal+nosvg" with line, \
      $pagesCachedNoexternalNoimg title "pages+cached+noexternal+noimg" with line

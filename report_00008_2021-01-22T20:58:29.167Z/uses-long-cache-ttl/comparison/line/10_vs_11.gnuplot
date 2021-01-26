@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [697.84:2474.16]
 set trange [697.84:2474.16]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-long-cache-ttl/comparison/line/10_vs_11.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-long-cache-ttl/comparison/line/10_vs_11.svg"
 
 plot $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line, \
      $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \

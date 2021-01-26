@@ -39,7 +39,7 @@ set xrange [0:13]
 set yrange [0.9969620253164551:1.1549367088607594]
 set trange [0.9969620253164551:1.1549367088607594]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/server-response-time/progression/eccentricity.svg"
+set output "report_00008_2021-01-22T20:58:29.167/server-response-time/progression/eccentricity.svg"
 
 plot $p90Eccentricity title "p90eccentricity" with linespoints, \
      $p90Discretization title "p90discretization" with linespoints

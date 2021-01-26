@@ -1447,7 +1447,7 @@ set xrange [0:99]
 set yrange [-120.60000000000001:6150.6]
 set trange [-120.60000000000001:6150.6]
 set terminal svg size 640, 760 enhanced background rgb 'white'
-set output "reprap/uses-text-compression/comparison/sorted/all_raw.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-text-compression/comparison/sorted/all_raw.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line, \

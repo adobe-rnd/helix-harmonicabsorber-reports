@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-552.2:28162.2]
 set trange [-552.2:28162.2]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/uses-webp-images/comparison/sorted/9_vs_10.svg"
+set output "report_00008_2021-01-22T20:58:29.167/uses-webp-images/comparison/sorted/9_vs_10.svg"
 
 plot $pagesCachedNoexternalNocss title "pages+cached+noexternal+nocss" with line, \
      $pagesCachedNoexternalNojs title "pages+cached+noexternal+nojs" with line

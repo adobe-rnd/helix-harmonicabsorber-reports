@@ -18,7 +18,7 @@ set style fill transparent solid 0.5 noborder
 
 set parametric
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/bootup-time/comparison/histogram/11_vs_12.svg"
+set output "report_00008_2021-01-22T20:58:29.167/bootup-time/comparison/histogram/11_vs_12.svg"
 
 plot $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with boxes, \
      $pagesCachedNoexternalNofontsNosvgNoimgNocss title "pages+cached+noexternal+nofonts+nosvg+noimg+nocss" with boxes, \

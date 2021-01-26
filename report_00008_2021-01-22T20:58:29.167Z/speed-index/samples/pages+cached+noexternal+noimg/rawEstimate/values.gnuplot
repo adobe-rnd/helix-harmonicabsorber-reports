@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [2528.0005790116693:2643.822507862967]
 set trange [2528.0005790116693:2643.822507862967]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/speed-index/samples/pages+cached+noexternal+noimg/rawEstimate/values.svg"
+set output "report_00008_2021-01-22T20:58:29.167/speed-index/samples/pages+cached+noexternal+noimg/rawEstimate/values.svg"
 
 plot $rawEstimateLower title "rawEstimate-lower" with line, \
      $rawEstimateUpper title "rawEstimate-upper" with line

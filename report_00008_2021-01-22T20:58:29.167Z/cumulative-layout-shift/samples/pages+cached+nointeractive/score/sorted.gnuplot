@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [0.23578183352384988:0.687831589268449]
 set trange [0.23578183352384988:0.687831589268449]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/samples/pages+cached+nointeractive/score/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/cumulative-layout-shift/samples/pages+cached+nointeractive/score/sorted.svg"
 
 plot $score title "score" with line
 

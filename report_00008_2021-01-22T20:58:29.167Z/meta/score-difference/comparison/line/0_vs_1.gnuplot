@@ -211,7 +211,7 @@ set xrange [0:99]
 set yrange [-0.002824698904172628:0.0034377030132650022]
 set trange [-0.002824698904172628:0.0034377030132650022]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/meta/score-difference/comparison/line/0_vs_1.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/score-difference/comparison/line/0_vs_1.svg"
 
 plot $empty title "empty" with line, \
      $pages title "pages" with line

@@ -36,7 +36,7 @@ set xrange [0:13]
 set yrange [-0.8000000000000016:92.8]
 set trange [-0.8000000000000016:92.8]
 set terminal svg size 640, 520 enhanced background rgb 'white'
-set output "reprap/cumulative-layout-shift/progression/eccentricity.svg"
+set output "report_00008_2021-01-22T20:58:29.167/cumulative-layout-shift/progression/eccentricity.svg"
 
 plot $p90Eccentricity title "p90eccentricity" with linespoints, \
      $p90Discretization title "p90discretization" with linespoints

@@ -22,7 +22,7 @@ set xrange [0:13]
 set yrange [-0.001:0.001]
 set trange [-0.001:0.001]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/meta/pScore-difference/progression/stddev.svg"
+set output "report_00008_2021-01-22T20:58:29.167/meta/pScore-difference/progression/stddev.svg"
 
 plot $p90Stdev title "p90stdev" with linespoints
 

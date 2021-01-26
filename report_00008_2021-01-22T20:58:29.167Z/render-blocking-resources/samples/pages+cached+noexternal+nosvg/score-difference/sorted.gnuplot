@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [-0.005444444444444362:0.0060000000000000045]
 set trange [-0.005444444444444362:0.0060000000000000045]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/render-blocking-resources/samples/pages+cached+noexternal+nosvg/score-difference/sorted.svg"
+set output "report_00008_2021-01-22T20:58:29.167/render-blocking-resources/samples/pages+cached+noexternal+nosvg/score-difference/sorted.svg"
 
 plot $scoreDifference title "score-difference" with line
 

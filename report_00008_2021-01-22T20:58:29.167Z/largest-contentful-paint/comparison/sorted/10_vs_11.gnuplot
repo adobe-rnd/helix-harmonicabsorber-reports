@@ -108,7 +108,7 @@ set xrange [0:99]
 set yrange [2798.6525520000005:2963.313047999999]
 set trange [2798.6525520000005:2963.313047999999]
 set terminal svg size 640, 500 enhanced background rgb 'white'
-set output "reprap/largest-contentful-paint/comparison/sorted/10_vs_11.svg"
+set output "report_00008_2021-01-22T20:58:29.167/largest-contentful-paint/comparison/sorted/10_vs_11.svg"
 
 plot $pagesCachedNoexternalNofontsNosvgNoimg title "pages+cached+noexternal+nofonts+nosvg+noimg" with line, \
      2500 title "score p10=2500", \

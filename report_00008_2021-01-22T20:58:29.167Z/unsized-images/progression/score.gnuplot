@@ -69,7 +69,7 @@ set xrange [1:13]
 set yrange [-0.001:0.001]
 set trange [-0.001:0.001]
 set terminal svg size 640, 560 enhanced background rgb 'white'
-set output "reprap/unsized-images/progression/score.svg"
+set output "report_00008_2021-01-22T20:58:29.167/unsized-images/progression/score.svg"
 
 plot $scoreP90Min title "score:p90min" with linespoints, \
      $scoreP90Mean title "score:p90mean" with linespoints, \
