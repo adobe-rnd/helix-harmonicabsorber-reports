@@ -1,0 +1,49 @@
+reset
+
+$p90Min <<EOF
+0 1004.7640000000007
+1 990.0560000000005
+2 105.41599999999997
+3 101.15599999999998
+4 103.65599999999998
+EOF
+
+$p90Mean <<EOF
+0 1160.0736703296695
+1 1076.2494065934068
+2 114.19964835164825
+3 112.90553846153844
+4 123.93103296703296
+EOF
+
+$p90Median <<EOF
+0 1154.948
+1 1068.3640000000005
+2 113.65599999999998
+3 112.58799999999998
+4 120.96799999999996
+EOF
+
+$p90Max <<EOF
+0 1364.9479999999994
+1 1217.8520000000008
+2 125.19199999999994
+3 125.26799999999999
+4 152.56400000000002
+EOF
+
+set key outside below
+set xrange [0:4]
+set yrange [75.88015999999999:1390.2238399999994]
+set trange [75.88015999999999:1390.2238399999994]
+set terminal svg size 640, 560 enhanced background rgb 'white'
+set output "report_00009_2021-02-08T22-37-41.559Z/bootup-time/progression/value.svg"
+
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints, \
+     1282 title "score p10=1282", \
+     3500 title "score median=3500"
+
+reset

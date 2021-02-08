@@ -1,0 +1,25 @@
+reset
+
+$pagesCachedNoadtechNomedia <<EOF
+540.2537350765373 99
+1080.5074701530746 1
+EOF
+
+$pagesCachedNoadtechNomediaNocss <<EOF
+1080.5074701530746 83
+540.2537350765373 17
+EOF
+
+set key outside below
+set boxwidth 540.2537350765373
+set xrange [420:1300]
+set yrange [0:100]
+set trange [0:100]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "report_00009_2021-02-08T22-37-41.559Z/uses-http2/comparison/histogram/3_vs_4.svg"
+
+plot $pagesCachedNoadtechNomedia title "pages+cached+noadtech+nomedia" with boxes, \
+     $pagesCachedNoadtechNomediaNocss title "pages+cached+noadtech+nomedia+nocss" with boxes
+
+reset

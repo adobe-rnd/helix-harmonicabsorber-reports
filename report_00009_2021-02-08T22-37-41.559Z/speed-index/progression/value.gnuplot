@@ -1,0 +1,49 @@
+reset
+
+$p90Min <<EOF
+0 6828.578645889777
+1 4431.296767679032
+2 2537.6774080632877
+3 2492.9018397282994
+4 1603.369
+EOF
+
+$p90Mean <<EOF
+0 8622.208753776335
+1 4747.93955675312
+2 2637.0707084023807
+3 2596.294553187554
+4 1625.1106500000005
+EOF
+
+$p90Median <<EOF
+0 8725.933621935415
+1 4776.868721984681
+2 2631.454330473298
+3 2585.970172635434
+4 1620.3745000000001
+EOF
+
+$p90Max <<EOF
+0 10777.131304486482
+1 5278.153349403952
+2 2799.5480737064086
+3 2762.7276621114697
+4 1712.9769999999999
+EOF
+
+set key outside below
+set xrange [0:4]
+set yrange [1419.8937539102703:10960.60655057621]
+set trange [1419.8937539102703:10960.60655057621]
+set terminal svg size 640, 560 enhanced background rgb 'white'
+set output "report_00009_2021-02-08T22-37-41.559Z/speed-index/progression/value.svg"
+
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints, \
+     3387 title "score p10=3387", \
+     5800 title "score median=5800"
+
+reset
