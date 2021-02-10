@@ -1,0 +1,40 @@
+reset
+
+$pages <<EOF
+0.29825974246545117 74
+0.5965194849309023 26
+EOF
+
+$pagesCached <<EOF
+0.29825974246545117 34
+0.5965194849309023 66
+EOF
+
+$pagesCachedNoadtech <<EOF
+0.5965194849309023 100
+EOF
+
+$pagesCachedNoadtechNomedia <<EOF
+0.5965194849309023 100
+EOF
+
+$pagesCachedNoadtechNomediaNocss <<EOF
+0.8947792273963535 100
+EOF
+
+set key outside below
+set boxwidth 0.29825974246545117
+set xrange [0.21508432752881365:0.8078676274335282]
+set yrange [0:100]
+set trange [0:100]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 530 enhanced background rgb 'white'
+set output "report_00017_2021-02-10T15-08-03.406Z/meta/pScore/comparison/histogram/all_raw.svg"
+
+plot $pages title "pages" with boxes, \
+     $pagesCached title "pages+cached" with boxes, \
+     $pagesCachedNoadtech title "pages+cached+noadtech" with boxes, \
+     $pagesCachedNoadtechNomedia title "pages+cached+noadtech+nomedia" with boxes, \
+     $pagesCachedNoadtechNomediaNocss title "pages+cached+noadtech+nomedia+nocss" with boxes
+
+reset
