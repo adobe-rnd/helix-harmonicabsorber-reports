@@ -5,6 +5,9 @@ Repeat of data collection from 12, with machine from 16.
 There is remarkably little difference to the data from 16…all values
 are almost the same past 50 lighthouse runs. This result is highly encouraging.
 
+The entire data collection here took around ten minutes with around a second per data collection.
+**This implies it might be possible to generate preliminary results in under a minute (sample size of 20),
+decent results in two minutes (sample size of 50) and excellent results in five (n=150)**
 
 [Parent ../](../)
 

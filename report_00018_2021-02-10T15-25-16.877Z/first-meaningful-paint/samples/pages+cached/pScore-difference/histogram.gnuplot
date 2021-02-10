@@ -1,0 +1,20 @@
+reset
+
+$pScoreDifference <<EOF
+0 64
+0.00485056810927298 26
+-0.00485056810927298 10
+EOF
+
+set key outside below
+set boxwidth 0.00485056810927298
+set xrange [-0.00499567557792735:0.004857496266000516]
+set yrange [0:100]
+set trange [0:100]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_00018_2021-02-10T15-25-16.877Z/first-meaningful-paint/samples/pages+cached/pScore-difference/histogram.svg"
+
+plot $pScoreDifference title "pScore-difference" with boxes
+
+reset
