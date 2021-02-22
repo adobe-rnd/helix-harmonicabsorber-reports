@@ -1,0 +1,137 @@
+
+# //max-potential-fid/samples/pages+cached
+
+[→ Parent](../..)
+
+
+## Raw
+
+
+```yaml
+p90min: 425
+p90max: 603
+p90range: 178
+p90mean: 464.3829787234043
+median: 452.5
+p90stdev: 39.566831795852046
+mad: 21.5
+stdevBySn: 30.411300000000004
+lfitCenter: 463.0137208187684
+lfitStdev: 32.858301694206965
+mfitCenter: 463.0137208187684
+mfitStdev: 41.18177408296629
+mfitConfidence: 4.11817740829663
+p90skewness: 1.5870453805467408
+p90eccentricity: 1
+p90discretization: 1.5932203389830508
+outlandishness: 1.0273038215892245
+
+```
+
+![PLOT: raw-values](./raw/values.svg)![PLOT: raw-sorted](./raw/sorted.svg)![PLOT: raw-histogram](./raw/histogram.svg)
+## Score
+
+
+```yaml
+p90min: 0.04
+p90max: 0.15
+p90range: 0.10999999999999999
+p90mean: 0.11574468085106383
+median: 0.12
+p90stdev: 0.027346840873292984
+mad: 0.020000000000000018
+stdevBySn: 0.023852000000000022
+lfitCenter: 0.11683336486286154
+lfitStdev: 0.02314252253266168
+mfitCenter: 0.11683336486286154
+mfitStdev: 0.029004850692513313
+mfitConfidence: 0.002900485069251331
+p90skewness: -0.8204936365990635
+p90eccentricity: 1.0000000000000002
+p90discretization: 7.833333333333333
+outlandishness: 0.9700801524653989
+
+```
+
+![PLOT: score-values](./score/values.svg)![PLOT: score-sorted](./score/sorted.svg)![PLOT: score-histogram](./score/histogram.svg)
+## Raw Estimate
+
+![PLOT: rawEstimate-values](./rawEstimate/values.svg)
+## Score Estimate
+
+![PLOT: scoreEstimate-values](./scoreEstimate/values.svg)
+## P Score
+
+
+```yaml
+p90min: 0.042218665466525473
+p90max: 0.14918989053590703
+p90range: 0.10697122506938156
+p90mean: 0.11649033802555492
+median: 0.1224582778557412
+p90stdev: 0.026917378150069483
+mad: 0.01749390495242703
+stdevBySn: 0.02808815224766377
+lfitCenter: 0.11776824763795776
+lfitStdev: 0.022634933449781437
+mfitCenter: 0.11776824763795776
+mfitStdev: 0.028368682118352355
+mfitConfidence: 0.0028368682118352353
+p90skewness: -0.9315458377815304
+p90eccentricity: 0.9999999999999996
+p90discretization: 1.5932203389830508
+outlandishness: 0.9690274292446531
+
+```
+
+![PLOT: pScore-values](./pScore/values.svg)![PLOT: pScore-sorted](./pScore/sorted.svg)![PLOT: pScore-histogram](./pScore/histogram.svg)
+## Score Difference
+
+
+```yaml
+p90min: 0
+p90max: 0
+p90range: 0
+p90mean: 0
+median: 0
+p90stdev: 0
+mad: 0
+stdevBySn: 0
+lfitCenter: 0
+lfitStdev: 0
+mfitCenter: 0
+mfitStdev: 0
+mfitConfidence: 0
+p90skewness: .nan
+p90eccentricity: .nan
+p90discretization: 94
+outlandishness: .nan
+
+```
+
+![PLOT: score-difference-values](./score-difference/values.svg)![PLOT: score-difference-sorted](./score-difference/sorted.svg)![PLOT: score-difference-histogram](./score-difference/histogram.svg)
+## P Score Difference
+
+
+```yaml
+p90min: -0.003989691079640506
+p90max: 0.004964372903314168
+p90range: 0.008954063982954674
+p90mean: 0.0006891442203789609
+median: 0.0003122354859593085
+p90stdev: 0.0027051428953881835
+mad: 0.002589600996924457
+stdevBySn: 0.0031463143382594715
+lfitCenter: 0.0006754486023812367
+lfitStdev: 0.0025342097447769263
+mfitCenter: 0.0006754486023812367
+mfitStdev: 0.0031761609032476155
+mfitConfidence: 0.00031761609032476156
+p90skewness: -0.021671617678700263
+p90eccentricity: 0.9999999999999997
+p90discretization: 1.492063492063492
+outlandishness: 0.9512774459553998
+
+```
+
+![PLOT: pScore-difference-values](./pScore-difference/values.svg)![PLOT: pScore-difference-sorted](./pScore-difference/sorted.svg)![PLOT: pScore-difference-histogram](./pScore-difference/histogram.svg)

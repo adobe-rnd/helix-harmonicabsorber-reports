@@ -1,0 +1,49 @@
+reset
+
+$p90Min <<EOF
+0 1.093710659450955
+1 1.1406689402262369
+2 1.121005854288737
+3 1.047173377143012
+4 0.20731867133246526
+EOF
+
+$p90Mean <<EOF
+0 1.189920860056054
+1 1.1710476635691693
+2 1.15261683790058
+3 1.1491633987246395
+4 0.22914691667128398
+EOF
+
+$p90Median <<EOF
+0 1.1810043784247504
+1 1.158188471476237
+2 1.1493086454603407
+3 1.152278103298611
+4 0.22252071804470486
+EOF
+
+$p90Max <<EOF
+0 1.3067596842447917
+1 1.2254139862060547
+2 1.254915256076389
+3 1.298398189968533
+4 0.95905275132921
+EOF
+
+set key outside below
+set xrange [0:4]
+set yrange [0.18532985107421873:1.3287485045030383]
+set trange [0.18532985107421873:1.3287485045030383]
+set terminal svg size 640, 560 enhanced background rgb 'white'
+set output "report_00022_2021-02-20T12:08:46.964Z/cumulative-layout-shift/progression/value.svg"
+
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints, \
+     0.1 title "score p10=0.1", \
+     0.25 title "score median=0.25"
+
+reset

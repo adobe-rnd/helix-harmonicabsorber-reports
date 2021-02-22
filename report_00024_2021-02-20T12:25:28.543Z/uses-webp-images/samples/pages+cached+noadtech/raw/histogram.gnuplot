@@ -1,0 +1,19 @@
+reset
+
+$raw <<EOF
+455.1978577324117 95
+625.8970543820661 5
+EOF
+
+set key outside below
+set boxwidth 56.89973221655146
+set xrange [450:610]
+set yrange [0:100]
+set trange [0:100]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "report_0_00242021-02-20T12:25:28.543Z/uses-webp-images/samples/pages+cached+noadtech/raw/histogram.svg"
+
+plot $raw title "raw" with boxes
+
+reset
