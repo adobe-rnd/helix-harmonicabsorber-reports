@@ -3,7 +3,7 @@
 
 [Parent ../](../)
 
-Reanalysis or data from report sixteen; now with log scales for score estimation.
+Reanalysis or data from report sixteen; now with log scales for score estimation. Looks like we can reduce the minimum sample size to around five and rely on our estimation methodology to tell us if we need more samples instead of playing it safe and using more points.
 
 ## Metas
 
