@@ -38,9 +38,9 @@ Enabling caching decreased the size drastically for all configurations. This had
 confidence interval size but producing a similar overall score) but drastically changed the score for agenda and card,
 which either indicates that these are network bound (unlikely) or indicates that these are nondeterministic in regards to the assets being delivered.
 
-The fact that the max-potential-fid [[27]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/agenda/), [[28]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/agenda/) differ so much while the server-response-time is relatively similar [[27]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/), [[28]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/.readme)
+The fact that the max-potential-fid [[27]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/agenda/readme.md), [[28]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/agenda/readme.md) differ so much while the server-response-time is relatively similar [[27]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/readme.md), [[28]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/readme.md)
 might be interpreted as evidence that a long-duration javascript task is injected on the server side.
-This difference is not visible when comparing the music scores, whose values where relatively similar cached and uncached: [[27/max-potential-fid/music]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/music/), [[28/max-potential-fid/music]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/music/).
+This difference is not visible when comparing the music scores, whose values where relatively similar cached and uncached: [[27/max-potential-fid/music]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/music/readme.md), [[28/max-potential-fid/music]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/music/readme.md).
 
 ## Metast
 
