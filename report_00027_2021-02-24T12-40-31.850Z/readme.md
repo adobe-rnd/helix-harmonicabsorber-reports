@@ -28,12 +28,12 @@ While the output confidence intervals are still large (up to 0.1), this is still
 We could mitigate that; put an envelope around the confidence interval or something?
 Some method that is order-invariant would be preferred though…
 
-[Comparing to 28](../report_00028_2021-02-24T12-49-42.674Z/readme.md) (which is a repeat report of this), confidence intervals differed by up to 70%; this is a lot,
+[Comparing to 28](../report_00028_2021-02-24T12-49-42.674Z/meta/scoreEstimate/readme.md) (which is a repeat report of this), confidence intervals differed by up to 70%; this is a lot,
 but as long as the value stays belows 100% **the confidence intervals still overlap and this is al-right**.
 False-positives or false-negatives only become an issue after this threshold is crossed. A 2 sigma confidence
 interval means this will still happen in **5%** of all experiments.
 
-[Comparing to 29](../report_00029_2021-02-24T13-36-40.390Z/readme.md) which is a repeat with caching enabled:
+[Comparing to 29](../report_00029_2021-02-24T13-36-40.390Z/meta/scoreEstimate/readme.md) which is a repeat with caching enabled:
 Enabling caching decreased the size drastically for all configurations. This had a positive impact on music and astro (reducing the
 confidence interval size but producing a similar overall score) but drastically changed the score for agenda and card,
 which either indicates that these are network bound (unlikely) or indicates that these are nondeterministic in regards to the assets being delivered.
