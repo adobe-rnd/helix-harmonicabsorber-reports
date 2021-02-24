@@ -1,0 +1,19 @@
+reset
+
+$score <<EOF
+0.8384573341613041 72
+0 27
+EOF
+
+set key outside below
+set boxwidth 0.8384573341613041
+set xrange [0.01:0.98]
+set yrange [0:99]
+set trange [0:99]
+set style fill transparent solid 0.5 noborder
+set terminal svg size 640, 490 enhanced background rgb 'white'
+set output "reports/report_00027_2021-02-24T12-40-31.850Z/largest-contentful-paint/samples/card/score/histogram.svg"
+
+plot $score title "score" with boxes
+
+reset

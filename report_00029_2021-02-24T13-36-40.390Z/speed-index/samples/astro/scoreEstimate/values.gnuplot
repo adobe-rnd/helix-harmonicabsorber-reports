@@ -1,0 +1,36 @@
+reset
+
+$scoreEstimateLower <<EOF
+0 0.03529983417499377
+1 0.033149302972943884
+2 0.015886025819611307
+3 -0.002575736787053598
+4 0.027019097399437295
+8 0.04493937501542465
+23 0.0649284569479041
+58 0.07619644882633428
+EOF
+
+$scoreEstimateUpper <<EOF
+0 0.03529983417499377
+1 0.04114369718778266
+2 0.08869100426412428
+3 0.1895447871740666
+4 0.18088994317773088
+8 0.18801532936259402
+23 0.18665953946675534
+58 0.17326152162537437
+EOF
+
+set key outside below
+set xrange [1:58]
+set yrange [-0.006418147266276002:0.193387197653289]
+set trange [-0.006418147266276002:0.193387197653289]
+set logscale x 2
+set terminal svg size 640, 520 enhanced background rgb 'white'
+set output "report/report_00029_2021-02-24T13-36-40.390Z/speed-index/samples/astro/scoreEstimate/values.svg"
+
+plot $scoreEstimateLower title "scoreEstimate-lower" with line, \
+     $scoreEstimateUpper title "scoreEstimate-upper" with line
+
+reset

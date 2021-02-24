@@ -1,0 +1,43 @@
+reset
+
+$p90Min <<EOF
+0 -0.0022910027691323024
+1 -0.0016086369548382108
+2 -0.002351895032488227
+3 -0.0017912770317077028
+EOF
+
+$p90Mean <<EOF
+0 -0.0001706041193418269
+1 -0.0001739456626444691
+2 -0.0002447919568456402
+3 0.00034875364325982685
+EOF
+
+$p90Median <<EOF
+0 -0.0002450244544344166
+1 -0.00027300274881171814
+2 -0.00022843731280246525
+3 0.0003732694019580137
+EOF
+
+$p90Max <<EOF
+0 0.002426369251136341
+1 0.0018579503629046923
+2 0.0020574423420301304
+3 0.0024544795300470348
+EOF
+
+set key outside below
+set xrange [0:3]
+set yrange [-0.003351895032488227:0.003454479530047035]
+set trange [-0.003351895032488227:0.003454479530047035]
+set terminal svg size 640, 560 enhanced background rgb 'white'
+set output "report/report_00029_2021-02-24T13-36-40.390Z/meta/pScore-difference/progression/value.svg"
+
+plot $p90Min title "p90min" with linespoints, \
+     $p90Mean title "p90mean" with linespoints, \
+     $p90Median title "p90median" with linespoints, \
+     $p90Max title "p90max" with linespoints
+
+reset

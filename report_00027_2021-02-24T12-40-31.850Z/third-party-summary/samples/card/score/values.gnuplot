@@ -1,0 +1,104 @@
+reset
+
+$score <<EOF
+0 0
+1 0
+2 0
+3 0
+4 0
+5 1
+6 0
+7 1
+8 1
+9 1
+10 0
+11 0
+12 0
+13 1
+14 1
+15 1
+16 1
+17 1
+18 1
+19 0
+21 0
+22 0
+23 0
+24 1
+25 1
+26 1
+27 1
+28 1
+30 0
+31 0
+32 0
+33 0
+34 0
+35 1
+36 1
+37 1
+38 1
+39 0
+40 0
+41 0
+42 0
+43 0
+44 1
+45 1
+46 1
+47 0
+48 0
+49 0
+50 0
+51 1
+53 0
+54 0
+55 1
+59 0
+60 0
+61 1
+62 1
+63 0
+64 0
+66 1
+68 0
+70 0
+71 0
+72 1
+73 1
+74 0
+75 0
+76 0
+77 0
+78 1
+79 0
+80 0
+81 0
+83 0
+84 1
+85 1
+86 0
+87 0
+88 0
+89 0
+90 0
+91 0
+92 0
+93 0
+94 0
+95 0
+96 0
+97 0
+98 1
+EOF
+
+set key outside below
+set xrange [0:98]
+set yrange [-0.02:1.02]
+set trange [-0.02:1.02]
+set terminal svg size 640, 500 enhanced background rgb 'white'
+set output "reports/report_00027_2021-02-24T12-40-31.850Z/third-party-summary/samples/card/score/values.svg"
+
+plot $score title "score" with line
+
+reset
