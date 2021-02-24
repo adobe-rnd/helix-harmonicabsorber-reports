@@ -5,7 +5,9 @@
 
 See the most important data here: [scoreEstimate](meta/scoreEstimate).
 
-First ever real application; config:
+First ever real application
+
+Config:
 
 Config:
 
@@ -20,7 +22,9 @@ const experiments = [
 ];
 ```
 
-What is going on with astro? Looks like the score is being changed actively every few seconds.
+The variances here where immense with **p90ranges of between 0.5 and 1** which looks like active tampering.
+While the output confidence intervals are still large (up to 0.1), this is still a really decent improvement over
+
 We could mitigate that; put an envelope around the confidence interval or something?
 Some method that is order-invariant would be preferred though…
 
@@ -33,6 +37,10 @@ interval means this will still happen in **5%** of all experiments.
 Enabling caching decreased the size drastically for all configurations. This had a positive impact on music and astro (reducing the
 confidence interval size but producing a similar overall score) but drastically changed the score for agenda and card,
 which either indicates that these are network bound (unlikely) or indicates that these are nondeterministic in regards to the assets being delivered.
+
+The fact that the max-potential-fid [[27]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/agenda/), [[28]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/agenda/) differ so much while the server-response-time is relatively similar [[27]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/), [[28]](../report_00028_2021-02-24T12-49-42.674Z/server-response-time/samples/agenda/.readme)
+might be interpreted as evidence that a long-duration javascript task is injected on the server side.
+This difference is not visible when comparing the music scores, whose values where relatively similar cached and uncached: [[27/max-potential-fid/music]](../report_00027_2021-02-24T12-40-31.850Z/max-potential-fid/samples/music/), [[28/max-potential-fid/music]](../report_00028_2021-02-24T12-49-42.674Z/max-potential-fid/samples/music/).
 
 ## Metast
 
