@@ -9,8 +9,6 @@ First ever real application
 
 Config:
 
-Config:
-
 ```
 const maxWorkers = 10; // 12 Threads available, but limited ram
 const E = (name, url) => ({ name, url }); // NO CACHING
@@ -23,7 +21,7 @@ const experiments = [
 ```
 
 The variances here where immense with **p90ranges of between 0.5 and 1** which looks like active tampering.
-While the output confidence intervals are still large (up to 0.1), this is still a really decent improvement over
+While the output confidence intervals are still large (up to 0.1), this is an **excellent improvement on the scores unprocessed**.
 
 We could mitigate that; put an envelope around the confidence interval or something?
 Some method that is order-invariant would be preferred though…
