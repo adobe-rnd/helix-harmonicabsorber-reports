@@ -11,7 +11,7 @@ Caching slightly improved the scores but had minor effects on the efficiency of 
 The score of agenda and card rose to almost perfect, this might also explain their great amount of variance under contention:
 The effect of performance variation might be much more visible, varying from 0.5 (greatest slowdown) to 1 (least slowdown)…
 
-**Notably, the differential results where similar under contention and without contention except in one csae** even though the absolute values where
+**Notably, the differential results where similar under contention and without contention** even though the absolute values where
 a lot different even providing a decent estimate of the effect size. More so, in absolute terms data collection under contention
 produced significant results faster than single threaded collection (because of parallelism).
 **This is confirms the effectiveness of our differential measurement methodology.**
@@ -46,6 +46,11 @@ Report | agenda-music | card-agenda  | astro-card
 [30]   | 18.13±0.241  | -0.364±0.014 | -54.735±0.135
 [31]   | 17.528±0.147 | -0.385±0.016 | -54.602±0.080
 [32]   | 15.607±0.266 | -0.544±0.257 | -55.408±1.032
+
+Note how the card-agenda result for 28 looks like a false result,
+but actually all the results from card agenda are below the significance threshold
+and are thus null results as in: More data points required.
+The card-agenda results for 30...32 are significant ad all produce a similar result.
 
 Zero point crossed for differential at sample size
 
